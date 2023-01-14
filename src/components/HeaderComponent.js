@@ -3,47 +3,41 @@ import React from 'react';
 
 const Header = () => {
   return (
-    // <nav className="header_ navbar ">
-    //     <div className="container-fluid">
-    //         <a className="navbar-brand" href="/">
-    //         <img src="/images/Full-Color.png"  alt="Logo" width="150" height="51.7" class="d-inline-block align-text-top"/>
-    //         </a>
-    //     </div>
-    // </nav>
-
+ 
+<nav className="navbar header_ navbar-expand-lg navbar-light bg-light">
+  <div className="container-fluid">
     
-    // <header className="header">
-    //   <h1 className="header__text">Welcome to my website!</h1>
-    // </header>
+    <div className="navbar-header">
+    {/* logo */}
+    <a className="navbar-brand" href="/">
+      <img src="/images/Full-Color.png" alt="Logo"  className="d-inline-block align-text-top header-logo"/>
+    </a>
 
-    <nav class="navbar header_ navbar-expand-lg navbar-light bg-light">
-         {/* logo */}
-         <div className="container-fluid">
-             <a className="navbar-brand" href="/">
-             <img src="/images/Full-Color.png"  alt="Logo" width="150" height="51.7" class="d-inline-block align-text-top"/>
-             </a>
-         </div>
+    </div>
 
-        {/* acordion button */}
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+    {/* nav content */}
+    <div className="collapse navbar-collapse" id="navbarNav">
+      <ul className="navbar-nav ms-auto">
+        <li className="nav-item active">
+          <a className="nav-link" href="#">Home</a>
+        </li>
+        <li className="nav-item">
+          <a className="nav-link" href="#">About</a>
+        </li>
+        <li className="nav-item">
+          <a className="nav-link" href="#">Contact</a>
+        </li>
+      </ul>
+    </div>
 
-        {/* nav content */}
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
-                <a class="nav-link" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Contact</a>
-            </li>
-            </ul>
-        </div>
-    </nav>
+            {/* acordion button */}
+    <button className="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span className="navbar-toggler-icon"></span>
+    </button>
+  </div>
+</nav>
+
+
   );
 };
 

@@ -1,45 +1,6 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-
+/* ------------------------- HEADER ------------------------- */
 .header_ {
-  position: fixed;
+  position: absolute; /*fixed will make this follow down when scrolling down*/
   top: 10px;
   left: 5vw;
   right: 5vw;
@@ -56,12 +17,145 @@
   padding: 10px;
 }
 
+.header-logo{
+  width: 10vw;
+
+}
+/* ------------------------- HEADER ------------------------- */
+
+/* ------------------------- WHY RENT ----------------------- */
 .why_rent{
+  
   background-image:  url('static/images/fonde.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center !important;
 }
 
 .toyota-why-rent{
   width: 90%;
   max-width: 90%;
-  --e-transform-flipX: -1;
+  
+  transform: scaleX(-1);
+}
+
+.why-rent-img{
+  max-width: 24vw;
+  width: 24vw;
+}
+.why-rent-img:hover{
+  transform: scale(1.2);
+  transition: all .6s;
+}
+/* ------------------------- WHY RENT ----------------------- */
+
+
+.best-choice-container{
+  background-image:  url('static/images/adam-le-sommer.jpg');
+  min-height: 40vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center !important;
+}
+.car-container{
+  background-image:  url('static/images/emifon.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center !important;
+  background-color: #000000;
+}
+
+.line-separator {
+  border-top: 3px solid black;
+}
+
+
+.logo-img{
+  object-fit: contain;
+  max-width: 50%;
+  max-height: 50%;
+}
+
+/* .car-model{
+  
+} */
+.text-model{
+  display: flex;
+}
+.text-with-line:after {
+
+  content: "";
+  display: inline-block;
+  flex-grow: 1;
+  /* margin: 0 .5em 0 -55%; */
+  vertical-align: middle;
+  border-bottom: 6px solid;
+}
+
+
+.car-image{
+  object-fit: contain;
+  max-width: 100%;
+  max-height: 100%;
+}
+.rounded-right-corners {
+  border-top-left-radius: 0;
+  border-radius: .25rem;
+}
+
+.container-how-works {
+  opacity: 0;
+  transition: opacity 1s;
+  width: 50%;
+  /* flex-shrink: 0; */
+}
+
+.fade-in {
+  opacity: 1;
+}
+
+.row-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.angle-down{
+  width: 4rem;
+  
+}
+
+/* .angle-down:after {
+
+  content: "";
+  display: inline-block;
+  flex-grow: 1;
+
+  vertical-align: middle;
+  border-bottom: 6px solid;
+
+  
+} */
+
+.angle-down-parent{
+  position: relative;
+}
+.angle-down-parent:before {
+  content: "";
+  display: block;
+  width: 40vw;
+  height: 5px;
+  background: #000;
+  left: 0;
+  top: 50%;
+  position: absolute;
+}
+.angle-down-parent:after {
+  content: "";
+  display: block;
+  width: 40vw;
+  height: 5px;
+  background: #000;
+  right: 0;
+  top: 50%;
+  position: absolute;
 }

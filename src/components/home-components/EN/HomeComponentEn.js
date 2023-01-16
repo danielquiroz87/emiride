@@ -5,6 +5,11 @@ import HowWorks from './HowWorks';
 import BestChoiceImg from '../../../static/images/best-choice.png';
 import CompleteFleetImg from '../../../static/images/know-fleet.png';
 import CarComponent from './CarComponent';
+import MapComponent from '../../MapComponent';
+
+import DocumentsRequired from './DocumentsRequired';
+import FaqAccordion from '../../FaqAccordion';
+import ModalInformation from '../../ModalInformation';
 
 import Mitsubishi from '../../../static/images/mitsubishi.png';
 import MitsubishiLogo from '../../../static/images/Mitsubishi_logo.svg.png'
@@ -38,6 +43,33 @@ import Step5 from '../../../static/images/payment-step-5.svg';
 import Step6 from '../../../static/images/collect-step-6.svg';
 
 import AngleDown from '../../../static/images/angle-down.png';
+
+import FAQImage from '../../../static/images/faq.png'
+
+import TicketsImageTrigger from '../../../static/images/traffic-tickets.png';
+import TicketsImageModal from '../../../static/images/traffic-tickets-modal.png';
+
+import RecklessDrivingImageTrigger from '../../../static/images/reckless-driving.png';
+import RecklessDrivingImageModal from '../../../static/images/reckless-driving-modal.png';
+
+import TrafficSignalsImageTrigger from '../../../static/images/traffic-signals.png';
+import TrafficSignalsImageModal from '../../../static/images/traffic-signals-modal.png';
+
+import DriverBehaivorImageTrigger from '../../../static/images/drivers-behaivor.png';
+import DriverBehaivorImageModal from '../../../static/images/drivers-behaivor-modal.png';
+
+import DrivingInfluenceImageTrigger from '../../../static/images/driving-under-influence.png';
+import DrivingInfluenceImageModal from '../../../static/images/driving-under-influence-modal.png';
+
+import SpeedingImageTrigger from '../../../static/images/speeding.png';
+import SpeedingImageModal from '../../../static/images/speeding-modal.png';
+
+import DrivingLicenceImageTrigger from '../../../static/images/driving-licences.png';
+import DrivingLicenceImageModal from '../../../static/images/driving-licences-modal.png';
+
+import DistractionsImageTrigger from '../../../static/images/distractions.png';
+import DistractionsImageModal from '../../../static/images/distractions-modal.png';
+
 
 function HomeEn () {
 
@@ -82,8 +114,8 @@ function HomeEn () {
       <CarouselEn/>
       <WhyRent/>
       <div className='best-choice-container d-flex  align-items-center'>
-        <div className='container justify-content-center'>
-          <img className='w-100' src={BestChoiceImg} />
+        <div className='d-flex container align-items-center justify-content-center'>
+          <img className='w-75' src={BestChoiceImg} />
         </div>
       </div>
       
@@ -91,6 +123,7 @@ function HomeEn () {
         <img className='w-50' src={CompleteFleetImg} />
       </div>
     
+      {/* car */}
       <div className=' container-fluid car-container py-4'>
         <div className='row py-2'>
           {/* img_src,alt_img, logo_src,alt_logo,price,marca,linea,modelo,price_msg */}
@@ -204,6 +237,61 @@ function HomeEn () {
           className="angle-down"
         />
       </div>
+      <div className="d-flex align-items-center justify-content-center" >
+        <MapComponent />
+      </div>
+
+      <div className='container required-documents d-flex align-items-center justify-content-center flex-column'>
+        <h2 className="required-documents-title my-2">DOCUMENTS REQUIRED</h2>
+        <h2 className="required-documents-text">TO RENT A CAR IN DUBAI</h2>
+      </div>
+      <DocumentsRequired/>
+
+      <div className='faq-container d-flex align-items-center'>
+        <div className='d-flex container align-items-center justify-content-center'>
+          <img className='w-75' src={FAQImage} />
+        </div>
+      </div>
+      
+      <div className="accordion accordion-flush" id="accordionExample">
+
+        <FaqAccordion  tittle={"Accordion Item #1"} content={"This is the first items accordion body."} tittle_id={"accordion1"} content_id={"accordion1Content"}/>
+        <FaqAccordion  tittle={"Accordion Item #2"} content={"This is the second items accordion body."} tittle_id={"accordion2"} content_id={"accordion2Content"}/>
+        <FaqAccordion  tittle={"Accordion Item #3"} content={"This is the third items accordion body."} tittle_id={"accordion3"} content_id={"accordion3Content"}/>
+        <FaqAccordion  tittle={"Accordion Item #4"} content={"This is the fourth items accordion body."} tittle_id={"accordion4"} content_id={"accordion4Content"}/>
+      </div>
+      <div className='container valuable-information'>
+
+          <div className='row'>
+            
+              <ModalInformation  IdModal={"Tickets"} triggerImage={TicketsImageTrigger} modalContent={TicketsImageModal} />
+            
+            
+              <ModalInformation  IdModal={"Reckless"} triggerImage={RecklessDrivingImageTrigger} modalContent={RecklessDrivingImageModal} />
+            
+            
+              <ModalInformation  IdModal={"Traffic"} triggerImage={TrafficSignalsImageTrigger} modalContent={TrafficSignalsImageModal} />
+            
+            
+              <ModalInformation  IdModal={"Behaivor"} triggerImage={DriverBehaivorImageTrigger} modalContent={DriverBehaivorImageModal} />
+            
+          </div>
+          <div className='row'>
+            
+              <ModalInformation  IdModal={"Influence"} triggerImage={DrivingInfluenceImageTrigger} modalContent={DriverBehaivorImageModal} />
+            
+            
+              <ModalInformation  IdModal={"Speeding"} triggerImage={SpeedingImageTrigger} modalContent={SpeedingImageModal} />
+            
+            
+              <ModalInformation  IdModal={"Licence"} triggerImage={DrivingLicenceImageTrigger} modalContent={DrivingLicenceImageModal} />
+            
+            
+              <ModalInformation  IdModal={"Distractions"} triggerImage={DistractionsImageTrigger} modalContent={DistractionsImageModal} />
+            
+          </div>
+      </div>
+
     </div>
   );
 };

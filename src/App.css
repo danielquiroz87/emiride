@@ -159,3 +159,97 @@
   top: 50%;
   position: absolute;
 }
+
+.location-widget{
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  z-index: 1;
+}
+
+
+@keyframes pointer-animation {
+  from {
+    transform: translateY(1000%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+
+.pointer {
+  animation: pointer-animation 1s ease-in-out;
+  transform: translateY(100%);
+}
+
+.pointer.is-visible {
+  transform: translateY(0);
+  animation: pointer-animation 1s ease-in-out;
+}
+
+.required-documents{
+  background-image:  url('static/images/emini_fondo_documents.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  
+  background-position: right !important;
+  background-color: #000000;
+  border-radius: 90px 0px 90px 90px;
+}
+
+.required-documents-title{
+  font-size: 1.9rem;
+  font-weight: 900;
+  background-color: white;
+  border-radius: 90px 90px 90px 90px;
+  width: 50%;
+  text-align: center;
+}
+
+.required-documents-text{
+  font-size: 1.9rem;
+  font-weight: 900;
+  color:white;
+  border-radius: 90px 90px 90px 90px;
+  width: 50%;
+  text-align: center;
+}
+
+.faq-container{
+  background-image:  url('static/images/adam-le-sommer.jpg');
+  min-height: 40vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center !important;
+}
+
+.faq-acordion-tittle{
+  text-align: center !important;
+}
+.faq-acordion-button{
+  
+  color:white !important;
+  background-color: #000000 !important;
+  border-radius: 90px 90px 90px 90px;
+}
+
+
+.faq-acordion-content{
+  color:black;
+  
+  background-color: white !important;
+  border-radius: 90px 90px 90px 90px;
+}
+
+.accordion-header {
+  margin:10px;
+}
+
+.valuable-information{
+  background-image:  url('static/images/valuable-information-desktop.jpg');
+  min-height: 40vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center !important;
+}

@@ -30,10 +30,10 @@ function WhyRent () {
             
             <div className='col-4 '>
                   <div className='container'>
-                    <img className='why-rent-img mb-2'      src={pickup_dropoff}    onMouseOver={() => setHoverImage(reason1)}/>  {/* onMouseOut={() => setHoverImage(reason1)} */}
-                    <img className='why-rent-img mb-2 ms-4' src={additional_driver} onMouseOver={() => setHoverImage(reason2)}/>  {/* onMouseOut={() => setHoverImage(reason2)} */}
-                    <img className='why-rent-img mb-2 ms-4' src={assistance_24h}    onMouseOver={() => setHoverImage(reason3)}/>  {/* onMouseOut={() => setHoverImage(reason3)} */}
-                    <img className='why-rent-img mb-2'      src={insurance_policy}  onMouseOver={() => setHoverImage(reason4)}/>  {/* onMouseOut={() => setHoverImage(reason4)} */}
+                    <img className='why-rent-img mb-2'      src={pickup_dropoff}    onMouseOver={() => setHoverImage(reason1)}/> 
+                    <img className='why-rent-img mb-2 ms-4' src={additional_driver} onMouseOver={() => setHoverImage(reason2)}/> 
+                    <img className='why-rent-img mb-2 ms-4' src={assistance_24h}    onMouseOver={() => setHoverImage(reason3)}/> 
+                    <img className='why-rent-img mb-2'      src={insurance_policy}  onMouseOver={() => setHoverImage(reason4)}/> 
                   </div>
             </div>
                 

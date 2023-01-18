@@ -24,11 +24,11 @@ function WhyRent () {
                   <img className='w-50' src= {WhyShouldYou}/>
                 </div>                 
             </div>
-            <div className='col-4 d-flex align-items-center justify-content-center'>
+            <div className='col-4  d-flex align-items-center justify-content-center'>
                 <img className='toyota-why-rent' src= {ToyotaFortuner}/> 
             </div>
             
-            <div className='col-4'>
+            <div className='col-4 '>
                   <div className='container'>
                     <img className='why-rent-img mb-2'      src={pickup_dropoff}    onMouseOver={() => setHoverImage(reason1)}/>  {/* onMouseOut={() => setHoverImage(reason1)} */}
                     <img className='why-rent-img mb-2 ms-4' src={additional_driver} onMouseOver={() => setHoverImage(reason2)}/>  {/* onMouseOut={() => setHoverImage(reason2)} */}
@@ -37,7 +37,7 @@ function WhyRent () {
                   </div>
             </div>
                 
-            <div className='col-4'>
+            <div className='col-4 '>
               <div className='container'>
                 {hoverImage && <img className='hover-image why-rent-img' src={hoverImage} />}
               </div>

@@ -1,9 +1,5 @@
 import React from 'react';
-import CarouselEn from './CarouselEn';
-import WhyRent from '../EN/WhyToRentWithUs/WhyRent';
-import HowWorks from './HowWorks';
-import BestChoiceImg from '../../../static/images/best-choice.png';
-import CompleteFleetImg from '../../../static/images/know-fleet.png';
+
 
 function CarComponent ({img_src,alt_img, logo_src,alt_logo,price,marca,linea,modelo,price_msg,char_img}) {
   return (

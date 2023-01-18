@@ -15,17 +15,28 @@ code {
 
 
 
-li { 
-  list-style-image: url("static/images/check-solid.svg");
-  font-weight: 900;
+.documents-li li::before {
+  content: url("static/images/check-solid.svg");
+
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  padding-right: 5px;
+}
+
+
+
+.documents-li li { 
+  list-style-image: url("");
+
   
+} 
 /* 
   width: 20px;
   height: 20px; */
   /* background-size: 50px 50px; */
   
   /* background-size: contain; */
- } 
 
  /* li p {
   font-size: 1.2rem;

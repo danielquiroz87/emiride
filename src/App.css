@@ -2,8 +2,8 @@
 .header_ {
   position: absolute; /*fixed will make this follow down when scrolling down*/
   top: 10px;
-  left: 5vw;
-  right: 5vw;
+  left: 10vw;
+  right: 10vw;
   background-color: white !important;
   border-radius: 40px;
   text-align: center;
@@ -19,8 +19,26 @@
 
 .header-logo{
   width: 10vw;
-
 }
+
+.header-text{
+  color:black;
+  font-weight: 700;
+}
+
+
+
+/* extra small devices (vertical phones) 300 px and up*/
+@media (max-width: 576px) { 
+  .header-logo{
+    width: 20vw;
+    display: flex;
+    justify-content: center;
+    
+  }
+}
+
+
 /* ------------------------- HEADER ------------------------- */
 
 /* ------------------------- WHY RENT ----------------------- */
@@ -47,6 +65,15 @@
   transform: scale(1.2);
   transition: all .6s;
 }
+
+@media (max-width: 576px) { 
+  .toyota-why-rent{
+    width: 100%;
+    max-width: 100%;
+    
+    transform: scaleX(-1);
+  }
+}
 /* ------------------------- WHY RENT ----------------------- */
 
 
@@ -71,9 +98,15 @@
 
 
 .logo-img{
+
   object-fit: contain;
   max-width: 50%;
   max-height: 50%;
+
+
+
+  /* object-fit: contain; */
+    
 }
 
 /* .car-model{
@@ -108,6 +141,14 @@
   transition: opacity 1s;
   width: 50%;
   /* flex-shrink: 0; */
+}
+
+.how-works-tittle{
+  font-weight: 900;
+}
+
+.steps-path{
+  max-width: 100%;
 }
 
 .fade-in {
@@ -181,12 +222,38 @@
 .pointer {
   animation: pointer-animation 1s ease-in-out;
   transform: translateY(100%);
+  position: absolute;
+  top: 30vh;
+  left: 50vw;
 }
 
+@media (max-width: 768px) { 
+  .pointer{
+    position: absolute;
+    top: 20vh;
+    left: 50vw;
+  }
+}
 .pointer.is-visible {
   transform: translateY(0);
   animation: pointer-animation 1s ease-in-out;
 }
+
+.map-image{
+  max-width: 100%;
+  margin-bottom: 5vh;
+  margin-top: 5vh;
+}
+/* @media (max-width: 576px) { 
+  .map-image{
+    max-width: 100%;  
+  }
+
+  .pointer {
+   max-width: 100%;
+  }
+
+ } */
 
 .required-documents{
   background-image:  url('static/images/emini_fondo_documents.png');
@@ -216,23 +283,124 @@
   text-align: center;
 }
 
+.required-documents-list-tittle{
+  font-weight: 900;
+}
+@media (max-width: 576px) { 
+  .required-documents{
+
+    background-size: auto 3vh;    
+    background-position: right !important;
+    background-color: #000000;
+    
+  }
+}
+@media (max-width: 768px) { 
+  .required-documents{
+
+    background-size: auto 5vh;    
+    background-position: right !important;
+    background-color: #000000;
+    
+  }
+  
+  .required-documents-title{
+    font-size: 1.3rem;
+    font-weight: 900;
+    background-color: white;
+    width: 70%;
+    text-align: center;
+  }
+  
+  .required-documents-text{
+    font-size: 1.3rem;
+    font-weight: 900;
+    color:white;
+    border-radius: 90px 90px 90px 90px;
+    width: 50%;
+    text-align: center;
+  }
+  
+  .required-documents-list-tittle{
+    font-weight: 900;
+  }
+}
+
 .faq-container{
   background-image:  url('static/images/adam-le-sommer.jpg');
   min-height: 40vh;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center !important;
+  
 }
 
-.faq-acordion-tittle{
-  text-align: center !important;
+.accordion{
+  margin: 30px;
 }
+.accordion-button{
+  border-radius: 90px !important;
+  margin-bottom: 10px;
+  margin-top :10px;
+  display: grid;
+  place-items: center;
+}
+/* erase the default iccon of accordion */
+.accordion-button::after {
+  
+  margin-left: 0;
+  
+  background-image: url("");
+
+
+}
+
+.accordion-button:not(.collapsed)::after {
+  background-image: url("");
+  transform: rotate(-180deg);
+}
+/* erase the default iccon of accordion  END*/
+
+
 .faq-acordion-button{
   
   color:white !important;
   background-color: #000000 !important;
-  border-radius: 90px 90px 90px 90px;
+  text-align: center !important;
+  font-size: 2rem 
 }
+
+/* extra small devices (vertical phones) 300 px and up*/
+@media (min-width: 300px) { 
+
+}
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (max-width: 576px) { 
+  .faq-acordion-button{
+  
+    color:white !important;
+    background-color: #000000 !important;
+    text-align: center !important;
+    font-size: 1.4rem 
+  }
+ }
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+
+ }
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+
+ }
+
+/* // Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
+
+ }
 
 
 .faq-acordion-content{
@@ -240,16 +408,72 @@
   
   background-color: white !important;
   border-radius: 90px 90px 90px 90px;
+  font-family: "Poppins", Sans-serif;
+  font-weight: 400 !important;
 }
+
 
 .accordion-header {
   margin:10px;
 }
 
+#accordion .collapsing {
+  transition: height 0.6s ease-in-out;
+}
+
 .valuable-information{
   background-image:  url('static/images/valuable-information-desktop.jpg');
-  min-height: 40vh;
+  height: 100vh;
+  /* width: 100%; */
+
   background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center !important;
+  /* background-size: 100vw 100vh; */
+  /* background-position: center !important; */
+
+
+  background-position: top center;
+  background-size: 100% auto;
 }
+
+.img-trigger-modals{
+  margin-left: 100px;
+}
+
+.row-modal-information{
+  margin-left: 25vw !important;
+  
+}
+
+.modal-image-trigger{
+  margin-top: 7rem;
+  width: 70%;
+}
+
+
+
+
+/* extra small devices (vertical phones) 300 px and up*/
+@media (min-width: 300px) { 
+ 
+}
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) { 
+
+ }
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+
+ }
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+
+ }
+
+/* // Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
+
+ }

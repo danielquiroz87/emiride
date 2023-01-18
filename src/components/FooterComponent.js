@@ -15,83 +15,52 @@ function Footer() {
                                         }} >
 
 
-        <div className="container-fluid text-center text-md-left " style={{"width":"90%"}}>
+        <div className="container-fluid text-left " >
     
-           
-            <div className="row ">
-    
-               
-                <div className="col-md-4 mt-md-0 mt-3" style={{textAlign:"center"}}>
-    
-                
-                    <p >
+            <div className="row align-items-center justify-content-center ">
+              
+                <div className="col-md-3 col-6" >
+                    
+                    <p className='text-center'>
                     <img src = {'/images/Full-Color.png'}
-                    width="120" 
-
-                    align="center"
+                    className="mt-4"
+                    width={"90%"} 
+                    height={"90%"}
+                    
                     alt='logo'
                     />
                     </p>
-                    <h5 className="text-uppercase font-weight-bold">síguenos en redes</h5>
-                    <div style={{"align":"center"}}>
-                      <a href="https://www.facebook.com">
-                          <i className="fa fa-facebook fa-3x icon-3d"></i>
-                      </a>
-                      <a href="https://www.instagram.com">
-                          <i className="fa fa-instagram fa-3x icon-3d"></i>
-                      </a>
-                      <a href="https://wa.me/573155806571">
-                          <i className="fa fa-whatsapp fa-3x icon-3d"></i> 
-                      </a>
-                    </div>
                 </div>
-              
-    
-                
-    
-              
-                <div className="col-md-4 mb-md-0 mb-3">
-                    <br/>
-                   
-                    <h5 className="text-uppercase font-weight-bold" >Nuestra sala de ventas</h5>
-                    <p>
-                      
-                      <b>San Juan de Pasto, Nariño</b>
-                      <br/>
-                      AV Panamericana Calle 16 # 35 - 69
-                      <br/> 
-                      <br/>
-                      <b> Horario de atención</b>
-                      <br/>
-                      Lunes a viernes: 8:00 am a 6:00 pm
-                      Sabados y festivos: 8:00 am a 4:00 pm 
-                    </p>
-    
+
+                <div className="col-md-3 col-6">
+                    <b><p className="text-uppercase mt-4" >Explore</p></b>
+                    <p>About Us</p>
+                    <p>Cars For Rent</p>
+                    <p>Contact Us</p>
                 </div>
         
-                <div className="col-md-4 mb-md-0 mb-3" style={{ textDecoration: "none",
-                                                                color: "inherit"}}>
-                    <br/>
-              
-                    <h5 className="text-uppercase font-weight-bold">Para mayor informacion</h5>
-                    <p>
-                      
-                        Jaime Figueroa Mora - Gerente
-                        <br/>
-                        Correo: <a className = "links" href="victoriautos@hotmail.com" target="_blank">victoriautos@hotmail.com</a>
-                        <br/>
-                        Celular:<a className = "links" href="3155806571" target="_blank">3155806571</a>
-                
-                    </p>
+                <div className="col-md-3 col-6" style={{ textDecoration: "none", color: "inherit"}}>
+                    <b><p className="text-uppercase mt-4">Customer Care</p></b>
+                    <p>Terms and Conditions</p>
+                    <p>Privacy Policy</p>
+                    <p>FAQs</p>
                 </div>
+
+                <div className="col-md-3 col-6" style={{ textDecoration: "none", color: "inherit"}}>
+                    <b><p className="text-uppercase mt-4">Connect</p></b>
+                    <p>Dubai UAE</p>
+                    <p>+971 50 332 3079</p>
+                    <p>info@emiride.com</p>
+                </div>
+
             </div>
         </div>
       </div>
-        
-        
-   
+
     
     )
 }
 
 export default Footer;
+
+

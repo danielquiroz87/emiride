@@ -3,36 +3,14 @@ import CarouselEn from './CarouselEn';
 import WhyRent from '../EN/WhyToRentWithUs/WhyRent';
 import HowWorks from './HowWorks';
 import BestChoiceImg from '../../../static/images/best-choice.png';
-import CompleteFleetImg from '../../../static/images/know-fleet.png';
-import CarComponent from './CarComponent';
+
 import MapComponent from '../../MapComponent';
 
 import DocumentsRequired from './DocumentsRequired';
 import FaqAccordion from '../../FaqAccordion';
 import ModalInformation from '../../ModalInformation';
 
-import Mitsubishi from '../../../static/images/mitsubishi.png';
-import MitsubishiLogo from '../../../static/images/Mitsubishi_logo.svg.png'
 
-import KiaPegas from '../../../static/images/kiapegas.png';
-import KiaLogo from '../../../static/images/kia_logo.jpg';
-
-import Elantra from '../../../static/images/elantra.png';
-import Accent from '../../../static/images/hyundaiaccent.png';
-import Santafe from '../../../static/images/santafe.png';
-
-import HyundaiLogo from '../../../static/images/hyundai_logo.jpg'
-
-import Xterra from '../../../static/images/xterra.png';
-import NissanLogo from '../../../static/images/nissan_logo.jpg';
-
-import Fortuner from '../../../static/images/fortuner.png';
-import ToyotaLogo from '../../../static/images/toyota_logo.png';
-
-import Urus from '../../../static/images/urus.png';
-import LamborginiLogo from '../../../static/images/lamborghini.jpg';
-
-import CharLow from '../../../static/images/car-caract-low-en.png'
 
 import StepsPath from '../../../static/images/steps-path-desktop.png';
 import Step1 from '../../../static/images/location-step-1.svg';
@@ -70,45 +48,50 @@ import DrivingLicenceImageModal from '../../../static/images/driving-licences-mo
 import DistractionsImageTrigger from '../../../static/images/distractions.png';
 import DistractionsImageModal from '../../../static/images/distractions-modal.png';
 
+import CompleteFleet from './CompleteFleet/CompleteFleet';
+
 
 function HomeEn () {
+
 
   const elements_1 = [
     {
       img: Step1,
-      title: 'Title 1',
-      text: 'Description 1'
+      title: 'Locations & Dates',
+      text: 'Select the pickup and return dates and locations'
     },
     {
       img: Step2,
-      title: 'Title 2',
-      text: 'Description 2'
+      title: 'Select Vehicle',
+      text: 'Compare and select your preferred vehicle'
     },
     {
       img: Step3,
-      title: 'Title 1',
-      text: 'Description 1'
+      title: 'Add-ons & Extras',
+      text: 'Select add-ons and extras based on your vehicle choice'
     }
   
   ]
   const elements_2 = [
+
     {
-      img: Step4,
-      title: 'Title 2',
-      text: 'Description 2'
+      img: Step6,
+      title: 'Collect Vehicle',
+      text: 'Our representative will contact you'
     },
     {
       img: Step5,
-      title: 'Title 1',
-      text: 'Description 1'
+      title: 'Checkout & Payment',
+      text: 'Review the charges and make online payment'
     },
-    {
-      img: Step6,
-      title: 'Title 2',
-      text: 'Description 2'
-    }
-  ]
 
+    {
+      img: Step4,
+      title: 'Your Info',
+      text: 'Enter and submit your acurate info'
+    },
+  ]
+  
   return (
     <div>
       <CarouselEn/>
@@ -118,117 +101,21 @@ function HomeEn () {
           <img className='w-75' src={BestChoiceImg} />
         </div>
       </div>
-      
-      <div className='mt-4 d-flex align-items-center container justify-content-center'>
-        <img className='w-50' src={CompleteFleetImg} />
+      <div id="cars-for-rent">
+
+      <CompleteFleet />
       </div>
-    
-      {/* car */}
-      <div className=' container-fluid car-container py-4'>
-        <div className='row py-2'>
-          {/* img_src,alt_img, logo_src,alt_logo,price,marca,linea,modelo,price_msg */}
-          <div className="col-md-3 col-sm-6"><CarComponent 
-                                              img_src={Mitsubishi} 
-                                              alt_img={"Mitsubishi"}
-                                              logo_src={MitsubishiLogo} 
-                                              price={"500.000"}
-                                              price_msg={"Starting from"} 
-                                              marca={"Mitsubishi"} 
-                                              linea={"Attrage"} 
-                                              modelo={"2023"}
-                                              char_img={CharLow}
-                                              /></div>
-          <div className="col-md-3 col-sm-6"><CarComponent 
-                                              img_src={KiaPegas}   
-                                              alt_img={"Kia"}
-                                              logo_src={KiaLogo}        
-                                              price={"500.000"}
-                                              price_msg={"Starting from"} 
-                                              marca={"Kia"} 
-                                              linea={"Pegas"} 
-                                              modelo={"2023"}
-                                              char_img={CharLow}
-                                              /></div>
-          <div className="col-md-3 col-sm-6"><CarComponent 
-                                              img_src={Accent}     
-                                              alt_img={"Accent"}
-                                              logo_src={HyundaiLogo}     
-                                              price={"500.000"}
-                                              price_msg={"Starting from"} 
-                                              marca={"Hyundai"} 
-                                              linea={"Accent"} 
-                                              modelo={"2023"}
-                                              char_img={CharLow}
-                                              /></div>
-          <div className="col-md-3 col-sm-6"><CarComponent 
-                                              img_src={Elantra}    
-                                              alt_img={"Elantra"}
-                                              logo_src={HyundaiLogo}    
-                                              price={"500.000"}
-                                              price_msg={"Starting from"} 
-                                              marca={"Hyundai"} 
-                                              linea={"Elantra"} 
-                                              modelo={"2023"}
-                                              char_img={CharLow}
-                                              /></div>
-        </div>
-        <div className='row py-2'>
-          <div className="col-md-3 col-sm-6"><CarComponent 
-                                              img_src={Santafe} 
-                                              alt_img={"Mitsubishi"}
-                                              logo_src={HyundaiLogo} 
-                                              price={"500.000"}
-                                              price_msg={"Starting from"} 
-                                              marca={"Hyundai"} 
-                                              linea={"Santafe"} 
-                                              modelo={"2023"}
-                                              char_img={CharLow}
-                                              /></div>
-          <div className="col-md-3 col-sm-6"><CarComponent 
-                                              img_src={Xterra} 
-                                              alt_img={"Mitsubishi"}
-                                              logo_src={NissanLogo} 
-                                              price={"500.000"}
-                                              price_msg={"Starting from"} 
-                                              marca={"Nissan"} 
-                                              linea={"X-Terra"} 
-                                              modelo={"2023"}
-                                              char_img={CharLow}
-                                              /></div>
-          <div className="col-md-3 col-sm-6"><CarComponent 
-                                              img_src={Fortuner} 
-                                              alt_img={"Mitsubishi"}
-                                              logo_src={ToyotaLogo} 
-                                              price={"500.000"}
-                                              price_msg={"Starting from"} 
-                                              marca={"Toyota"} 
-                                              linea={"Fortuner"} 
-                                              modelo={"2023"}
-                                              char_img={CharLow}
-                                              /></div>
-          <div className="col-md-3 col-sm-6"><CarComponent 
-                                              img_src={Urus} 
-                                              alt_img={"Mitsubishi"}
-                                              logo_src={LamborginiLogo} 
-                                              price={"500.000"}
-                                              price_msg={"Starting from"} 
-                                              marca={"Lamborhini"} 
-                                              linea={"Urus"} 
-                                              modelo={"2023"}
-                                              char_img={CharLow}
-                                              /></div>
-        </div>
-      </div>      
-      
-      <div className='container'>
-        <b><h3 className='d-flex align-items-center justify-content-center'>HOW IT WORKS</h3></b>
-      <HowWorks elements={elements_1}/>
-      <div className='container d-flex align-items-center justify-content-center'>
-        <img
-        src={StepsPath}
-        />
-      </div>
-      <HowWorks elements={elements_2} />
+
+      <div className='container my-4'>
+        <b><h3 className='d-flex align-items-center justify-content-center how-works-tittle my-4 py-4'>HOW IT WORKS</h3></b>
+        <HowWorks elements={elements_1}/>
+         
+            <img
+            className='steps-path'
+            src={StepsPath}
+            />
+  
+        <HowWorks elements={elements_2} />
       </div>
 
       <div className='d-flex align-items-center justify-content-center angle-down-parent'>
@@ -255,14 +142,20 @@ function HomeEn () {
       
       <div className="accordion accordion-flush" id="accordionExample">
 
-        <FaqAccordion  tittle={"Accordion Item #1"} content={"This is the first items accordion body."} tittle_id={"accordion1"} content_id={"accordion1Content"}/>
-        <FaqAccordion  tittle={"Accordion Item #2"} content={"This is the second items accordion body."} tittle_id={"accordion2"} content_id={"accordion2Content"}/>
-        <FaqAccordion  tittle={"Accordion Item #3"} content={"This is the third items accordion body."} tittle_id={"accordion3"} content_id={"accordion3Content"}/>
-        <FaqAccordion  tittle={"Accordion Item #4"} content={"This is the fourth items accordion body."} tittle_id={"accordion4"} content_id={"accordion4Content"}/>
-      </div>
-      <div className='container valuable-information'>
+        <FaqAccordion  tittle={"What is Salik Toll system?"} content={"Salik is the name given to Dubai's electronic road toll system. The Salik system is based on radio frequency identification technology. All vehicles are subject to a toll of AED 4 plus 5 VAT."} tittle_id={"1"} content_id={"Content1"}/>
+        <FaqAccordion  tittle={"What is Darb Toll System?"} content={"Darb is the name given to Abu Dhabi's electronic road toll system. The Darb system is based on radio frequency identification technology. All vehicles are subject to a toll of AED 4 plus 5 VAT."} tittle_id={"2"} content_id={"Content2"}/>
+        <FaqAccordion  tittle={"Can I add another driver to the reservation?"} content={"Yes, you can add another driver in the ADDS ON option, this may be subject to an additional cost but only at the time of making the reservation it will be shown. The additional driver will have to provide the required documents as well as the person who is taking the reservation and they must be shown physically at the pickup date."} tittle_id={"3"} content_id={"Content3"}/>
+        <FaqAccordion  tittle={"What happens if I return the vehicle after the contract end time?"} content={"A grace period of 1 hour (60 minutes) is granted, in case the vehicle is not delivered within this grace period, the rate corresponding to a rental day equal to the one contracted agreement within the contract it will be no charged."} tittle_id={"4"} content_id={"Content4"}/>
+        <FaqAccordion  tittle={"Can I drive on OFF-ROAD roads or in the desert?"} content={"No, it is not allowed to drive in these places and to do so would be a violation of the rental agreement since it is not allowed."} tittle_id={"5"} content_id={"Content5"}/>
+        <FaqAccordion  tittle={"Who can contract the Collision Damage Waiver (CDW)?"} content={"Anyone who has a driving license older than 1 year for UAE residents and tourists."} tittle_id={"6"} content_id={"Content6"}/>
+        <FaqAccordion  tittle={"About fines for violations of traffic regulations?"} content={"Most of the roads in the United Arab Emirates are controlled by speed cameras and radars which will make it very easy for you to be fined for violating traffic regulations, along the roads you will be able to find the speed limit. In the event that one or more fines are charged for infractions during the rental period of the vehicle, these will be automatically charged to the customer's credit card plus 5% VAT and 10% as a handling fee."} tittle_id={"7"} content_id={"Content7"}/>
+        <FaqAccordion  tittle={"How does the deposit refund process work?"} content={"According to the norm established for car rental companies in the United Arab Emirates, we are obliged to refund the money from the deposit in a period equal to or less than 30 days from the delivery of the vehicle, but at E M I RIDE RENT A CAR we know how tedious this process can be or the need for our clients to use their money, so we will do it as quickly as we make sure that no other additional charge was generated to the vehicle during the rental period as a result of fines, tolls or others."} tittle_id={"8"} content_id={"Content8"}/>
+        <FaqAccordion  tittle={"Who can rent a vehicle at E M I and what are the rental periods?"} content={"The person must be at least 21 years old and must have a valid UAE license (minimum 6 months issued) if resident. For tourists, they must have a valid driving license from the country of origin (minimum 1 year issued) or, if required, must also present an international driving permit. In relation to the rental periods E M I RIDE RENT A CAR offers a daily (24 hours minimum), weekly or monthly (30 days in case the client wants to extend this period, a new rental agreement must be made again) rental periods."} tittle_id={"9"} content_id={"Content9"}/>
 
-          <div className='row'>
+      </div>
+      <div className='container-fluid  valuable-information'>
+
+          <div className='row row-modal-information'>
             
               <ModalInformation  IdModal={"Tickets"} triggerImage={TicketsImageTrigger} modalContent={TicketsImageModal} />
             
@@ -276,7 +169,7 @@ function HomeEn () {
               <ModalInformation  IdModal={"Behaivor"} triggerImage={DriverBehaivorImageTrigger} modalContent={DriverBehaivorImageModal} />
             
           </div>
-          <div className='row'>
+          <div className='row row-modal-information'>
             
               <ModalInformation  IdModal={"Influence"} triggerImage={DrivingInfluenceImageTrigger} modalContent={DriverBehaivorImageModal} />
             

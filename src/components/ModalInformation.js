@@ -3,8 +3,8 @@ import React from 'react';
 const CustomModal = ({ triggerImage ,modalContent,IdModal }) => {
   return (
 
-    <div className='d-flex align-items-center justify-content-end col-lg-3 col-md-3 col-sm-6'>
-      <img className = " " type="button" width={"100vw"} src={triggerImage} data-bs-toggle="modal" data-bs-target={`#${IdModal}`}/>
+    <div className='d-flex justify-content-center col-lg-3 col-md-3 col-sm-6'>
+      <img className = "modal-image-trigger" type="button" width={"100vw"} src={triggerImage} data-bs-toggle="modal" data-bs-target={`#${IdModal}`}/>
   
       <div className="modal fade" id={IdModal} tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div className="modal-dialog">

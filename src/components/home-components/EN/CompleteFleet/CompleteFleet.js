@@ -1,48 +1,48 @@
 import React from 'react';
 import CarComponent from '../../../CarComponent';
 
-import Mitsubishi from '../../../../static/images/mitsubishi.png';
-// import MitsubishiLogo from '../../../../static/images/Mitsubishi_logo.svg.png'
-import MitsubishiLogo from '../../../../static/images/Mitsubishi_logo_g.png'
+import Mitsubishi from '../../../../static/images/mitsubishi.webp';
+// import MitsubishiLogo from '../../../../static/images/Mitsubishi_logo.svg.webp'
+import MitsubishiLogo from '../../../../static/images/Mitsubishi_logo_g.webp'
 
-import KiaPegas from '../../../../static/images/kiapegas.png';
-// import KiaLogo from '../../../../static/images/kia_logo.jpg';
-import KiaLogo from '../../../../static/images/kia_logo_g.jpg';
+import KiaPegas from '../../../../static/images/kiapegas.webp';
+// import KiaLogo from '../../../../static/images/kia_logo.webp';
+import KiaLogo from '../../../../static/images/kia_logo_g.webp';
 
-import Elantra from '../../../../static/images/elantra.png';
-import Accent from '../../../../static/images/hyundaiaccent.png';
-import Santafe from '../../../../static/images/santafe.png';
+import Elantra from '../../../../static/images/elantra.webp';
+import Accent from '../../../../static/images/hyundaiaccent.webp';
+import Santafe from '../../../../static/images/santafe.webp';
 
-// import HyundaiLogo from '../../../../static/images/hyundai_logo.jpg';
-import HyundaiLogo from '../../../../static/images/hyundai_logo_g.jpg';
+// import HyundaiLogo from '../../../../static/images/hyundai_logo.webp';
+import HyundaiLogo from '../../../../static/images/hyundai_logo_g.webp';
 
-import Xterra from '../../../../static/images/xterra.png';
-// import NissanLogo from '../../../../static/images/nissan_logo.jpg';
-import NissanLogo from '../../../../static/images/nissan_logo_g.jpg';
+import Xterra from '../../../../static/images/xterra.webp';
+// import NissanLogo from '../../../../static/images/nissan_logo.webp';
+import NissanLogo from '../../../../static/images/nissan_logo_g.webp';
 
-import Fortuner from '../../../../static/images/fortuner.png';
-// import ToyotaLogo from '../../../../static/images/toyota_logo.png';
-import ToyotaLogo from '../../../../static/images/toyota_logo_g.png';
+import Fortuner from '../../../../static/images/fortuner.webp';
+// import ToyotaLogo from '../../../../static/images/toyota_logo.webp';
+import ToyotaLogo from '../../../../static/images/toyota_logo_g.webp';
 
-import Urus from '../../../../static/images/urus.png';
-// import LamborginiLogo from '../../../../static/images/lamborghini.jpg';
-import LamborginiLogo from '../../../../static/images/lamborghini_gg.png';
+import Urus from '../../../../static/images/urus.webp';
+// import LamborginiLogo from '../../../../static/images/lamborghini.webp';
+import LamborginiLogo from '../../../../static/images/lamborghini_gg.webp';
 
-import CharLow from '../../../../static/images/car-caract-low-en.png'
+import CharLow from '../../../../static/images/car-caract-low-en.webp'
 
-import CompleteFleetImg from '../../../../static/images/know-fleet.png';
+import CompleteFleetImg from '../../../../static/images/know-fleet.webp';
 
 function CompleteFleet () {
   return (
     <>
     <div className='mt-4 d-flex align-items-center container justify-content-center'>
-        <img className='w-50' src={CompleteFleetImg} />
+        <img className='complete-fleet-img' src={CompleteFleetImg} />
     </div>
 
     <div className=' container-fluid car-container py-4'>
         <div className='row py-2'>
 
-        <div className="col-md-3 col-sm-6"><CarComponent 
+        <div className="col-6 col-md-3 col-sm-6"><CarComponent 
                                             img_src={Mitsubishi} 
                                             alt_img={"Mitsubishi"}
                                             logo_src={MitsubishiLogo} 
@@ -53,7 +53,7 @@ function CompleteFleet () {
                                             modelo={"2023"}
                                             char_img={CharLow}
                                             /></div>
-        <div className="col-md-3 col-sm-6"><CarComponent 
+        <div className="col-6 col-md-3 col-sm-6"><CarComponent 
                                             img_src={KiaPegas}   
                                             alt_img={"Kia"}
                                             logo_src={KiaLogo}        
@@ -64,7 +64,7 @@ function CompleteFleet () {
                                             modelo={"2023"}
                                             char_img={CharLow}
                                             /></div>
-        <div className="col-md-3 col-sm-6"><CarComponent 
+        <div className="col-6 col-md-3 col-sm-6"><CarComponent 
                                             img_src={Accent}     
                                             alt_img={"Accent"}
                                             logo_src={HyundaiLogo}     
@@ -75,7 +75,7 @@ function CompleteFleet () {
                                             modelo={"2023"}
                                             char_img={CharLow}
                                             /></div>
-        <div className="col-md-3 col-sm-6"><CarComponent 
+        <div className="col-6 col-md-3 col-sm-6"><CarComponent 
                                             img_src={Elantra}    
                                             alt_img={"Elantra"}
                                             logo_src={HyundaiLogo}    
@@ -88,7 +88,7 @@ function CompleteFleet () {
                                             /></div>
         </div>
         <div className='row py-2'>
-        <div className="col-md-3 col-sm-6"><CarComponent 
+        <div className="col-6 col-md-3 col-sm-6"><CarComponent 
                                             img_src={Santafe} 
                                             alt_img={"Mitsubishi"}
                                             logo_src={HyundaiLogo} 
@@ -99,7 +99,7 @@ function CompleteFleet () {
                                             modelo={"2023"}
                                             char_img={CharLow}
                                             /></div>
-        <div className="col-md-3 col-sm-6"><CarComponent 
+        <div className="col-6 col-md-3 col-sm-6"><CarComponent 
                                             img_src={Xterra} 
                                             alt_img={"Mitsubishi"}
                                             logo_src={NissanLogo} 
@@ -110,7 +110,7 @@ function CompleteFleet () {
                                             modelo={"2023"}
                                             char_img={CharLow}
                                             /></div>
-        <div className="col-md-3 col-sm-6"><CarComponent 
+        <div className="col-6 col-md-3 col-sm-6"><CarComponent 
                                             img_src={Fortuner} 
                                             alt_img={"Mitsubishi"}
                                             logo_src={ToyotaLogo} 
@@ -121,7 +121,7 @@ function CompleteFleet () {
                                             modelo={"2023"}
                                             char_img={CharLow}
                                             /></div>
-        <div className="col-md-3 col-sm-6"><CarComponent 
+        <div className="col-6 col-md-3 col-sm-6"><CarComponent 
                                             img_src={Urus} 
                                             alt_img={"Mitsubishi"}
                                             logo_src={LamborginiLogo} 

@@ -22,7 +22,7 @@ function Footer() {
                 <div className="col-md-3 col-6" >
                     
                     <p className='text-center'>
-                    <img src = {'/images/Full-Color.png'}
+                    <img src = {'/images/Full-Color.webp'}
                     className="mt-4"
                     width={"90%"} 
                     height={"90%"}

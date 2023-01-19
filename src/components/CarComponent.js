@@ -2,8 +2,9 @@ import React from 'react';
 
 
 function CarComponent ({img_src,alt_img, logo_src,alt_logo,price,marca,linea,modelo,price_msg,char_img}) {
+  
   return (
-    <div className='card my-2'>
+    <div className='card my-2 car-card'>
       <div className='container'>
         
         <div className='row'>
@@ -33,12 +34,12 @@ function CarComponent ({img_src,alt_img, logo_src,alt_logo,price,marca,linea,mod
         <div className='card-body'>
           <div className="line-separator"></div>
             <p className=''>{price_msg} <b>AED {price}</b></p>
-          <div className='text-model'>
-            <h4 className='text-with-line'>{marca} {linea}</h4>
+          <div className='text-model-container'>
+            <p className='text-model'>{marca} {linea}</p>
           </div>
-          <div className='container mb-3'>
+          <div className='container d-flex justify-content-center align-items-center mb-3'>
             <img
-            className='car-image'
+            className='car-charact-img'
             src={char_img}
             />
           </div>

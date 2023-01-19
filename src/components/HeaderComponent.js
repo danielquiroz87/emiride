@@ -1,27 +1,26 @@
 import React from 'react';
-// import './Header.css';
 
 import facebookImage from '../static/images/facebook.svg';
 import instagramImage from '../static/images/instagram.svg';
 import tiktokImage from '../static/images/tiktok.svg';
 import whatsappImage from '../static/images/whatsapp.svg';
-import spainImage from '../static/images/spanish.png';
-
+import spainImage from '../static/images/spanish.webp';
 const Header = () => {
   return (
  
-<nav className="navbar header_ navbar-expand-lg navbar-light bg-light">
+<nav className="navbar header_ navbar-expand-lg navbar-dark bg-light">
   <div className="container-fluid">
     
     <div className="navbar-header">
-    {/* logo */}
-    <a className="navbar-brand" href="/">
-      <img src="/images/Full-Color.png" alt="Logo"  className="d-inline-block align-text-top header-logo"/>
-    </a>
 
+      <a className="navbar-brand d-none d-sm-block" href="/">
+        <img src="/images/Full-Color.webp" alt="Logo"  className="d-inline-block align-text-top header-logo"/>
+      </a>
+      <a className="navbar-brand d-sm-none" href="/">
+        <img src="/images/header-logo-mobile.webp" alt="Logo"  className="d-inline-block align-text-top header-logo"/>
+      </a>
     </div>
 
-    {/* nav content */}
     <div className="collapse navbar-collapse" id="navbarNav">
       <ul className="navbar-nav ms-auto">
         <li className="nav-item mx-2 active">
@@ -55,10 +54,9 @@ const Header = () => {
 
     </div>
 
-            {/* acordion button */}
     <div className='d-flex justify-content-end align-items-center'>
 
-      <button className="navbar-toggler  " type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <button className="navbar-toggler  " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" >
               <span className="navbar-toggler-icon d-flex justify-content-end align-items-end"></span>
       </button>
       <a className="nav-link header-text mx-2" href="#"><img src={spainImage} width={"25vw"} /></a>
@@ -66,6 +64,7 @@ const Header = () => {
 
   </div>
 </nav>
+
 
 
   );

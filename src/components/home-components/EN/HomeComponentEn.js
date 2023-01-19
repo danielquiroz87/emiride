@@ -2,7 +2,7 @@ import React from 'react';
 import CarouselEn from './CarouselEn';
 import WhyRent from '../EN/WhyToRentWithUs/WhyRent';
 import HowWorks from './HowWorks';
-import BestChoiceImg from '../../../static/images/best-choice.png';
+import BestChoiceImg from '../../../static/images/best-choice.webp';
 
 import MapComponent from '../../MapComponent';
 
@@ -12,7 +12,7 @@ import ModalInformation from '../../ModalInformation';
 
 
 
-import StepsPath from '../../../static/images/steps-path-desktop.png';
+import StepsPath from '../../../static/images/steps-path-desktop.webp';
 import Step1 from '../../../static/images/location-step-1.svg';
 import Step2 from '../../../static/images/select-step-2.svg';
 import Step3 from '../../../static/images/extras-step-3.svg';
@@ -20,33 +20,33 @@ import Step4 from '../../../static/images/info-step-4.svg';
 import Step5 from '../../../static/images/payment-step-5.svg';
 import Step6 from '../../../static/images/collect-step-6.svg';
 
-import AngleDown from '../../../static/images/angle-down.png';
+import AngleDown from '../../../static/images/angle-down.webp';
 
-import FAQImage from '../../../static/images/faq.png'
+import FAQImage from '../../../static/images/faq.webp'
 
-import TicketsImageTrigger from '../../../static/images/traffic-tickets.png';
-import TicketsImageModal from '../../../static/images/traffic-tickets-modal.png';
+import TicketsImageTrigger from '../../../static/images/traffic-tickets.webp';
+import TicketsImageModal from '../../../static/images/traffic-tickets-modal.webp';
 
-import RecklessDrivingImageTrigger from '../../../static/images/reckless-driving.png';
-import RecklessDrivingImageModal from '../../../static/images/reckless-driving-modal.png';
+import RecklessDrivingImageTrigger from '../../../static/images/reckless-driving.webp';
+import RecklessDrivingImageModal from '../../../static/images/reckless-driving-modal.webp';
 
-import TrafficSignalsImageTrigger from '../../../static/images/traffic-signals.png';
-import TrafficSignalsImageModal from '../../../static/images/traffic-signals-modal.png';
+import TrafficSignalsImageTrigger from '../../../static/images/traffic-signals.webp';
+import TrafficSignalsImageModal from '../../../static/images/traffic-signals-modal.webp';
 
-import DriverBehaivorImageTrigger from '../../../static/images/drivers-behaivor.png';
-import DriverBehaivorImageModal from '../../../static/images/drivers-behaivor-modal.png';
+import DriverBehaivorImageTrigger from '../../../static/images/drivers-behaivor.webp';
+import DriverBehaivorImageModal from '../../../static/images/drivers-behaivor-modal.webp';
 
-import DrivingInfluenceImageTrigger from '../../../static/images/driving-under-influence.png';
-import DrivingInfluenceImageModal from '../../../static/images/driving-under-influence-modal.png';
+import DrivingInfluenceImageTrigger from '../../../static/images/driving-under-influence.webp';
+import DrivingInfluenceImageModal from '../../../static/images/driving-under-influence-modal.webp';
 
-import SpeedingImageTrigger from '../../../static/images/speeding.png';
-import SpeedingImageModal from '../../../static/images/speeding-modal.png';
+import SpeedingImageTrigger from '../../../static/images/speeding.webp';
+import SpeedingImageModal from '../../../static/images/speeding-modal.webp';
 
-import DrivingLicenceImageTrigger from '../../../static/images/driving-licences.png';
-import DrivingLicenceImageModal from '../../../static/images/driving-licences-modal.png';
+import DrivingLicenceImageTrigger from '../../../static/images/driving-licences.webp';
+import DrivingLicenceImageModal from '../../../static/images/driving-licences-modal.webp';
 
-import DistractionsImageTrigger from '../../../static/images/distractions.png';
-import DistractionsImageModal from '../../../static/images/distractions-modal.png';
+import DistractionsImageTrigger from '../../../static/images/distractions.webp';
+import DistractionsImageModal from '../../../static/images/distractions-modal.webp';
 
 import CompleteFleet from './CompleteFleet/CompleteFleet';
 
@@ -98,7 +98,7 @@ function HomeEn () {
       <WhyRent/>
       <div className='best-choice-container d-flex  align-items-center'>
         <div className='d-flex container align-items-center justify-content-center'>
-          <img className='w-75' src={BestChoiceImg} />
+          <img className='best-choice-header' src={BestChoiceImg} />
         </div>
       </div>
       <div id="cars-for-rent">

@@ -1,7 +1,7 @@
 import React, {useEffect, useRef, useState} from 'react';
 
-import MapImage from "../static/images/map.png";
-import Pointer from "../static/images/emirates_icon.png"
+import MapImage from "../static/images/map.webp";
+import Pointer from "../static/images/emirates_icon.webp"
 
 function MapWithPointer() {
   const mapRef = useRef(null);

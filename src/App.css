@@ -158,8 +158,6 @@
   object-fit: contain;
   max-width: 50%;
   max-height: 50%;
-
-  /* object-fit: contain; */
     
 }
 
@@ -195,11 +193,21 @@
 .car-charact-img{
   object-fit: contain;
   max-width: 100%;
-  
 }
 .rounded-right-corners {
   border-top-left-radius: 0;
   border-radius: .25rem;
+}
+@media (max-width: 767px) {
+  .text-model-container:after {
+    content: "";
+    display: block;
+    width: 0vw;
+  }
+  .car-charact-img{
+    object-fit: cover;
+    max-width: 100%;
+  }
 }
 /* --------------- CAR CONTAINER END ------------------------ */
 
@@ -493,6 +501,32 @@
 /* ------------------------- FAQ END ------------------------ */
 
 /* ---------------------- VALUABLE INFO --------------------- */
+.valuable-information-tittle-container{
+  background-image:  url('static/images/adam-le-sommer.webp');
+  min-height: 20vh;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center !important;
+}
+
+.valuable-information-tittle{
+  font-size: 1.3rem;
+  font-weight: 1000;
+  background-color: white;
+  width: 90%;
+  text-align: center;
+  border-radius: 30px;
+}
+
+.valuable-information-text{
+  font-size: 1.3rem;
+  font-weight: 1000;
+  color:white;
+  border-radius: 90px 90px 90px 90px;
+  width: 50%;
+  text-align: center;
+}
+
 .valuable-information{
   background-image:  url('static/images/valuable-information-desktop.webp');
   height: 100vh;
@@ -505,9 +539,6 @@
   background-size: 100% auto;
 }
 
-.img-trigger-modals{
-  margin-left: 100px;
-}
 
 .row-modal-information{
   margin-left: 25vw !important;
@@ -519,6 +550,26 @@
   width: 70%;
 }
 
+@media (max-width: 767px) {
+  .valuable-information{
+    background-image:  url('static/images/valuable-information-mobile.webp');
+    height: 100vh;
+    /* width: 100%; */
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: auto 100%;
+  }
+  .modal-image-trigger{
+    width: 25vw;
+    margin-top: 4rem;
+  }
+  .row-modal-information{
+    margin-left: 0vw !important; 
+  }
+  .modal-image-content{
+    max-width: 100vw ;
+  }
+}
 /* --------------------- VALUABLE INFO END ------------------- */
 
 

@@ -153,6 +153,14 @@ function HomeEn () {
         <FaqAccordion  tittle={"Who can rent a vehicle at E M I and what are the rental periods?"} content={"The person must be at least 21 years old and must have a valid UAE license (minimum 6 months issued) if resident. For tourists, they must have a valid driving license from the country of origin (minimum 1 year issued) or, if required, must also present an international driving permit. In relation to the rental periods E M I RIDE RENT A CAR offers a daily (24 hours minimum), weekly or monthly (30 days in case the client wants to extend this period, a new rental agreement must be made again) rental periods."} tittle_id={"9"} content_id={"Content9"}/>
 
       </div>
+
+      <div className='hide-on-desktop valuable-information-tittle-container'>
+        <div className='d-flex  align-items-center justify-content-center flex-column'>
+          <h2 className="valuable-information-tittle my-4">SOME VALUABLE INFORMATION</h2>
+          <h2 className="valuable-information-text">FOR YOU</h2>        
+        </div>        
+      </div>
+
       <div className='container-fluid  valuable-information'>
 
           <div className='row row-modal-information'>

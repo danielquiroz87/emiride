@@ -1,5 +1,8 @@
 import React from 'react';
 
+import desktopLogo from '../static/images/Full-Color.webp';
+import mobileLogo from '../static/images/header-logo-mobile.webp';
+
 import facebookImage from '../static/images/facebook.svg';
 import instagramImage from '../static/images/instagram.svg';
 import tiktokImage from '../static/images/tiktok.svg';
@@ -14,10 +17,10 @@ const Header = () => {
     <div className="navbar-header">
 
       <a className="navbar-brand d-none d-sm-block" href="/">
-        <img src="/images/Full-Color.webp" alt="Logo"  className="d-inline-block align-text-top header-logo"/>
+        <img src={desktopLogo} alt="Logo"  className="d-inline-block align-text-top header-logo"/>
       </a>
       <a className="navbar-brand d-sm-none" href="/">
-        <img src="/images/header-logo-mobile.webp" alt="Logo"  className="d-inline-block align-text-top header-logo"/>
+        <img src={mobileLogo} alt="Logo"  className="d-inline-block align-text-top header-logo"/>
       </a>
     </div>
 

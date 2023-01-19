@@ -34,8 +34,11 @@ function CarComponent ({img_src,alt_img, logo_src,alt_logo,price,marca,linea,mod
         <div className='card-body'>
           <div className="line-separator"></div>
             <p className=''>{price_msg} <b>AED {price}</b></p>
-          <div className='text-model-container'>
+          <div className='text-model-container hide-on-mobile'>
             <p className='text-model'>{marca} {linea}</p>
+          </div>
+          <div className='text-model-container hide-on-desktop'>
+            <p className='text-model'>{marca} <br/> {linea}</p>
           </div>
           <div className='container d-flex justify-content-center align-items-center mb-3'>
             <img

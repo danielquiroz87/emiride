@@ -1,5 +1,6 @@
 import React from 'react';
 
+import logoImg from '../static/images/Full-Color.webp'
 // import {Link} from 'react-router-dom';
 
 //will render in any location except /admin
@@ -22,7 +23,7 @@ function Footer() {
                 <div className="col-md-3 col-6" >
                     
                     <p className='text-center'>
-                    <img src = {'/images/Full-Color.webp'}
+                    <img src = {logoImg}
                     className="mt-4"
                     width={"90%"} 
                     height={"90%"}

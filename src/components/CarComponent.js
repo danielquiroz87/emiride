@@ -64,7 +64,7 @@ function CarComponent ({img_src,alt_img, logo_src,alt_logo,price,marca,linea,mod
             />
                       <div className='container d-flex align-items-center justify-content-center'>
                       
-            <button className={`btn rounded-right-corners text-white mb-3 ${marca === 'LAMBORGHINI' ? 'bg-gold' : 'bg-black'}`}>{marca === 'LAMBORGHINI' ? 'Coming Soon' : 'Button'}</button>
+            <button className={`btn rounded-right-corners text-white mb-3 ${marca === 'LAMBORGHINI' ? 'bg-gold' : 'bg-black'}`}>{marca === 'LAMBORGHINI' ? 'Coming Soon' : 'Book Now'}</button>
           </div>
       </div>
     </div>

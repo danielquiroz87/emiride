@@ -27,7 +27,7 @@ code {
 
 
 .documents-li li { 
-  list-style-image: none;
+  list-style-image: url("");
 
 } 
 /* 

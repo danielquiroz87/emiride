@@ -6,11 +6,12 @@ import UaeTouristsSvg from '../../../static/images/uae_tourist.svg';
 function DocumentsRequired(){
     return(
     //  documents required
-    <div className='container w-75 py-4'>
+    <div className='container w-100 py-4'>
         <div className='row my-4'>
+          
           <div className='col'>
             <h3 className='required-documents-list-tittle'>For UAE residents</h3>
-            <ul className='documents-li'>
+            <ul className='documents-li px-0'>
               <li>
                 Passport copy
               </li>
@@ -22,24 +23,28 @@ function DocumentsRequired(){
               </li>
             </ul>
           </div>
+
           <div className='col d-flex align-items-center mx-auto'>
             <img
             className='doc-req-img'
             src={UaeResidentsSvg}
             />
           </div>
+
         </div>
+        
         <div className='row my-4'>
+
           <div className='col d-flex align-items-center mx-auto'>
             <img 
             className='doc-req-img'
             src={UaeTouristsSvg}
             />
-        
           </div>
+          
           <div className='col'>
             <h3 className='required-documents-list-tittle'>For UAE tourists</h3>
-              <ul className='documents-li'>
+              <ul className='documents-li px-0'>
                 <li>
                   Passport copy
                 </li>

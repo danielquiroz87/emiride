@@ -127,7 +127,7 @@ function HomeEn () {
             <div className='col-4'>
                 <HowWorksMobile elements={elements_1}/>
             </div>
-            <div className='col-4'>
+            <div className='col-4 d-flex align-items-center justify-content-center'>
                 <img
                 className='w-100'
                 src={StepsPathMobile}
@@ -202,7 +202,7 @@ function HomeEn () {
           </div>
           <div className='row row-modal-information'>
             
-              <ModalInformation  IdModal={"Influence"} triggerImage={DrivingInfluenceImageTrigger} modalContent={DriverBehaivorImageModal} />
+              <ModalInformation  IdModal={"Influence"} triggerImage={DrivingInfluenceImageTrigger} modalContent={DrivingInfluenceImageModal} />
             
             
               <ModalInformation  IdModal={"Speeding"} triggerImage={SpeedingImageTrigger} modalContent={SpeedingImageModal} />

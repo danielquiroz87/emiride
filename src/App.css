@@ -169,7 +169,7 @@
 .text-model-container:after {
   content: "";
   display: block;
-  width: 7vw;
+  width: 4vw;
   height: 5px;
   background: #000;
   right: 0;
@@ -196,7 +196,7 @@
 }
 .rounded-right-corners {
   border-top-left-radius: 0;
-  border-radius: .25rem;
+  border-radius: 0px 30px 30px 30px;
 }
 @media (max-width: 767px) {
   .text-model-container:after {
@@ -208,6 +208,18 @@
     object-fit: cover;
     max-width: 100%;
   }
+  .logo-img{
+
+    object-fit: contain;
+    max-width: 100%;
+    max-height: 100%;
+  }
+  .text-model{
+    font-size: 1rem;
+  }
+}
+.bg-gold{
+  background-color: #c8c624 !important;
 }
 /* --------------- CAR CONTAINER END ------------------------ */
 
@@ -362,14 +374,21 @@
 .required-documents-list-tittle{
   font-weight: 900;
 }
+
+.doc-req-img{
+  max-width: 50vw;
+}
 @media (max-width: 576px) { 
   .required-documents{
 
     background-size: auto 3vh;    
     background-position: right !important;
     background-color: #000000;
-    
   }
+  
+.doc-req-img{
+  width: 30vw;
+}
 }
 @media (max-width: 768px) { 
   .required-documents{
@@ -429,13 +448,13 @@
   
   margin-left: 0;
   
-  background-image: url("");
+  background-image: none;
 
 
 }
 
 .accordion-button:not(.collapsed)::after {
-  background-image: url("");
+  background-image: none;
   transform: rotate(-180deg);
 }
 /* erase the default iccon of accordion  END*/
@@ -461,7 +480,10 @@
     color:white !important;
     background-color: #000000 !important;
     text-align: center !important;
-    font-size: 1.4rem 
+   
+  }
+  .accordion-header{
+    font-size: 1.1rem;
   }
  }
 
@@ -611,4 +633,14 @@
   .hide-on-mobile {
       display: none;
   }
+}
+
+
+
+.carousel-caption{
+  right: 0;
+  left: auto;
+  bottom: auto;
+  top: 50%;
+  transform: translateY(-50%);
 }

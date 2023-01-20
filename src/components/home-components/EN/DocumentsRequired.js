@@ -22,15 +22,17 @@ function DocumentsRequired(){
               </li>
             </ul>
           </div>
-          <div className='col'>
+          <div className='col d-flex align-items-center mx-auto'>
             <img
+            className='doc-req-img'
             src={UaeResidentsSvg}
             />
           </div>
         </div>
         <div className='row my-4'>
-          <div className='col'>
+          <div className='col d-flex align-items-center mx-auto'>
             <img 
+            className='doc-req-img'
             src={UaeTouristsSvg}
             />
         

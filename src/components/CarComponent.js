@@ -31,25 +31,41 @@ function CarComponent ({img_src,alt_img, logo_src,alt_logo,price,marca,linea,mod
           </div>
         </div>
         
-        <div className='card-body'>
+        <div className='card-body pb-0'>
           <div className="line-separator"></div>
-            <p className=''>{price_msg} <b>AED {price}</b></p>
+             
+              <div className='hide-on-mobile'>
+              {marca === 'LAMBORGHINI' ? 
+                <p className='text-model'>COMING SOON</p>
+                : 
+                <p className='text-price'>{price_msg} <b>AED {price}</b></p>
+              }
+              </div>
+              <div className='hide-on-desktop'>
+              {marca === 'LAMBORGHINI' ? 
+                <p className='text-model'>COMING<br/> SOON</p>
+                : 
+                <p className='text-price'>{price_msg} <b>AED {price}</b></p>
+              }
+              </div>
+            
           <div className='text-model-container hide-on-mobile'>
             <p className='text-model'>{marca} {linea}</p>
           </div>
           <div className='text-model-container hide-on-desktop'>
             <p className='text-model'>{marca} <br/> {linea}</p>
           </div>
-          <div className='container d-flex justify-content-center align-items-center mb-3'>
-            <img
-            className='car-charact-img'
+
+        </div>
+        
+        <img
+            className='car-charact-img mt-0 mb-4'
             src={char_img}
             />
+                      <div className='container d-flex align-items-center justify-content-center'>
+                      
+            <button className={`btn rounded-right-corners text-white mb-3 ${marca === 'LAMBORGHINI' ? 'bg-gold' : 'bg-black'}`}>{marca === 'LAMBORGHINI' ? 'Coming Soon' : 'Button'}</button>
           </div>
-          <div className='container d-flex align-items-center justify-content-center'>
-            <button className="btn rounded-right-corners bg-black text-white">Button</button>
-          </div>
-        </div>
       </div>
     </div>
 

@@ -260,6 +260,11 @@
   flex-wrap: wrap;
 }
 
+@media (max-width: 768px) { 
+  .container-how-works {
+    width: 100%;
+  }
+}
 /* ----------- HOW WORKS CONTAINER -------------------------- */
 
 /* ----------- ANGLE DOWN AFTER HOW WORKS --------------------*/

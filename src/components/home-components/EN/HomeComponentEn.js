@@ -108,36 +108,38 @@ function HomeEn () {
       <CompleteFleet />
       </div>
 
-      <div className='container my-4 hide-on-mobile'>
-        <b><h3 className='d-flex align-items-center justify-content-center how-works-tittle my-4 py-4'>HOW IT WORKS</h3></b>
-        <HowWorks elements={elements_1}/>
-         
-            <img
-            className='steps-path'
-            src={StepsPath}
-            />
-  
-        <HowWorks elements={elements_2} />
-      </div>
+{/* ------------------------- HOW WORKS ----------------------- */}
+    <div className='container my-4 hide-on-mobile'>
+      <b><h3 className='d-flex align-items-center justify-content-center how-works-tittle my-4 py-4'>HOW IT WORKS</h3></b>
+      <HowWorks elements={elements_1}/>
+        
+          <img
+          className='steps-path'
+          src={StepsPath}
+          />
 
-<div className='container my-4 hide-on-desktop'>
-    <b><h3 className='d-flex align-items-center justify-content-center how-works-tittle my-4 py-4'>HOW IT WORKS</h3></b>
-    <div className='row'>
-        <div className='col-4'>
-            <HowWorksMobile elements={elements_1}/>
-        </div>
-        <div className='col-4'>
-            <img
-            className='w-100'
-            src={StepsPathMobile}
-            />
-        </div>
-        <div className='col-4'>
-            <HowWorksMobile elements={elements_2} />
+      <HowWorks elements={elements_2} />
+    </div>
+
+    <div className='container my-4 hide-on-desktop'>
+        <b><h3 className='d-flex align-items-center justify-content-center how-works-tittle my-4 py-4'>HOW IT WORKS</h3></b>
+        <div className='row'>
+            <div className='col-4'>
+                <HowWorksMobile elements={elements_1}/>
+            </div>
+            <div className='col-4'>
+                <img
+                className='w-100'
+                src={StepsPathMobile}
+                />
+            </div>
+            <div className='col-4'>
+                <HowWorksMobile elements={elements_2} />
+            </div>
         </div>
     </div>
-</div>
 
+{/* --------------------- HOW WORKS END -------------------- */}
 
       <div className='d-flex align-items-center justify-content-center angle-down-parent'>
         <img 

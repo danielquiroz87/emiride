@@ -234,7 +234,15 @@
 .how-works-tittle{
   font-weight: 900;
 }
+.steps-mobile-tittle{
+  font-size: 0.9rem;
+  font-weight: 900;
+}
 
+.steps-mobile-text{
+  font-size: 0.8rem;
+  font-weight: 600;
+}
 .steps-path{
   max-width: 100%;
   display: flex;

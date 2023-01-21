@@ -1,18 +1,47 @@
-import React from "react";
+import React, {useState} from "react";
+
+function formatDate(date) {
+    const dateArray = date.split("-"); // split the date string into an array
+    dateArray.reverse(); // reverse the order of the elements in the array
+    return dateArray.join("-"); // join the elements back into a string, separated by "-"
+  }
 
 function FormComponent(){
+    const baseUrl = "https://emiride.renthubsoftware.com/en_GB/rental-booking-engine/"
+    
+    const [from,setFrom] = useState("");
+    const [to,setTo] = useState("");
+
+    const [date_from,setDate_from] = useState("");
+    const [hour_from,setHour_from] = useState("09");
+    const [minute_from,setMinute_from] = useState("30");
+    
+    const [date_to,setDate_to] = useState("");
+    const [hour_to,setHour_to] = useState("18");
+    const [minute_to,setMinute_to] = useState("30");
+
+    // Handle form submit event
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        // Build the URL for the external API
+
+        const time_from = hour_from+':'+minute_from;
+        const time_to = hour_to+':'+minute_to;
+        const apiUrl = `${baseUrl}search?from=${from}&to=${to}&date_from=${formatDate(date_from)}&time_from=${time_from}&date_to=${formatDate(date_to)}&time_to=${time_to}`;
+        // Redirect to the external API
+        window.location.href = apiUrl;
+    };
 
     return(
-        <div>
 
-        <form id="booking-form" action="javascript:redirect()">
-        <div className="container form-container">
-            <h3 className="py-3">Make your reservation</h3>
+        <form className="form-container" id="booking-form" onSubmit={handleSubmit}>
+        <div className="container">
+            <h3 className="py-3 form-tittle">MAKE YOUR RESERVATION</h3>
             <div className="row">
                 <div className="col-6">
                     <div className="form-group">
                         <label for="pick-up-place">Pick-up place <span className="text-danger">*</span></label>
-                        <select className="form-control" id="pick-up-place">
+                        <select className="form-control" id="pick-up-place" value={from} onChange={(e) => setFrom(e.target.value)}>
                             <option value="0">- Choose -</option>    
                             <option value="3">Dubai International Airport - Terminal 1 - Dubai - United Arab Emirates</option>
                             <option value="4">Dubai International Airport - Terminal 2 - Dubai - United Arab Emirates</option>
@@ -30,12 +59,14 @@ function FormComponent(){
                     </div>
                     <div className="form-group">
                         <label for="startDate">Pick-up date <span className="text-danger">*</span></label>
-                        <input id="startDate" className="form-control" type="date" />
+                        <input id="startDate" className="form-control" type="date"           
+                                              value={date_from}
+                                              onChange={(e) => setDate_from(e.target.value)}/>
                     </div>
                     <div className="row">
                         <div className="form-group col-6">
                             <label for="pick-up-hour">Pick-up hour <span className="text-danger">*</span></label>
-                            <select className="form-control" id="pick-up-hour">
+                            <select className="form-control" id="pick-up-hour" value={hour_from} onChange={(e) => setHour_from(e.target.value)}>
                                 <option value="00">12 am</option>
                                 <option value="01">1 am</option>
                                 <option value="02">2 am</option>
@@ -64,7 +95,7 @@ function FormComponent(){
                         </div>
                         <div className="form-group col-6">
                             <label for="pick-up-minute">Pick-up minute</label>
-                            <select className="form-control" id="pick-up-minute">
+                            <select className="form-control" id="pick-up-minute" value={minute_from} onChange={(e) => setMinute_from(e.target.value)}>
                                 <option value="00">00</option>
                                 <option value="30" selected>30</option>
                             </select>
@@ -141,7 +172,7 @@ function FormComponent(){
                 <div className="col-6">
                     <div className="form-group">
                         <label for="drop-off-place">Drop-off place <span className="text-danger">*</span></label>
-                        <select className="form-control" id="drop-off-place">
+                        <select className="form-control" id="drop-off-place" value={to} onChange={(e) => setTo(e.target.value)}>
                             <option value="0">- Choose -</option>    
                             <option value="3">Dubai International Airport - Terminal 1 - Dubai - United Arab Emirates</option>
                             <option value="4">Dubai International Airport - Terminal 2 - Dubai - United Arab Emirates</option>
@@ -159,12 +190,14 @@ function FormComponent(){
                     </div>
                     <div className="form-group">
                         <label for="endDate">Drop-off date <span className="text-danger">*</span></label>
-                        <input id="endDate" className="form-control" type="date" />
+                        <input id="endDate" className="form-control" type="date"           
+                                            value={date_to}
+                                            onChange={(e) => setDate_to(e.target.value)}/>
                     </div>
                     <div className="row">
                         <div className="form-group col-6">
                             <label for="drop-off-hour">Drop-off hour <span className="text-danger">*</span></label>
-                            <select className="form-control" id="drop-off-hour">
+                            <select className="form-control" id="drop-off-hour" value={hour_to} onChange={(e) => setHour_to(e.target.value)}>
                                 <option value="00">12 am</option>
                                 <option value="01">1 am</option>
                                 <option value="02">2 am</option>
@@ -193,7 +226,7 @@ function FormComponent(){
                         </div>
                         <div className="form-group col-6">
                             <label for="drop-off-minute">Drop-off minute</label>
-                            <select className="form-control" id="drop-off-minute">
+                            <select className="form-control" id="drop-off-minute" value={minute_to} onChange={(e) => minute_to(e.target.value)}>
                                 <option value="00">00</option>
                                 <option value="30" selected>30</option>
                             </select>
@@ -212,7 +245,6 @@ function FormComponent(){
 
     </form>
 
-    </div>
     )
 }
 

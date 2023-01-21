@@ -24,9 +24,9 @@ function CarouselEn () {
         </div>
       </div>
       
-      {/* <div className="carousel-caption d-none d-md-block">
+      <div className="carousel-caption hide-on-tablet hide-on-mobile">
         <FormComponent/>
-      </div> */}
+      </div>
 
     </div>
   );

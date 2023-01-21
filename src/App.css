@@ -57,6 +57,24 @@
 
 /* ------------------------- HEADER END --------------------- */
 
+/* ------------------------- FORM --------------------------- */
+.form-tittle{
+  color: black;
+  font-family: 'Poppins',sans-serif;
+  font-weight: 700;
+}
+.form-container{
+  max-width: 50vw;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 30px;
+}
+@media screen and (min-width: 767px) and (max-width: 1031px) {
+  .hide-on-tablet{
+    display: none;
+  }
+}
+
+/* ------------------------- FORM --------------------------- */
 /* ------------------------- WHY RENT ----------------------- */
 .why_rent{
   
@@ -679,13 +697,19 @@
       display: none;
   }
 }
-
+@media screen and (min-width: 767px) and (max-width: 1031px) {
+  .hide-on-tablet{
+    display: none;
+  }
+}
 
 
 .carousel-caption{
-  right: 0;
+  right: 2.5vw;
   left: auto;
   bottom: auto;
   top: 50%;
   transform: translateY(-50%);
 }
+
+/* d-none d-md-block just shows desktop */

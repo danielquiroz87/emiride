@@ -42,16 +42,16 @@ const Header = () => {
         <li className="nav-item mx-2">
           <a className="nav-link header-text" href="#">CONTACT US</a>
         </li>
-        <li className="nav-item">
+        <li className="nav-item hide-on-mobile hide-on-tablet">
           <a className="nav-link header-text" href="#"><img src={facebookImage} width={"25vw"} /></a>
         </li>
-        <li className="nav-item">
+        <li className="nav-item hide-on-mobile hide-on-tablet">
           <a className="nav-link header-text" href="#"><img src={instagramImage} width={"25vw"} /></a>
         </li>
-        <li className="nav-item">
+        <li className="nav-item hide-on-mobile hide-on-tablet">
           <a className="nav-link header-text" href="#"><img src={tiktokImage} width={"25vw"} /></a>
         </li>
-        <li className="nav-item">
+        <li className="nav-item hide-on-mobile hide-on-tablet">
           <a className="nav-link header-text" href="#"><img src={whatsappImage} width={"25vw"} /></a>
         </li>
         <li className="nav-item">

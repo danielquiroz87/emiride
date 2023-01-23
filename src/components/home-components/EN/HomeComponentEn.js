@@ -51,6 +51,7 @@ import DistractionsImageTrigger from '../../../static/images/distractions.webp';
 import DistractionsImageModal from '../../../static/images/distractions-modal.webp';
 
 import CompleteFleet from './CompleteFleet/CompleteFleet';
+import FormComponentMobile from './FormComponentMobile';
 
 
 function HomeEn () {
@@ -97,6 +98,9 @@ function HomeEn () {
   return (
     <div>
       <CarouselEn/>
+
+      <FormComponentMobile />
+      
       <WhyRent/>
       <div className='best-choice-container d-flex  align-items-center'>
         <div className='d-flex container align-items-center justify-content-center'>
@@ -104,8 +108,7 @@ function HomeEn () {
         </div>
       </div>
       <div id="cars-for-rent">
-
-      <CompleteFleet />
+        <CompleteFleet />
       </div>
 
 {/* ------------------------- HOW WORKS ----------------------- */}

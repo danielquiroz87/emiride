@@ -26,8 +26,8 @@ function HowWorks({elements}) {
     <div className="d-flex flex-row">
       {elements.map((element, index) => (
         <div className='container  container-how-works' ref={containerRefs.current[index]} key={index}>
-          <div className='row'>
-            <div className='col-3'>
+          <div className='row d-flex align-items-center justify-content-center'>
+            <div className='col-4 px-0'>
               <img className ="w-75" src={element.img} />
             </div>
             <div className='col-8'>

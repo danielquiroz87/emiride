@@ -68,6 +68,14 @@
   background-color: rgba(255, 255, 255, 0.3);
   border-radius: 30px;
 }
+
+.form-container-mobile{
+  max-width: 90vw;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 30px;
+  margin-top: 2.5vh;
+}
+
 @media screen and (min-width: 767px) and (max-width: 1031px) {
   .hide-on-tablet{
     display: none;
@@ -688,7 +696,7 @@
 
  @media (min-width: 767px) {
   .hide-on-desktop {
-      display: none;
+      display: none ;
   }
 }
 
@@ -703,6 +711,11 @@
   }
 }
 
+@media (max-width: 1031px) {
+  .show-on-tablet-mobile-flex{
+    display: flex !important;
+  }
+}
 
 .carousel-caption{
   right: 2.5vw;

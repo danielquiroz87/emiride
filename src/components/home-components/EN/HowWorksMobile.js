@@ -35,7 +35,7 @@ function HowWorks({elements}) {
         <div className='container-how-works' ref={containerRefs.current[index]} key={index}> 
             <div className='row'>
             
-                <img className ="w-75" src={element.img} />
+                <img className ="w-75" src={element.img} alt="..."/>
             
             
                 <b>

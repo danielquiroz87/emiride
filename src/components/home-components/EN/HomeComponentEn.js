@@ -104,7 +104,7 @@ function HomeEn () {
       <WhyRent/>
       <div className='best-choice-container d-flex  align-items-center'>
         <div className='d-flex container align-items-center justify-content-center'>
-          <img className='best-choice-header' src={BestChoiceImg} />
+          <img className='best-choice-header' src={BestChoiceImg} width="100%" height="auto"/>
         </div>
       </div>
       <div id="cars-for-rent">

@@ -61,9 +61,19 @@ import reserveYourVehicleCarousel from "../../../static/images/reserve-your-vehi
 
 function HomeEn () {
   const [carousel_1,setCarousel_1] = useState("");
+  const [carousel_1_loaded,setCarousel_1_loaded] = useState(false);
+
   const [carousel_2,setCarousel_2] = useState("");
+  const [carousel_2_loaded,setCarousel_2_loaded] = useState(false);
+
   const [carousel_3,setCarousel_3] = useState("");
+  const [carousel_3_loaded,setCarousel_3_loaded] = useState(false);
+  
   const [carousel_4,setCarousel_4] = useState("");
+  const [carousel_4_loaded,setCarousel_4_loaded] = useState(false);
+
+  const [all_img_loaded, setAll_img_loaded] = useState(false);
+
   useEffect(() => {
 
     
@@ -72,24 +82,40 @@ function HomeEn () {
     // set the src property to the URL of the image you want to preload
     carousel_1.src = elantraCarouesel;
     setCarousel_1(carousel_1.src);
+    carousel_1.onload = () => setCarousel_1_loaded(true);
 
     const carousel_2 = new Image();
     // set the src property to the URL of the image you want to preload
     carousel_2.src = fountainCarouesel;
     setCarousel_2(carousel_2.src);
+    carousel_2.onload = () => setCarousel_2_loaded(true);
     
     const carousel_3 = new Image();
     // set the src property to the URL of the image you want to preload
     carousel_3.src = museumCarouesel;
     setCarousel_3(carousel_3.src);
+    carousel_3.onload = () => setCarousel_3_loaded(true);
 
     const carousel_4 = new Image();
     // set the src property to the URL of the image you want to preload
     carousel_4.src = reserveYourVehicleCarousel;
     setCarousel_4(carousel_4.src);
-  
+    carousel_4.onload = () => setCarousel_4_loaded(true);
 
-  }, []);
+    // if (carousel_1_loaded && carousel_2_loaded && carousel_3_loaded && carousel_4_loaded){
+    //   console.log('all loadedd', all_img_loaded)
+    //   setAll_img_loaded(true)
+    // }else (console.log('all no loadedd', all_img_loaded))
+    try {
+      if (carousel_1_loaded && carousel_2_loaded && carousel_3_loaded && carousel_4_loaded){
+        console.log('all loadedd', all_img_loaded)
+        setAll_img_loaded(true)
+      }else (console.log('all no loadedd', all_img_loaded))
+    } catch (error) {
+      console.log('all no loadedd catch', all_img_loaded)
+    }
+
+  }, [carousel_1_loaded,carousel_2_loaded,carousel_3_loaded,carousel_4_loaded,]);
 
 
   const elements_1 = [
@@ -131,6 +157,7 @@ function HomeEn () {
   ]
   
   return (
+    all_img_loaded ? (
     <div>
       <CarouselEn c1={carousel_1} c2={carousel_2} c3={carousel_3} c4={carousel_4}/>
 
@@ -255,6 +282,8 @@ function HomeEn () {
       </div>
 
     </div>
+    )
+    : null
   );
 };
 

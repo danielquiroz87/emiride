@@ -62,7 +62,7 @@ const Header = () => {
     </div>
 
     <div className='d-flex justify-content-end align-items-center'>
-      <a className="nav-link header-text mx-2" href="#"><img src={spainImage} width={"25vw"} /></a>
+      <a className="nav-link header-text mx-2" href="#"><img src={spainImage} width="30" height="30" /></a>
     </div>
 
   </div>

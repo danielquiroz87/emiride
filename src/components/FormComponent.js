@@ -42,7 +42,7 @@ function FormComponent(){
             <div className="row">
                 <div className="col-6">
                     <div className="form-group">
-                        <label htmlFor="pick-up-place">Pick-up place <span className="text-danger">*</span></label>
+                        <label htmlFor="pick-up-place">Pick-up place <span className="red-color">*</span></label>
                         <select className="form-control" id="pick-up-place" value={from} onChange={(e) => setFrom(e.target.value)}>
                             <option value="0">- Choose -</option>    
                             <option value="3">Dubai International Airport - Terminal 1 - Dubai - United Arab Emirates</option>
@@ -60,14 +60,14 @@ function FormComponent(){
                         </select>
                     </div>
                     <div className="form-group">
-                        <label htmlFor="startDate">Pick-up date <span className="text-danger">*</span></label>
+                        <label htmlFor="startDate">Pick-up date <span className="red-color">*</span></label>
                         <input id="startDate" className="form-control" type="date"           
                                               value={date_from}
                                               onChange={(e) => setDate_from(e.target.value)}/>
                     </div>
                     <div className="row">
                         <div className="form-group col-6">
-                            <label htmlFor="pick-up-hour">Pick-up hour <span className="text-danger">*</span></label>
+                            <label htmlFor="pick-up-hour">Pick-up hour <span className="red-color">*</span></label>
                             <select className="form-control" id="pick-up-hour" value={hour_from} onChange={(e) => setHour_from(e.target.value)}>
                                 <option value="00">12 am</option>
                                 <option value="01">1 am</option>
@@ -111,7 +111,7 @@ function FormComponent(){
 
                 <div className="col-6">
                     <div className="form-group">
-                        <label htmlFor="drop-off-place">Drop-off place <span className="text-danger">*</span></label>
+                        <label htmlFor="drop-off-place">Drop-off place <span className="red-color">*</span></label>
                         <select className="form-control" id="drop-off-place" value={to} onChange={(e) => setTo(e.target.value)}>
                             <option value="0">- Choose -</option>    
                             <option value="3">Dubai International Airport - Terminal 1 - Dubai - United Arab Emirates</option>
@@ -129,14 +129,14 @@ function FormComponent(){
                         </select>
                     </div>
                     <div className="form-group">
-                        <label htmlFor="endDate">Drop-off date <span className="text-danger">*</span></label>
+                        <label htmlFor="endDate">Drop-off date <span className="red-color">*</span></label>
                         <input id="endDate" className="form-control" type="date"           
                                             value={date_to}
                                             onChange={(e) => setDate_to(e.target.value)}/>
                     </div>
                     <div className="row">
                         <div className="form-group col-6">
-                            <label htmlFor="drop-off-hour">Drop-off hour <span className="text-danger">*</span></label>
+                            <label htmlFor="drop-off-hour">Drop-off hour <span className="red-color">*</span></label>
                             <select className="form-control" id="drop-off-hour" value={hour_to} onChange={(e) => setHour_to(e.target.value)}>
                                 <option value="00">12 am</option>
                                 <option value="01">1 am</option>

@@ -12,7 +12,7 @@ function CarouselEn () {
   useEffect(() => {
 
     images.forEach(function(image){
-      // create a new Image object  
+      // create a new Image object
       const img = new Image();
       // set the src property to the URL of the image you want to preload
       img.src = image;
@@ -38,7 +38,7 @@ function CarouselEn () {
           <img fetchpriority="low" src={museumCarouesel} className="d-block w-100"  width= "100%" alt="..."/>
         </div>
       </div>
-      
+
       <div className="carousel-caption hide-on-tablet hide-on-mobile">
         <FormComponent/>
       </div>

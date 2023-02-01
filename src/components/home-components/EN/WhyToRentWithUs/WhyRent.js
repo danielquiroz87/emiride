@@ -21,7 +21,7 @@ function WhyRent () {
         <div className='row hide-on-mobile'>
             <div className='py-4 my-2 d-flex align-items-center justify-content-center'>
                 <div className='container d-flex justify-content-center'>
-                  <img className='my-4' src= {WhyShouldYou} alt="why rent with us" width="1296" height="67.0833"/>
+                  <img className='my-4' src= {WhyShouldYou} alt="why rent with us" width="800" height="41"/>
                 </div>                 
             </div>
 
@@ -49,7 +49,7 @@ function WhyRent () {
         <div className='row  hide-on-desktop'>
             <div className='py-4 my-2 d-flex align-items-center justify-content-center'>
                 <div className='container d-flex justify-content-center'>
-                  <img className='w-100' src= {WhyShouldYou} alt="why should you rent"/>
+                  <img className='w-100' src= {WhyShouldYou} alt="why should you rent" width="800" height="41"/>
                 </div>                 
             </div>
 

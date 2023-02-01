@@ -13,7 +13,10 @@ function CarComponent ({img_src,alt_img, logo_src,alt_logo,price,marca,linea,mod
               <img
               className='logo-img' 
               src={logo_src} 
-              alt={alt_img} />
+              alt={alt_img} 
+              width="50"
+              height="50"
+              />
             </div>
           </div>
 
@@ -27,7 +30,10 @@ function CarComponent ({img_src,alt_img, logo_src,alt_logo,price,marca,linea,mod
             <img
               className='car-image' 
               src={img_src} 
-              alt={alt_img} />
+              alt={alt_img}
+              // width="350"
+              // height="263"
+              />
           </div>
         </div>
         

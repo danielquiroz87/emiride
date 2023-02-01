@@ -6,36 +6,36 @@ import reserveYourVehicle from "../../../static/images/reserve-your-vehicle.webp
 
 import FormComponent from '../../FormComponent';
 
-function CarouselEn () {
+function CarouselEn (props) {
   let images = [elantraCarouesel,fountainCarouesel,museumCarouesel,reserveYourVehicle];
 
-  useEffect(() => {
+  // useEffect(() => {
 
-    images.forEach(function(image){
-      // create a new Image object
-      const img = new Image();
-      // set the src property to the URL of the image you want to preload
-      img.src = image;
-      // add the Image object to the DOM
-      document.getElementsByTagName("head")[0].appendChild(img);
-    })
+  //   images.forEach(function(image){
+  //     // create a new Image object
+  //     const img = new Image();
+  //     // set the src property to the URL of the image you want to preload
+  //     img.src = image;
+  //     // add the Image object to the DOM
+  //     document.getElementsByTagName("head")[0].appendChild(img);
+  //   })
 
-  }, []);
+  // }, []);
 
   return (
     <div id="carouselExampleInterval" className="carousel slide" data-bs-ride="carousel">
       <div className="carousel-inner">
         <div className="carousel-item active" data-bs-interval="10000">
-          <img fetchpriority="high" src={reserveYourVehicle} className="d-block w-100"  width= "100%" alt="..."/>
+          <img fetchpriority="high" src={props.c1} className="d-block w-100"  width= "100%" alt="..."/>
         </div>
         <div className="carousel-item active" data-bs-interval="10000">
-          <img fetchpriority="low" src={elantraCarouesel} className="d-block w-100"  width= "100%" alt="..."/>
+          <img fetchpriority="low" src={props.c2} className="d-block w-100"  width= "100%" alt="..."/>
         </div>
         <div className="carousel-item" data-bs-interval="2000">
-          <img fetchpriority="low" src={fountainCarouesel} className="d-block w-100"  width= "100%" alt="..."/>
+          <img fetchpriority="low" src={props.c3} className="d-block w-100"  width= "100%" alt="..."/>
         </div>
         <div className="carousel-item">
-          <img fetchpriority="low" src={museumCarouesel} className="d-block w-100"  width= "100%" alt="..."/>
+          <img fetchpriority="low" src={props.c4} className="d-block w-100"  width= "100%" alt="..."/>
         </div>
       </div>
 

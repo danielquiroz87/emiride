@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import CarouselEn from './CarouselEn';
 import WhyRent from '../EN/WhyToRentWithUs/WhyRent';
 import HowWorks from './HowWorks';
@@ -54,7 +54,42 @@ import CompleteFleet from './CompleteFleet/CompleteFleet';
 import FormComponentMobile from './FormComponentMobile';
 
 
+import elantraCarouesel from "../../../static/images/elantra_c.webp";
+import fountainCarouesel from "../../../static/images/fountain.webp";
+import museumCarouesel from "../../../static/images/museum-of-the-future.webp";
+import reserveYourVehicleCarousel from "../../../static/images/reserve-your-vehicle.webp"
+
 function HomeEn () {
+  const [carousel_1,setCarousel_1] = useState("");
+  const [carousel_2,setCarousel_2] = useState("");
+  const [carousel_3,setCarousel_3] = useState("");
+  const [carousel_4,setCarousel_4] = useState("");
+  useEffect(() => {
+
+    
+    // create a new Image object
+    const carousel_1 = new Image();
+    // set the src property to the URL of the image you want to preload
+    carousel_1.src = elantraCarouesel;
+    setCarousel_1(carousel_1.src);
+
+    const carousel_2 = new Image();
+    // set the src property to the URL of the image you want to preload
+    carousel_2.src = fountainCarouesel;
+    setCarousel_2(carousel_2.src);
+    
+    const carousel_3 = new Image();
+    // set the src property to the URL of the image you want to preload
+    carousel_3.src = museumCarouesel;
+    setCarousel_3(carousel_3.src);
+
+    const carousel_4 = new Image();
+    // set the src property to the URL of the image you want to preload
+    carousel_4.src = reserveYourVehicleCarousel;
+    setCarousel_4(carousel_4.src);
+  
+
+  }, []);
 
 
   const elements_1 = [
@@ -97,7 +132,7 @@ function HomeEn () {
   
   return (
     <div>
-      <CarouselEn/>
+      <CarouselEn c1={carousel_1} c2={carousel_2} c3={carousel_3} c4={carousel_4}/>
 
       <FormComponentMobile />
       

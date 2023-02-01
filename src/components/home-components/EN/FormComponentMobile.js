@@ -32,7 +32,7 @@ function FormComponentMobile(){
     };
 
     return(
-        <form className="hide-on-desktop show-on-tablet-mobile-flex" id="booking-form"  onSubmit={handleSubmit}>
+        <form className="hide-on-desktop show-on-tablet-mobile-flex" id="booking-form"  onSubmit={handleSubmit} style={{height:620}}>
         <div className="container form-container-mobile">
             <h4 className="py-3 d-flex align-items-center justify-content-center form-tittle">MAKE YOUR RESERVATION</h4>
             <div className="row">

@@ -40,7 +40,7 @@ function WhyRent () {
                 
             <div className='col-4 '>
               <div className='container'>
-                {hoverImage && <img className='hover-image why-rent-img' src={hoverImage} alt="reasons to rent" width="100%" height="auto"/>}
+                {hoverImage && <img className='hover-image why-rent-img' src={hoverImage} alt="reasons to rent" width="350" height="368"/>}
               </div>
             </div>
 

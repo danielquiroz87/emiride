@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 
-import ToyotaFortuner from '../../../../static/images/Fortuner-2022-SuperBlanco-1024x683.webp';
+import ToyotaFortuner from '../../../../static/images/Fortuner-2022-SuperBlanco.webp';
 
 import WhyShouldYou from '../../../../static/images/why-en.webp';
 import pickup_dropoff from '../../../../static/images/Drop-off-1024x253.webp';
@@ -26,7 +26,7 @@ function WhyRent () {
             </div>
 
             <div className='col-4  d-flex align-items-center justify-content-center'>
-                <img className='toyota-why-rent' src= {ToyotaFortuner} alt="fortuner" width="439.2" height="292.95"/> 
+                <img className='toyota-why-rent' src= {ToyotaFortuner} alt="fortuner" width="500" height="333"/> 
             </div>
             
             <div className='col-4 '>

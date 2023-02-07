@@ -9,6 +9,10 @@
   text-align: center;
   z-index: 2;
 }
+.navbar-open {
+  background-color: black !important;
+
+}
 
 .header__text {
   font-size: 20px;
@@ -617,8 +621,9 @@
 }
 
 .modal-image-trigger{
-  margin-top: 7rem;
-  width: 70%;
+  margin-top: 8rem;
+  width: 10vw;
+  height: 10vw;
 }
 /* // Large devices (desktops, 992px and up) */
 @media (max-width: 992px) { 
@@ -637,7 +642,8 @@
     background-size: auto 100%;
   }
   .modal-image-trigger{
-    width: 25vw;
+    width: 38vw;
+    height: 38vw;
     margin-top: 4rem;
   }
   .row-modal-information{
@@ -658,7 +664,8 @@
     background-size: auto 100%;
   }
   .modal-image-trigger{
-    width: 20vw;
+    width: 28vw;
+    height: 28vw;
     margin-top: 3.5rem;
   }
   .row-modal-information{

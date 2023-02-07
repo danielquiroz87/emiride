@@ -106,10 +106,7 @@ function HomeEn () {
     setCarousel_4(carousel_4.src);
     carousel_4.onload = () => setCarousel_4_loaded(true);
 
-    // if (carousel_1_loaded && carousel_2_loaded && carousel_3_loaded && carousel_4_loaded){
-    //   console.log('all loadedd', all_img_loaded)
-    //   setAll_img_loaded(true)
-    // }else (console.log('all no loadedd', all_img_loaded))
+
     try {
       if (carousel_1_loaded && carousel_2_loaded && carousel_3_loaded && carousel_4_loaded){
         console.log('all loadedd', all_img_loaded)
@@ -117,6 +114,7 @@ function HomeEn () {
       }else (console.log('all no loadedd', all_img_loaded))
     } catch (error) {
       console.log('all no loadedd catch', all_img_loaded)
+      setAll_img_loaded(true); //this line is to avoid break the page if one image couldn't be loaded
     }
 
   }, [carousel_1_loaded,carousel_2_loaded,carousel_3_loaded,carousel_4_loaded,]);

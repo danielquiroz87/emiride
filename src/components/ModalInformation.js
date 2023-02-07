@@ -4,7 +4,12 @@ const CustomModal = ({ triggerImage ,modalContent,IdModal }) => {
   return (
 
     <div className='d-flex justify-content-center col-lg-3 col-md-3 col-sm-6 col-6'>
-      <img className = "modal-image-trigger" type="button"  src={triggerImage} data-bs-toggle="modal" data-bs-target={`#${IdModal}`}/>
+      <img className = "modal-image-trigger" type="button"  
+                                            src={triggerImage} data-bs-toggle="modal" 
+                                            data-bs-target={`#${IdModal}`}
+                                            width="200"
+                                            height="200"
+                                            />
   
       <div className="modal fade" id={IdModal} tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div className="modal-dialog">

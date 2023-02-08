@@ -1,37 +1,47 @@
 import React, {useEffect, useRef, useState} from 'react';
 
-import MapImage from "../static/images/map.webp";
-import Pointer from "../static/images/emirates_icon.webp"
+// import MapImage from "../static/images/map.webp";
+// import Pointer from "../static/images/emirates_icon.webp"
+import MapPointer from '../static/images/map-pointer.webp';
 
 function MapWithPointer() {
   const mapRef = useRef(null);
   const pointerRef = useRef(null);
   const [isPointerVisible, setIsPointerVisible] = useState(false);
 
-  useEffect(() => {
-    const observer = new IntersectionObserver((entries) => {
-      if (entries[0].isIntersecting) {
-        setIsPointerVisible(true);
-      }
-    });
-    if(mapRef.current) observer.observe(mapRef.current);
-    return () => observer.disconnect();
-  }, [mapRef]);
+  // useEffect(() => {
+  //   const observer = new IntersectionObserver((entries) => {
+  //     if (entries[0].isIntersecting) {
+  //       setIsPointerVisible(true);
+  //     }
+  //   });
+  //   if(mapRef.current) observer.observe(mapRef.current);
+  //   return () => observer.disconnect();
+  // }, [mapRef]);
 
   return (
-    <div ref={mapRef}  style={{ position: "relative" }}>
-      <img src={MapImage} alt="map" className='map-image'
+
+    <img
         
-       />
-      <img
-        ref={pointerRef}
-        src={Pointer}
+        src={MapPointer}
         alt="pointer"
-        width={'30wh'}
-        className={`pointer ${isPointerVisible ? "is-visible" : ""}`}
+        className='map-image'
+
         // style={{ position: "absolute", top: "320px", left: "640px" }}
       />
-    </div>
+    // <div ref={mapRef}  style={{ position: "relative" }}>
+    //   <img src={MapImage} alt="map" className='map-image'
+        
+    //    />
+    //   <img
+    //     ref={pointerRef}
+    //     src={Pointer}
+    //     alt="pointer"
+    //     width={'30wh'}
+    //     className={`pointer ${isPointerVisible ? "is-visible" : ""}`}
+    //     // style={{ position: "absolute", top: "320px", left: "640px" }}
+    //   />
+    // </div>
   );
 }
 

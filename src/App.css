@@ -10,15 +10,15 @@
   z-index: 2;
 }
 .navbar-open {
-  background-color: black !important;
-
+  background-color: black !important; 
+}
+.navbar-content-open{
+  color: white !important;
+   
 }
 
-.header__text {
-  font-size: 20px;
-  color: black;
-  margin: 0;
-  padding: 10px;
+.hide-language-icon{
+  display: none;
 }
 
 .header-logo{
@@ -28,6 +28,23 @@
 .header-text{
   color:black;
   font-weight: 700;
+}
+
+.header-text-open{
+  color: white !important;
+}
+
+.header-text-open:hover{
+  background-color: white;
+  color:black !important;
+  border-radius: 20px;
+}
+.navbar-toggler-open{
+background-color: rgba(0, 0, 0);
+/* display: none; */
+}
+.close-cross{
+  color: white !important;
 }
 
 
@@ -738,3 +755,30 @@
 }
 
 /* d-none d-md-block just shows desktop */
+
+
+
+/* ------about us------- */
+
+.about-us-container{
+  background-image:  url('static/images/fonde.webp'); 
+  background-size: contain;  
+  background-repeat: no-repeat;
+}
+
+.about-us-tittle{
+  
+  text-align: center;
+  font-family: "Poppins", Sans-serif;
+  font-size: 2.2rem;
+  font-weight: 800;
+  line-height: 1px;
+  color: #474747;
+  margin-top: 20vh;
+  margin-bottom: 10vh;   
+}
+.about-us-text{
+  text-align: justify;
+  font-family: "Poppins", Sans-serif;
+  font-size: 1.1rem;
+}

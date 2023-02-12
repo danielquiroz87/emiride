@@ -1,6 +1,6 @@
 import React from 'react';
 
-import logoImg from '../static/images/Full-Color.webp'
+import logoImg from '../../../static/images/Full-Color.webp'
 // import {Link} from 'react-router-dom';
 
 //will render in any location except /admin

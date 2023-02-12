@@ -1,13 +1,15 @@
-import React,{useEffect} from 'react';
-import elantraCarouesel from "../../../static/images/elantra_c.webp";
-import fountainCarouesel from "../../../static/images/fountain.webp";
-import museumCarouesel from "../../../static/images/museum-of-the-future.webp";
-import reserveYourVehicle from "../../../static/images/reserve-your-vehicle.webp"
+import React,{} from 'react';
 
-import FormComponent from '../../FormComponent';
+// import elantraCarouesel from "../../../static/images/elantra_c.webp";
+// import fountainCarouesel from "../../../static/images/fountain.webp";
+// import museumCarouesel from "../../../static/images/museum-of-the-future.webp";
+// import reserveYourVehicle from "../../../static/images/reserve-your-vehicle.webp"
+
+import FormComponent from './FormComponent';
 
 function CarouselEn (props) {
-  let images = [elantraCarouesel,fountainCarouesel,museumCarouesel,reserveYourVehicle];
+
+  // let images = [elantraCarouesel,fountainCarouesel,museumCarouesel,reserveYourVehicle];
 
   // useEffect(() => {
 

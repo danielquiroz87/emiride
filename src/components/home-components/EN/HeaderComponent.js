@@ -1,14 +1,14 @@
 import React ,{useState} from 'react';
 
-import desktopLogo from '../static/images/Full-Color.webp';
-import mobileLogo from '../static/images/header-logo-mobile.webp';
-import mobileLogoBW from '../static/images/header-logo-mobile-bw.webp';
-import facebookImage from '../static/images/facebook.svg';
-import instagramImage from '../static/images/instagram.svg';
-import tiktokImage from '../static/images/tiktok.svg';
-import whatsappImage from '../static/images/whatsapp.svg';
-import spainImage from '../static/images/spanish.webp';
-import closeCross from '../static/images/x-solid.svg';
+import desktopLogo from '../../../static/images/Full-Color.webp';
+import mobileLogo from '../../../static/images/header-logo-mobile.webp';
+import mobileLogoBW from '../../../static/images/header-logo-mobile-bw.webp';
+import facebookImage from '../../../static/images/facebook.svg';
+import instagramImage from '../../../static/images/instagram.svg';
+import tiktokImage from '../../../static/images/tiktok.svg';
+import whatsappImage from '../../../static/images/whatsapp.svg';
+import spainImage from '../../../static/images/spanish.webp';
+import closeCross from '../../../static/images/x-solid.svg';
 
 const Header = () => {
 

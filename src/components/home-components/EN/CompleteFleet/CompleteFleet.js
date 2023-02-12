@@ -2,30 +2,28 @@ import React from 'react';
 import CarComponent from '../../../CarComponent';
 
 import Mitsubishi from '../../../../static/images/mitsubishi.webp';
-// import MitsubishiLogo from '../../../../static/images/Mitsubishi_logo.svg.webp'
 import MitsubishiLogo from '../../../../static/images/Mitsubishi_logo_g.webp'
 
 import KiaPegas from '../../../../static/images/kiapegas.webp';
-// import KiaLogo from '../../../../static/images/kia_logo.webp';
+
 import KiaLogo from '../../../../static/images/kia_logo_g.webp';
 
 import Elantra from '../../../../static/images/elantra.webp';
 import Accent from '../../../../static/images/hyundaiaccent.webp';
 import Santafe from '../../../../static/images/santafe.webp';
 
-// import HyundaiLogo from '../../../../static/images/hyundai_logo.webp';
 import HyundaiLogo from '../../../../static/images/hyundai_logo_g.webp';
 
 import Xterra from '../../../../static/images/xterra.webp';
-// import NissanLogo from '../../../../static/images/nissan_logo.webp';
+
 import NissanLogo from '../../../../static/images/nissan_logo_g.webp';
 
 import Fortuner from '../../../../static/images/fortuner.webp';
-// import ToyotaLogo from '../../../../static/images/toyota_logo.webp';
+
 import ToyotaLogo from '../../../../static/images/toyota_logo_g.webp';
 
 import Urus from '../../../../static/images/urus.webp';
-// import LamborghiniLogo from '../../../../static/images/lamborghini.webp';
+
 import LamborghiniLogo from '../../../../static/images/lamborghini_gg.webp';
 
 import CharLow from '../../../../static/images/car-caract-low-en.webp'
@@ -36,7 +34,7 @@ function CompleteFleet () {
   return (
     <>
     <div className='mt-4 d-flex align-items-center container justify-content-center'>
-        <img className='complete-fleet-img my-2' src={CompleteFleetImg} />
+        <img className='complete-fleet-img my-2' src={CompleteFleetImg} alt="complete fleet" />
     </div>
 
     <div className=' container-fluid car-container py-4'>

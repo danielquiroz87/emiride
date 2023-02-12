@@ -1,6 +1,6 @@
 import React from "react";
-import Header from "../../HeaderComponent";
-import Footer from "../../FooterComponent";
+import Header from "./HeaderComponent";
+import Footer from "./FooterComponent";
 import DocumentsRequired from "./DocumentsRequired";
 import FaqAccordion from "../../FaqAccordion";
 
@@ -31,7 +31,7 @@ function AboutComponent(){
             </div>
 
             <div className="d-flex align-items-center justify-content-center">
-                <img className="img-fluid my-4 py-4"  src={MapPointerImg}/>
+                <img className="img-fluid my-4 py-4"  src={MapPointerImg} alt="map"/>
             </div>
             <div className='container required-documents d-flex align-items-center justify-content-center flex-column'>
                 <h2 className="required-documents-title my-2">DOCUMENTS REQUIRED</h2>
@@ -43,7 +43,7 @@ function AboutComponent(){
 
             <div className='faq-container d-flex align-items-center'>
                 <div className='d-flex container align-items-center justify-content-center'>
-                    <img className='w-75' src={FAQImage} />
+                    <img className='w-75' src={FAQImage} alt="FAQs"/>
                 </div>
             </div>
           

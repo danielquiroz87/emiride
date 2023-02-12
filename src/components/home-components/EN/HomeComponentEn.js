@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 
-import Header from '../../HeaderComponent';
-import Footer from '../../FooterComponent';
+import Header from './HeaderComponent';
+import Footer from './FooterComponent';
 
 import CarouselEn from './CarouselEn';
 import WhyRent from '../EN/WhyToRentWithUs/WhyRent';

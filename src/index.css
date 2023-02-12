@@ -24,11 +24,13 @@ code {
   padding-right: 5px;
 }
 
+.documents-li {
+  list-style: none;
+}
 
 
 .documents-li li { 
   list-style-image: url("");
-
 } 
 /* 
   width: 20px;

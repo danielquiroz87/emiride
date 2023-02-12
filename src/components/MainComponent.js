@@ -4,6 +4,7 @@ import {Routes, Route, Navigate} from 'react-router-dom'; //Switch changed to ro
 
 import HomeEn from './home-components/EN/HomeComponentEn';
 import AboutUs from './home-components/EN/aboutComponent';
+import PrivacyPolicy from './home-components/EN/PrivacyPolicy';
 
 import HomeEs from './home-components/ES/HomeComponentEs';
 
@@ -22,6 +23,7 @@ function Main(){
         <Routes>
             <Route path = "/"               element={<HomeEn/>}/>
             <Route path = "/about-us"       element={<AboutUs/>}/>
+            <Route path = "/privacy-policy" element={<PrivacyPolicy/>} />
 
             <Route path = "/inicio"         element={<HomeEs/>}/> 
             <Route path = "*"               element={<Navigate to="/" />} />

@@ -9,6 +9,7 @@ const CustomModal = ({ triggerImage ,modalContent,IdModal }) => {
                                             data-bs-target={`#${IdModal}`}
                                             width="200"
                                             height="200"
+                                            alt={`${IdModal}-modal-trigger `}
                                             />
   
       <div className="modal fade" id={IdModal} tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -17,7 +18,7 @@ const CustomModal = ({ triggerImage ,modalContent,IdModal }) => {
             <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
      
             <div className="modal-body d-flex justify-content-center align-items-center">
-              <img className='modal-image-content' src={modalContent}/>
+              <img className='modal-image-content' src={modalContent} alt={`${IdModal}-modal-content`}/>
             </div>
 
         </div>

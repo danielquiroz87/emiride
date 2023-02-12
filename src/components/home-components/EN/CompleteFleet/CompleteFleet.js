@@ -36,7 +36,7 @@ function CompleteFleet () {
   return (
     <>
     <div className='mt-4 d-flex align-items-center container justify-content-center'>
-        <img className='complete-fleet-img' src={CompleteFleetImg} />
+        <img className='complete-fleet-img my-2' src={CompleteFleetImg} />
     </div>
 
     <div className=' container-fluid car-container py-4'>

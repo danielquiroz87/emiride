@@ -59,7 +59,7 @@ import FormComponentMobile from './FormComponentMobile';
 
 
 import elantraCarouesel from "../../../static/images/elantra_c.webp";
-import fountainCarouesel from "../../../static/images/fountain.webp";
+import fountainCarousel from "../../../static/images/fountain.webp";
 import museumCarouesel from "../../../static/images/museum-of-the-future.webp";
 import reserveYourVehicleCarousel from "../../../static/images/reserve-your-vehicle.webp"
 
@@ -90,7 +90,7 @@ function HomeEn () {
 
     const carousel_2 = new Image();
     // set the src property to the URL of the image you want to preload
-    carousel_2.src = fountainCarouesel;
+    carousel_2.src = fountainCarousel;
     setCarousel_2(carousel_2.src);
     carousel_2.onload = () => setCarousel_2_loaded(true);
     
@@ -117,7 +117,7 @@ function HomeEn () {
       setAll_img_loaded(true); //this line is to avoid break the page if one image couldn't be loaded
     }
 
-  }, [carousel_1_loaded,carousel_2_loaded,carousel_3_loaded,carousel_4_loaded,]);
+  }, [carousel_1_loaded,carousel_2_loaded,carousel_3_loaded,carousel_4_loaded,all_img_loaded]);
 
 
   const elements_1 = [
@@ -170,7 +170,7 @@ function HomeEn () {
           <WhyRent/>
           <div className='best-choice-container d-flex  align-items-center'>
             <div className='d-flex container align-items-center justify-content-center'>
-              <img className='best-choice-header' src={BestChoiceImg} width="5650" height="302"/>
+              <img className='best-choice-header' src={BestChoiceImg} width="5650" height="302" alt="BestChoice" style={{ objectFit: 'contain', width: '100%', height: '100%' }} />
             </div>
           </div>
           <div id="cars-for-rent">
@@ -185,6 +185,10 @@ function HomeEn () {
               <img
               className='steps-path'
               src={StepsPath}
+              alt="stepsPaths"
+              width="1024"
+              height="200"
+              style={{ objectFit: 'contain', width: '100%', height: '100%' }}
               />
 
           <HowWorks elements={elements_2} />
@@ -200,6 +204,10 @@ function HomeEn () {
                     <img
                     className='w-100'
                     src={StepsPathMobile}
+                    alt="Steps"
+                    width="295"
+                    height="1024"
+                    style={{ objectFit: 'contain', width: '100%', height: '100%' }}
                     />
                 </div>
                 <div className='col-4'>
@@ -214,6 +222,10 @@ function HomeEn () {
             <img 
               src={AngleDown}
               className="angle-down"
+              alt="AngleDown"
+              // width="512"
+              // height="512"
+              // style={{ objectFit: 'contain', width: '100%', height: '100%' }}
             />
           </div>
           <div className="d-flex align-items-center justify-content-center" >
@@ -228,7 +240,7 @@ function HomeEn () {
 
           <div className='faq-container d-flex align-items-center'>
             <div className='d-flex container align-items-center justify-content-center'>
-              <img className='w-75' src={FAQImage} />
+              <img className='w-75' src={FAQImage} alt="FAQs"/>
             </div>
           </div>
           

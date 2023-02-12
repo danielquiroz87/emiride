@@ -118,8 +118,8 @@ background-color: rgba(0, 0, 0);
 }
 
 .toyota-why-rent{
-  width: 90%;
-  max-width: 90%;
+  width: 100%;
+  max-width: 100%;
   
   transform: scaleX(-1);
 }
@@ -131,6 +131,9 @@ background-color: rgba(0, 0, 0);
 .why-rent-img:hover{
   transform: scale(1.2);
   transition: all .6s;
+}
+.hover-image{
+  padding-right: 10px;
 }
 
 @media (max-width: 767px) {
@@ -144,11 +147,11 @@ background-color: rgba(0, 0, 0);
     max-width: 60%;
     width: 60%;
     margin-bottom: 5vh;
-    margin-top: 5vh;
+    margin-top: 5vh; 
   }
   .why-rent-img-mobile{
   
-    width: 35vw;
+    max-width: 35vw;
   }
 }
 
@@ -262,7 +265,7 @@ background-color: rgba(0, 0, 0);
     width: 0vw;
   }
   .car-charact-img{
-    object-fit: cover;
+    object-fit: contain;
     max-width: 100%;
   }
   .logo-img{
@@ -277,6 +280,9 @@ background-color: rgba(0, 0, 0);
 }
 .bg-gold{
   background-color: #c8c624 !important;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 /* --------------- CAR CONTAINER END ------------------------ */
 

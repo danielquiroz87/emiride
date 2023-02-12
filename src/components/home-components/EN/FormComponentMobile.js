@@ -32,14 +32,14 @@ function FormComponentMobile(){
     };
 
     return(
-        <form className="hide-on-desktop show-on-tablet-mobile-flex" id="booking-form"  onSubmit={handleSubmit} style={{height:620}}>
+        <form className="hide-on-desktop show-on-tablet-mobile-flex" id="mobile-booking-form"  onSubmit={handleSubmit} style={{height:620}}>
         <div className="container form-container-mobile">
             <h4 className="py-3 d-flex align-items-center justify-content-center form-tittle">MAKE YOUR RESERVATION</h4>
             <div className="row">
                 <div className="col-12">
                     <div className="form-group">
-                        <label htmlFor="pick-up-place">Pick-up place <span className="red-color">*</span></label>
-                        <select className="form-control" id="pick-up-place" value={from} onChange={(e) => setFrom(e.target.value)}>
+                        <label htmlFor="mobile-pick-up-place">Pick-up place <span className="red-color">*</span></label>
+                        <select className="form-control" id="mobile-pick-up-place" value={from} onChange={(e) => setFrom(e.target.value)}>
                             <option value="0">- Choose -</option>    
                             <option value="3">Dubai International Airport - Terminal 1 - Dubai - United Arab Emirates</option>
                             <option value="4">Dubai International Airport - Terminal 2 - Dubai - United Arab Emirates</option>
@@ -56,8 +56,8 @@ function FormComponentMobile(){
                         </select>
                     </div>
                     <div className="form-group">
-                        <label htmlFor="drop-off-place">Drop-off place <span className="red-color">*</span></label>
-                        <select className="form-control" id="drop-off-place" value={to} onChange={(e) => setTo(e.target.value)}>
+                        <label htmlFor="mobile-drop-off-place">Drop-off place <span className="red-color">*</span></label>
+                        <select className="form-control" id="mobile-drop-off-place" value={to} onChange={(e) => setTo(e.target.value)}>
                             <option value="0">- Choose -</option>    
                             <option value="3">Dubai International Airport - Terminal 1 - Dubai - United Arab Emirates</option>
                             <option value="4">Dubai International Airport - Terminal 2 - Dubai - United Arab Emirates</option>
@@ -74,21 +74,21 @@ function FormComponentMobile(){
                         </select>
                     </div>
                     <div className="form-group">
-                        <label htmlFor="startDate">Pick-up date <span className="red-color">*</span></label>
-                        <input id="startDate" className="form-control" type="date"
+                        <label htmlFor="mobile-startDate">Pick-up date <span className="red-color">*</span></label>
+                        <input id="mobile-startDate" className="form-control" type="date"
                                               value={date_from}
                                               onChange={(e) => setDate_from(e.target.value)} />
                     </div>
                     <div className="form-group">
-                        <label htmlFor="endDate">Drop-off date <span className="red-color">*</span></label>
-                        <input id="endDate" className="form-control" type="date" 
+                        <label htmlFor="mobile-endDate">Drop-off date <span className="red-color">*</span></label>
+                        <input id="mobile-endDate" className="form-control" type="date" 
                                             value={date_to}
                                             onChange={(e) => setDate_to(e.target.value)}/>
                     </div>
 
                     <div className="form-group">
-                        <label htmlFor="pick-up-hour">Pick-up hour <span className="red-color">*</span></label>
-                        <select className="form-control" id="pick-up-hour" value={hour_from} onChange={(e) => setHour_from(e.target.value)}>
+                        <label htmlFor="mobile-pick-up-hour">Pick-up hour <span className="red-color">*</span></label>
+                        <select className="form-control" id="mobile-pick-up-hour" value={hour_from} onChange={(e) => setHour_from(e.target.value)}>
                             <option value="00:00" >00:00</option>
                             <option value="00:30">00:30</option>
                             <option value="01:00">01:00</option>
@@ -141,8 +141,8 @@ function FormComponentMobile(){
                         </select>
                     </div>
                     <div className="form-group">
-                        <label htmlFor="drop-off-hour">Drop-off hour <span className="red-color">*</span></label>
-                        <select className="form-control" id="drop-off-hour" value={hour_to} onChange={(e) => setHour_to(e.target.value)}>
+                        <label htmlFor="mobile-drop-off-hour">Drop-off hour <span className="red-color">*</span></label>
+                        <select className="form-control" id="mobile-drop-off-hour" value={hour_to} onChange={(e) => setHour_to(e.target.value)}>
                             <option value="00:00" >00:00</option>
                             <option value="00:30">00:30</option>
                             <option value="01:00">01:00</option>
@@ -195,8 +195,8 @@ function FormComponentMobile(){
                     </div>
 
                     <div className="form-group">
-                        <label htmlFor="age">Age (years)</label>
-                        <input type="number" min="21" max="80" value={age} onChange={(e) => setAge(e.target.value)} className="form-control" id="age" />
+                        <label htmlFor="mobile-age">Age (years)</label>
+                        <input type="number" min="21" max="80" value={age} onChange={(e) => setAge(e.target.value)} className="form-control" id="mobile-age" />
                     </div>
                 </div>
 
@@ -205,7 +205,7 @@ function FormComponentMobile(){
             <div className="container py-4">
                 <div className="row align-items-center justify-content-center">
                     <div className="col text-center">
-                        <button type="submit" id="submitBtn" className="btn btn-lg btn-secondary rounded-pill submit-button ">Book Now</button>
+                        <button type="submit" id="mobile-submitBtnMobile" className="btn btn-lg btn-secondary rounded-pill submit-button ">Book Now</button>
                     </div>
                 </div>
             </div>

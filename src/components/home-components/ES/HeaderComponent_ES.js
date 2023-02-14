@@ -7,7 +7,7 @@ import facebookImage from '../../../static/images/facebook.svg';
 import instagramImage from '../../../static/images/instagram.svg';
 import tiktokImage from '../../../static/images/tiktok.svg';
 import whatsappImage from '../../../static/images/whatsapp.svg';
-import spainImage from '../../../static/images/spanish.webp';
+import englishImage from '../../../static/images/english.webp';
 import closeCross from '../../../static/images/x-solid.svg';
 
 const Header = () => {
@@ -43,16 +43,16 @@ const Header = () => {
     <div className={`collapse navbar-collapse ${isOpen ? 'show navbar-content-open' : ''}`} id="navbarNav">
       <ul className="navbar-nav ms-auto">
         <li className="nav-item mx-2 active">
-          <a className={`nav-link header-text ${isOpen ? 'header-text-open':''}`} href="/">HOME</a>
+          <a className={`nav-link header-text ${isOpen ? 'header-text-open':''}`} href="/">INICIO</a>
         </li>
         <li className="nav-item mx-2">
-          <a className={`nav-link header-text ${isOpen ? 'header-text-open':''}`} href="/#cars-for-rent">CARS FOR RENT</a>
+          <a className={`nav-link header-text ${isOpen ? 'header-text-open':''}`} href="/inicio#cars-for-rent">CARROS EN ALQUILER</a>
         </li>
         <li className="nav-item mx-2">
-          <a className={`nav-link header-text ${isOpen ? 'header-text-open':''}`} href="/about-us">ABOUT US</a>
+          <a className={`nav-link header-text ${isOpen ? 'header-text-open':''}`} href="/sobre-nosotros">NOSOTROS</a>
         </li>
         <li className="nav-item mx-2">
-          <a className={`nav-link header-text ${isOpen ? 'header-text-open':''}`} href="https://api.whatsapp.com/send/?phone=%2B971503323079&text=Hello+i+want+to+rent+a+car+with+EMI&type=phone_number&app_absent=0">CONTACT US</a>
+          <a className={`nav-link header-text ${isOpen ? 'header-text-open':''}`} href="https://api.whatsapp.com/send/?phone=%2B971503323079&text=Hello+i+want+to+rent+a+car+with+EMI&type=phone_number&app_absent=0">CONTACTENOS</a>
         </li>
         <li className="nav-item hide-on-mobile hide-on-tablet">
           <a aria-label='Facebook' className={`nav-link header-text ${isOpen ? 'header-text-open':''}`} href="https://www.facebook.com/emiridedubai?mibextid=ZbWKwL"><img src={facebookImage} width="30" height="30" alt="Facebook" /></a>
@@ -72,7 +72,7 @@ const Header = () => {
     </div>
 
     <div className={"d-flex justify-content-end align-items-center"}>
-      <a aria-label="Spanish" className={`nav-link header-text mx-2 ${isOpen ? 'hide-language-icon' : ''}`} href="/inicio"><img src={spainImage} width="30" height="30" alt="Spanish Version"/></a>
+      <a aria-label="Spanish" className={`nav-link header-text mx-2 ${isOpen ? 'hide-language-icon' : ''}`} href="/"><img src={englishImage} width="30" height="30" alt="Spanish Version"/></a>
     </div>
 
   </div>

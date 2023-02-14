@@ -1,0 +1,81 @@
+import React, {useState} from 'react';
+
+import ToyotaFortuner from '../../../../static/images/Fortuner-2022-SuperBlanco.webp';
+
+import WhyShouldYou from '../../../../static/images/why-rent_ES.webp';
+
+import pickup_dropoff from '../../../../static/images/dropoff_ES.webp';
+import additional_driver from '../../../../static/images/additionaldriver_ES.webp';
+import assistance_24h from '../../../../static/images/assistance_ES.webp';
+import insurance_policy from '../../../../static/images/assurance_ES.webp';
+
+import reason1 from '../../../../static/images/C1_ES.webp';
+import reason2 from '../../../../static/images/C2_ES.webp';
+import reason3 from '../../../../static/images/C3_ES.webp';
+import reason4 from '../../../../static/images/C4_ES.webp';
+
+function WhyRent () {
+  const [hoverImage, setHoverImage] = useState(reason1);
+
+  return (
+    <div className='why_rent container-fluid'>
+        <div className='row hide-on-mobile'>
+            <div className='py-4 my-2 d-flex align-items-center justify-content-center'>
+                <div className='container d-flex justify-content-center'>
+                  <img className='my-4' src= {WhyShouldYou} alt="why rent with us" width="800" height="41" style={{ objectFit: 'contain', width: '100%', height: '100%' }}/>
+                </div>                 
+            </div>
+
+            <div className='col-4  d-flex align-items-center justify-content-center'>
+                <img className='toyota-why-rent' src= {ToyotaFortuner} alt="fortuner" width="500" height="333" style={{ objectFit: 'contain', width: '100%', height: '100%' }}/> 
+            </div>
+            
+            <div className='col-4 '>
+                  <div className='container'>
+                    <img className='why-rent-img mb-2'      width="384" height="94.87" src={pickup_dropoff}    onMouseOver={() => setHoverImage(reason1)} alt="pickup dropoff" style={{ objectFit: 'contain', width: '100%', height: '100%' }} /> 
+                    <img className='why-rent-img mb-2 ms-4' width="384" height="94.87" src={additional_driver} onMouseOver={() => setHoverImage(reason2)} alt="additional driver" style={{ objectFit: 'contain', width: '100%', height: '100%' }} /> 
+                    <img className='why-rent-img mb-2 ms-4' width="384" height="94.87" src={assistance_24h}    onMouseOver={() => setHoverImage(reason3)} alt="assistance 24h" style={{ objectFit: 'contain', width: '100%', height: '100%' }} /> 
+                    <img className='why-rent-img mb-2'      width="384" height="94.87" src={insurance_policy}  onMouseOver={() => setHoverImage(reason4)} alt="insurance policy" style={{ objectFit: 'contain', width: '100%', height: '100%' }} /> 
+                  </div>
+            </div>
+                
+            <div className='col-4 '>
+              <div className='container'>
+                {hoverImage && <img className='hover-image why-rent-img' src={hoverImage} alt="reasons to rent" width="350" height="368" style={{ objectFit: 'contain', width: '100%', height: '100%' }}/>}
+              </div>
+            </div>
+
+        </div>
+
+        <div className='row  hide-on-desktop'>
+            <div className='py-4 my-2 d-flex align-items-center justify-content-center'>
+                <div className='container d-flex justify-content-center'>
+                  <img className='w-100' src= {WhyShouldYou} alt="why should you rent" width="800" height="41" style={{ objectFit: 'contain', width: '100%', height: '100%' }}/>
+                </div>                 
+            </div>
+
+            <div className='col-6  d-flex align-items-center justify-content-center'>
+                <img className='toyota-why-rent' src= {ToyotaFortuner} alt="toyoya fortuner"  width="500" height="333" style={{ objectFit: 'contain', width: '100%', height: '100%' }}/> 
+            </div>
+            
+            <div className='col-6 '>
+                  <div className='container'>
+                    <img className='why-rent-img-mobile mb-2'      src={pickup_dropoff}    onMouseOver={() => setHoverImage(reason1)} alt="pick up drop off m" style={{ objectFit: 'contain', width: '100%', height: '100%' }}/> 
+                    <img className='why-rent-img-mobile mb-2 ms-4' src={additional_driver} onMouseOver={() => setHoverImage(reason2)} alt="additional driver m" style={{ objectFit: 'contain', width: '100%', height: '100%' }}/> 
+                    <img className='why-rent-img-mobile mb-2 ms-4' src={assistance_24h}    onMouseOver={() => setHoverImage(reason3)} alt="24 assistance m" style={{ objectFit: 'contain', width: '100%', height: '100%' }}/> 
+                    <img className='why-rent-img-mobile mb-2'      src={insurance_policy}  onMouseOver={() => setHoverImage(reason4)} alt="insurance policy m" style={{ objectFit: 'contain', width: '100%', height: '100%' }}/> 
+                  </div>
+            </div>
+                
+            <div className='col-12 '>
+              <div className='container d-flex align-items-center justify-content-center'>
+                {hoverImage && <img className='hover-image why-rent-img-reasons' src={hoverImage} alt="reasons to rent m" style={{ objectFit: 'contain', width: '100%', height: '100%' }}/>}
+              </div>
+            </div>
+
+        </div>
+    </div>
+  );
+};
+
+export default WhyRent;

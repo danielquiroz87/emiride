@@ -60,8 +60,8 @@ function CarComponent ({img_src,alt_img, logo_src,alt_logo,price,marca,linea,mod
           <div className='text-model-container hide-on-mobile'>
             <p className='text-model'>{marca} {linea}</p>
           </div>
-          <div className='text-model-container hide-on-desktop'>
-            <p className='text-model'>{marca} <br/> {linea}</p>
+          <div className='text-model-container hide-on-desktop show-767-1246'>
+            <p className='text-model font-tablet'>{marca} <br/> {linea}</p>
           </div>
 
         </div>

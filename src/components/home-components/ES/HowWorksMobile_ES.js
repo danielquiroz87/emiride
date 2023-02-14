@@ -6,7 +6,8 @@ function HowWorks({elements}) {
   useEffect(() => {
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
-        const index = containerRefs.current.findIndex((ref) => ref.current === entry.target);
+        // const index = containerRefs.current.findIndex((ref) => ref.current === entry.target);
+
         if (entry.isIntersecting) {
           entry.target.classList.add('fade-in');
         } else {
@@ -23,25 +24,35 @@ function HowWorks({elements}) {
   }, []);
 
   return (
-    <div className="d-flex flex-row">
-      {elements.map((element, index) => (
-        <div className='container  container-how-works' ref={containerRefs.current[index]} key={index}>
-          <div className='row d-flex align-items-center justify-content-center'>
-            <div className='col-4 px-0'>
-              <img className ="w-75" src={element.img} alt="..."/>
+
+
+
+    
+
+    <div className="d-flex flex-column">
+        {elements.map((element, index) => (
+        
+        //here it was container on the class
+        <div className='container-how-works' ref={containerRefs.current[index]} key={index}> 
+            <div className='row'>
+            
+                <img className ="w-75" src={element.img} alt="..."/>
+            
+            
+                <b>
+                <h3 className='steps-mobile-tittle'>{element.title}</h3>
+                </b>
+                <p className='steps-mobile-text'>{element.text}</p>
+            
             </div>
-            <div className='col-8'>
-              <b>
-                <p className='steps-tittle-desktop'>{element.title}</p>
-              </b>
-              <p>{element.text}</p>
-            </div>
-          </div>
         </div>
-      ))}
+        ))}
     </div>
+    
+
   );
 }
 
 export default HowWorks;
+
 

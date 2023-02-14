@@ -39,17 +39,17 @@ function Footer() {
                 </div>
 
                 <div className="col-md-3 col-6">
-                    <b><p className="text-uppercase mt-4" >Explore</p></b>
-                    <a className='footer-links' href='/about-us'><p>About Us</p></a>
-                    <a className='footer-links' href='/#cars-for-rent'><p>Cars For Rent</p></a>
-                    <a className='footer-links' href="https://api.whatsapp.com/send/?phone=%2B971503323079&text=Hello+i+want+to+rent+a+car+with+EMI&type=phone_number&app_absent=0"><p>Contact Us</p></a>
+                    <b><p className="text-uppercase mt-4" >Explora</p></b>
+                    <a className='footer-links' href='/sobre-nosotros'><p>Acerca de nosotros</p></a>
+                    <a className='footer-links' href='/inicio#cars-for-rent'><p>Carros en alquiler</p></a>
+                    <a className='footer-links' href="https://api.whatsapp.com/send/?phone=%2B971503323079&text=Hello+i+want+to+rent+a+car+with+EMI&type=phone_number&app_absent=0"><p>Contáctanos</p></a>
                 </div>
         
                 <div className="col-md-3 col-6" style={{ textDecoration: "none", color: "inherit"}}>
-                    <b><p className="text-uppercase mt-4">Customer Care</p></b>
-                    <a className='footer-links' href='/terms-conditions'><p>Terms and Conditions</p></a>
-                    <a className='footer-links' href='/privacy-policy'><p>Privacy Policy</p></a>
-                    <a className='footer-links' href='#FAQ-Accordion'><p>FAQs</p></a>
+                    <b><p className="text-uppercase mt-4">ATENCIÓN AL CLIENTE</p></b>
+                    <a className='footer-links' href='/terminos-condiciones'><p>Terminos y Condiciones</p></a>
+                    <a className='footer-links' href='/politica-privacidad'><p>Politica de Privacidad</p></a>
+                    <a className='footer-links' href='/inicio#FAQ-Accordion'><p>FAQs</p></a>
                 </div>
 
                 <div className="col-md-3 col-6" style={{ textDecoration: "none", color: "inherit"}}>

@@ -62,6 +62,7 @@ import elantraCarouesel from "../../../static/images/elantra_c.webp";
 import fountainCarousel from "../../../static/images/fountain.webp";
 import museumCarouesel from "../../../static/images/museum-of-the-future.webp";
 import reserveYourVehicleCarousel from "../../../static/images/reserve-your-vehicle.webp"
+import WhatsappIcon from '../../whatsappIcon';
 
 function HomeEn () {
   const [carousel_1,setCarousel_1] = useState("");
@@ -240,11 +241,11 @@ function HomeEn () {
 
           <div className='faq-container d-flex align-items-center'>
             <div className='d-flex container align-items-center justify-content-center'>
-              <img className='w-75' src={FAQImage} alt="FAQs"/>
+              <img style={{objectFit:"contain", width:"75%", height:"75%"}}  src={FAQImage} widt="1024" height="95" alt="FAQs"/>
             </div>
           </div>
           
-          <div className="accordion accordion-flush" id="accordionExample">
+          <div className="accordion accordion-flush" id="FAQ-Accordion">
 
             <FaqAccordion  tittle={"What is Salik Toll system?"} content={"Salik is the name given to Dubai's electronic road toll system. The Salik system is based on radio frequency identification technology. All vehicles are subject to a toll of AED 4 plus 5 VAT."} tittle_id={"1"} content_id={"Content1"}/>
             <FaqAccordion  tittle={"What is Darb Toll System?"} content={"Darb is the name given to Abu Dhabi's electronic road toll system. The Darb system is based on radio frequency identification technology. All vehicles are subject to a toll of AED 4 plus 5 VAT."} tittle_id={"2"} content_id={"Content2"}/>
@@ -298,6 +299,7 @@ function HomeEn () {
           </div>
 
         </div>
+        <WhatsappIcon/>
         <Footer/>
       </div>
     )

@@ -226,7 +226,7 @@ background-color: rgba(0, 0, 0);
   position: relative;
 }
 
-.text-model-container:after {
+/* .text-model-container:after {
   content: "";
   display: block;
   width: 4vw;
@@ -235,7 +235,7 @@ background-color: rgba(0, 0, 0);
   right: 0;
   top: 50%;
   position: absolute;
-}
+} */
 
 .text-model{
   font-size: 1.3rem;
@@ -292,6 +292,12 @@ background-color: rgba(0, 0, 0);
   transition: opacity 1s;
   width: 50%;
   /* flex-shrink: 0; */
+}
+
+.steps-tittle-desktop{
+  font-family: "Poppins", Sans-serif;
+  font-size: 1.4rem;
+  font-weight: 700;
 }
 
 .how-works-tittle{
@@ -607,6 +613,8 @@ background-color: rgba(0, 0, 0);
   background-position: center !important;
 }
 
+
+
 .valuable-information-tittle{
   font-size: 1.3rem;
   font-weight: 1000;
@@ -633,6 +641,14 @@ background-color: rgba(0, 0, 0);
   background-repeat: no-repeat;
   /* background-size: 100vw 100vh; */
   /* background-position: center !important; */
+  background-position: top center;
+  background-size: 100% auto;
+}
+
+.valuable-information-es{
+  background-image:  url('static/images/vi_bg_ES.webp');
+  height: 100vh;
+  background-repeat: no-repeat;
   background-position: top center;
   background-size: 100% auto;
 }
@@ -664,6 +680,13 @@ background-color: rgba(0, 0, 0);
     background-position: top center;
     background-size: auto 100%;
   }
+  .valuable-information-es{
+    background-image:  url('static/images/valuable-information-mobile.webp');
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: auto 100%;
+  }
   .modal-image-trigger{
     width: 38vw;
     height: 38vw;
@@ -682,6 +705,13 @@ background-color: rgba(0, 0, 0);
     background-image:  url('static/images/valuable-information-mobile.webp');
     height: 100vh;
     /* width: 100%; */
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: auto 100%;
+  }
+  .valuable-information-es{
+    background-image:  url('static/images/valuable-information-mobile.webp');
+    height: 100vh;
     background-repeat: no-repeat;
     background-position: top center;
     background-size: auto 100%;
@@ -751,6 +781,20 @@ background-color: rgba(0, 0, 0);
     display: flex !important;
   }
 }
+@media (min-width: 767px) and (max-width: 1246px) {
+  .hide-on-desktop {
+    display: none;
+  }
+  .hide-on-mobile {
+    display: none;
+  }
+  .show-767-1246 {
+    display: block;
+  }
+  .font-tablet{
+    font-size: 0.9rem !important; 
+  }
+}
 
 .carousel-caption{
   right: 2.5vw;
@@ -788,3 +832,50 @@ background-color: rgba(0, 0, 0);
   font-family: "Poppins", Sans-serif;
   font-size: 1.1rem;
 }
+
+.footer-links{
+  text-decoration:none;
+  color:black
+}
+.footer-links:hover{
+  
+  font-weight: 800;
+  color:black;
+}
+
+/* Whatsapp button */
+
+.floating {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 40px;
+  right: 40px;
+  background-color: white;
+  color: #fff;
+  border-radius: 50%;
+  font-size: 30px;
+  box-shadow: 2px 2px 3px #999;
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.float-button{
+	margin-top:16px;
+}
+.notification {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  width: 20px;
+  height: 20px;
+  background-color: red;
+  color: white;
+  border-radius: 50%;
+  font-size: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* Whatsapp button */

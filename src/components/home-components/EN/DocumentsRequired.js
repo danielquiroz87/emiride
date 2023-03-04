@@ -24,10 +24,11 @@ function DocumentsRequired(){
             </ul>
           </div>
 
-          <div className='col d-flex align-items-center mx-auto'>
+          <div className='col-6 d-flex align-items-center mx-auto'>
             <img
             className='doc-req-img'
             src={UaeResidentsSvg}
+            alt="UAE Residents"
             />
           </div>
 
@@ -35,10 +36,11 @@ function DocumentsRequired(){
         
         <div className='row my-4'>
 
-          <div className='col d-flex align-items-center mx-auto'>
+          <div className='col-6 d-flex align-items-center mx-auto'>
             <img 
             className='doc-req-img'
             src={UaeTouristsSvg}
+            alt="UAE Tourists"
             />
           </div>
           

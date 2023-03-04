@@ -25,7 +25,7 @@ function CarouselEn (props) {
   // }, []);
 
   return (
-    <div id="carouselExampleInterval" className="carousel slide" data-bs-ride="carousel">
+    <div id="carouselExampleInterval" className="carousel slide" data-bs-ride="carousel" data-bs-touch="true">
       <div className="carousel-inner">
         <div className="carousel-item active" data-bs-interval="10000">
           <img fetchpriority="high" src={props.c1} className="d-flex w-100 h-100" style={{objectFit:"scale-up "}}  width= "1350" height="760" alt="..."/>

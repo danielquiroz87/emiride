@@ -44,45 +44,49 @@ function CompleteFleet () {
                                             img_src={Mitsubishi} 
                                             alt_img={"MITSUBISHI"}
                                             logo_src={MitsubishiLogo} 
-                                            price={"99,99"}
+                                            price={"109,99"}
                                             price_msg={"Starting from"} 
                                             marca={"MITSUBISHI"} 
                                             linea={"ATTRAGE"} 
                                             modelo={"2023"}
                                             char_img={CharLow}
+                                            link={"https://emiride.renthubsoftware.com/en_GB/rental-booking-engine/search"}
                                             /></div>
         <div className="col-6 col-md-3 col-sm-6"><CarComponent 
                                             img_src={KiaPegas}   
                                             alt_img={"KIA"}
                                             logo_src={KiaLogo}        
-                                            price={"104,99"}
+                                            price={"114,99"}
                                             price_msg={"Starting from"} 
                                             marca={"KIA"} 
                                             linea={"PEGAS"} 
                                             modelo={"2023"}
                                             char_img={CharLow}
+                                            link={"https://emiride.renthubsoftware.com/en_GB/rental-booking-engine/search"}
                                             /></div>
         <div className="col-6 col-md-3 col-sm-6"><CarComponent 
                                             img_src={Accent}     
                                             alt_img={"ACCENT"}
                                             logo_src={HyundaiLogo}     
-                                            price={"114,99"}
+                                            price={"119,99"}
                                             price_msg={"Starting from"} 
                                             marca={"HYUNDAI"} 
                                             linea={"ACCENT"} 
                                             modelo={"2023"}
                                             char_img={CharLow}
+                                            link={"https://emiride.renthubsoftware.com/en_GB/rental-booking-engine/search"}
                                             /></div>
         <div className="col-6 col-md-3 col-sm-6"><CarComponent 
                                             img_src={Elantra}    
                                             alt_img={"ELANTRA"}
                                             logo_src={HyundaiLogo}    
-                                            price={"159,99"}
+                                            price={"179,99"}
                                             price_msg={"Starting from"} 
                                             marca={"HYUNDAI"} 
                                             linea={"ELANTRA"} 
                                             modelo={"2023"}
                                             char_img={CharLow}
+                                            link={"https://emiride.renthubsoftware.com/en_GB/rental-booking-engine/search"}
                                             /></div>
         </div>
         <div className='row py-2'>
@@ -96,28 +100,31 @@ function CompleteFleet () {
                                             linea={"SANTAFE"} 
                                             modelo={"2023"}
                                             char_img={CharLow}
+                                            link={"https://emiride.renthubsoftware.com/en_GB/rental-booking-engine/search"}
                                             /></div>
         <div className="col-6 col-md-3 col-sm-6"><CarComponent 
                                             img_src={Xterra} 
                                             alt_img={"NISSAN"}
                                             logo_src={NissanLogo} 
-                                            price={"359,99"}
+                                            price={"349,99"}
                                             price_msg={"Starting from"} 
                                             marca={"NISSAN"} 
                                             linea={"X-TERRA"} 
                                             modelo={"2023"}
                                             char_img={CharLow}
+                                            link={"https://emiride.renthubsoftware.com/en_GB/rental-booking-engine/search"}
                                             /></div>
         <div className="col-6 col-md-3 col-sm-6"><CarComponent 
                                             img_src={Fortuner} 
                                             alt_img={"TOYOTA"}
                                             logo_src={ToyotaLogo} 
-                                            price={"349,99"}
+                                            price={"359,99"}
                                             price_msg={"Starting from"} 
                                             marca={"TOYOTA"} 
                                             linea={"FORTUNER"} 
                                             modelo={"2023"}
                                             char_img={CharLow}
+                                            link={"https://emiride.renthubsoftware.com/en_GB/rental-booking-engine/search"}
                                             /></div>
         <div className="col-6 col-md-3 col-sm-6"><CarComponent 
                                             img_src={Urus} 
@@ -129,6 +136,7 @@ function CompleteFleet () {
                                             linea={"URUS"} 
                                             modelo={"2023"}
                                             char_img={CharLow}
+                                            link={"https://emiride.renthubsoftware.com/en_GB/rental-booking-engine/search"}
                                             /></div>
         </div>
     </div>     

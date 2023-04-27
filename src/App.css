@@ -474,7 +474,8 @@ background-color: rgba(0, 0, 0);
 }
 
 .doc-req-img{
-  max-width: 50vw;
+  max-width : 660px;
+  max-height : 318.817px;
 }
 @media (max-width: 576px) { 
   .required-documents{
@@ -485,7 +486,8 @@ background-color: rgba(0, 0, 0);
   }
   
 .doc-req-img{
-  max-width: 45vw;
+  max-width : 660px;
+  max-height : 318.817px;
 }
 }
 @media (max-width: 768px) { 
@@ -806,6 +808,11 @@ background-color: rgba(0, 0, 0);
   .show-on-tablet-mobile-flex-form{
     display: flex !important;
   }
+@media screen and (min-width: 767px) and (max-width: 1246px){
+  .why-rent-show-tablet{
+    display: flex !important;
+  }
+}
 }
 @media (min-width: 767px) and (max-width: 1246px) {
   .hide-on-desktop {

@@ -58,11 +58,16 @@ import CompleteFleet from './CompleteFleet/CompleteFleet';
 import FormComponentMobile from './FormComponentMobile';
 
 
-import elantraCarouesel from "../../../static/images/elantra_c.webp";
+import elantraCarouesel from "../../../static/images/elantra.webp";
 import fountainCarousel from "../../../static/images/fountain.webp";
 import museumCarouesel from "../../../static/images/museum-of-the-future.webp";
 import reserveYourVehicleCarousel from "../../../static/images/reserve-your-vehicle.webp"
+
 import WhatsappIcon from '../../whatsappIcon';
+import CarComponent from '../../CarComponent';
+import Urus from '../../../static/images/urus.webp';
+import LamborghiniLogo from '../../../static/images/lamborghini_gg.webp';
+import ss4 from '../../../static/images/sss4.webp';
 
 function HomeEn () {
   const [carousel_1,setCarousel_1] = useState("");
@@ -170,12 +175,32 @@ function HomeEn () {
           
           <WhyRent/>
           <div className='best-choice-container d-flex  align-items-center'>
-            <div className='d-flex container align-items-center justify-content-center'>
+            <div className='d-flex col-8 container align-items-center justify-content-center'>
               <img className='best-choice-header' src={BestChoiceImg} width="5650" height="302" alt="BestChoice" style={{ objectFit: 'contain', width: '100%', height: '100%' }} />
             </div>
           </div>
           <div id="cars-for-rent">
             <CompleteFleet />
+            <div className='row car-container justify-content-center'>
+
+              <div className='container  d-flex align-items-center justify-content-center flex-column my-4'>
+                <p style={{fontWeight:900}} className="required-documents-title my-2 py-3">COMING SOON</p>
+              </div>
+              <div className="col-6 col-md-3 col-sm-6">
+                <CarComponent 
+                  img_src={Urus} 
+                  alt_img={"LAMBORGHINI"}
+                  logo_src={LamborghiniLogo} 
+                  price={"SOON"}
+                  price_msg={"A partir de"} 
+                  marca={"LAMBORGHINI"} 
+                  linea={"URUS"} 
+                  modelo={"2023"}
+                  char_img={ss4}
+                  link={"/"}
+                />
+                </div>
+            </div>
           </div>
 
         {/* ------------------------- HOW WORKS ----------------------- */}

@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react';
 import Header from './HeaderComponent_ES';
 import Footer from './FooterComponent';
 
-import CarouselEn from './CarouselEs';
+import CarouselEs from './CarouselEs';
 import WhyRent from '../ES/WhyToRentWithUs/WhyRent_ES';
 import HowWorks from './HowWorks_ES';
 import HowWorksMobile from './HowWorksMobile_ES';
@@ -58,12 +58,18 @@ import CompleteFleet from './CompleteFleet/CompleteFleet_ES';
 import FormComponentMobile from './FormComponentMobile_ES';
 
 
-import elantraCarouesel from "../../../static/images/carousel_1_ES.webp";
-import fountainCarousel from "../../../static/images/carousel_4_ES.webp";
-import museumCarouesel from "../../../static/images/carousel_2_ES.webp";
-import reserveYourVehicleCarousel from "../../../static/images/carousel_3_ES.webp";
+import elantraCarouesel from "../../../static/images/elantra-es.webp";
+import fountainCarousel from "../../../static/images/fountain-es.webp";
+import museumCarouesel from "../../../static/images/museum-of-the-future-es.webp";
+import reserveYourVehicleCarousel from "../../../static/images/reserve-your-vehicle-es.webp";
 
 import WhatsappIcon from '../../whatsappIcon';
+
+import CarComponent from '../../CarComponent';
+import Urus from '../../../static/images/urus.webp';
+import LamborghiniLogo from '../../../static/images/lamborghini_gg.webp';
+import lamborghini_char from '../../../static/images/lamborghini_ch_es.webp';
+
 function HomeEs () {
   const [carousel_1,setCarousel_1] = useState("");
   const [carousel_1_loaded,setCarousel_1_loaded] = useState(false);
@@ -164,23 +170,43 @@ function HomeEs () {
       <div>
         <Header/>
         <div>
-          <CarouselEn c1={carousel_1} c2={carousel_2} c3={carousel_3} c4={carousel_4}/>
+          <CarouselEs c1={carousel_1} c2={carousel_2} c3={carousel_3} c4={carousel_4}/>
 
           <FormComponentMobile />
           
           <WhyRent/>
           <div className='best-choice-container d-flex  align-items-center'>
-            <div className='d-flex container align-items-center justify-content-center'>
+            <div className='d-flex col-8 container align-items-center justify-content-center'>
               <img className='best-choice-header' src={BestChoiceImg} width="5650" height="302" alt="BestChoice" style={{ objectFit: 'contain', width: '100%', height: '100%' }} />
             </div>
           </div>
           <div id="cars-for-rent">
             <CompleteFleet />
+              <div className='row car-container justify-content-center'>
+
+                <div className='container  d-flex align-items-center justify-content-center flex-column my-4'>
+                  <p style={{fontWeight:900}} className="required-documents-title my-2 py-3">PROXIMAMENTE</p>
+                </div>
+                <div className="col-6 col-md-3 col-sm-6">
+                  <CarComponent 
+                    img_src={Urus} 
+                    alt_img={"LAMBORGHINI"}
+                    logo_src={LamborghiniLogo} 
+                    price={"SOON"}
+                    price_msg={"A partir de"} 
+                    marca={"LAMBORGHINI"} 
+                    linea={"URUS"} 
+                    modelo={"2023"}
+                    char_img={lamborghini_char}
+                    link={"/"}
+                  />
+                  </div>
+              </div>
           </div>
 
         {/* ------------------------- HOW WORKS ----------------------- */}
         <div className='container my-4 hide-on-mobile'>
-          <b><h3 className='d-flex align-items-center justify-content-center how-works-tittle my-4 py-4'>HOW IT WORKS</h3></b>
+          <b><h3 className='d-flex align-items-center justify-content-center how-works-tittle my-4 py-4'>COMO FUNCIONA</h3></b>
           <HowWorks elements={elements_1}/>
             
               <img
@@ -196,7 +222,7 @@ function HomeEs () {
         </div>
 
         <div className='container my-4 hide-on-desktop'>
-            <b><h3 className='d-flex align-items-center justify-content-center how-works-tittle my-4 py-4'>HOW IT WORKS</h3></b>
+            <b><h3 className='d-flex align-items-center justify-content-center how-works-tittle my-4 py-4'>COMO FUNCIONA</h3></b>
             <div className='row'>
                 <div className='col-4'>
                     <HowWorksMobile elements={elements_1}/>

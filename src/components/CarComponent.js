@@ -1,8 +1,9 @@
 import React from 'react';
-
+import { useLocation } from 'react-router-dom';
 
 function CarComponent ({img_src,alt_img, logo_src,alt_logo,price,marca,linea,modelo,price_msg,char_img,link}) {
-  
+  const location = useLocation();
+  const isInicio = location.pathname === '/inicio';
   return (
     <div className='card my-2 car-card'>
       <div className='container-fluid'>
@@ -44,7 +45,7 @@ function CarComponent ({img_src,alt_img, logo_src,alt_logo,price,marca,linea,mod
              
               <div >
               {marca === 'LAMBORGHINI' ? 
-                <p className='text-model'>COMING SOON</p>
+                isInicio ? <p className='text-model'>PROXIMAMENTE</p> : <p className='text-model'>COMING SOON</p>
                 : 
                 <p className='text-price'>{price_msg} <b>AED {price}</b></p>
               }
@@ -71,8 +72,20 @@ function CarComponent ({img_src,alt_img, logo_src,alt_logo,price,marca,linea,mod
           </div>
 
           <div className='container d-flex align-items-center justify-content-center'>
-                      
-            <button onClick={() => {window.location.href = `${link}`}} id={`${marca}-${linea}-SubmitBtn`} className={`btn rounded-right-corners text-white px-4 mb-3 ${marca === 'LAMBORGHINI' ? 'bg-gold' : 'bg-black'}`}>{marca === 'LAMBORGHINI' ? 'Coming Soon' : 'Book Now'}</button>
+
+            <button 
+              onClick={() => {window.location.href = `${link}`}} 
+              id={`${marca}-${linea}-SubmitBtn`} 
+              className={`btn rounded-right-corners px-4 mb-3 ${marca === 'LAMBORGHINI' ? 'bg-gold text-black fw-bold' : 'bg-black text-white'}`}
+            >
+              {isInicio ? (
+                marca === 'LAMBORGHINI' ? 'Proximamente' : 'Reservar'
+              ) : (
+                marca === 'LAMBORGHINI' ? 'Coming Soon' : 'Book Now'
+              )}
+            </button>
+                     
+            {/* <button onClick={() => {window.location.href = `${link}`}} id={`${marca}-${linea}-SubmitBtn`} className={`btn rounded-right-corners text-white px-4 mb-3 ${marca === 'LAMBORGHINI' ? 'bg-gold' : 'bg-black'}`}>{marca === 'LAMBORGHINI' ? 'Coming Soon' : 'Book Now'}</button> */}
             {/* <button id={`${marca}-${linea}-SubmitBtn`} className={`btn rounded-right-corners text-white px-4 mb-3 ${marca === 'LAMBORGHINI' ? 'bg-gold' : 'bg-black'}`} style={{ fontSize: marca === 'LAMBORGHINI' ? '0.8rem' : '1rem', fontWeight: marca === 'LAMBORGHINI' ? 'bold' : 'normal' }}>{marca === 'LAMBORGHINI' ? 'Coming Soon' : 'Book Now'}</button> */}
 
           </div>

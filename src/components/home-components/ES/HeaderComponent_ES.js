@@ -28,7 +28,7 @@ const Header = () => {
   <div className={"container-fluid"}>
     <div className="navbar-header">
       <a className="navbar-brand d-none d-sm-block" href="/">
-        <img src={desktopLogo} alt="Logo" className="d-inline-block align-text-top header-logo " />
+        <img src={isOpen ? mobileLogo : desktopLogo} alt="Logo" className="d-inline-block align-text-top header-logo " />
       </a>
       <a className="navbar-brand d-sm-none" href="/">
         {/* <img src={mobileLogo} alt="Logo" className="d-inline-block align-text-top header-logo"/> */}

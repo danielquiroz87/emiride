@@ -18,9 +18,9 @@ function WhyRent () {
 
   return (
     <div className='why_rent container-fluid'>
-        <div className='row hide-on-mobile'>
+        <div className='row hide-on-mobile why-rent-show-tablet'>
             <div className='py-4 my-2 d-flex align-items-center justify-content-center'>
-                <div className='container d-flex justify-content-center'>
+                <div className='col-8 container d-flex justify-content-center'>
                   <img className='my-4' src= {WhyShouldYou} alt="why rent with us" width="800" height="41" style={{ objectFit: 'contain', width: '100%', height: '100%' }}/>
                 </div>                 
             </div>
@@ -30,7 +30,7 @@ function WhyRent () {
             </div>
             
             <div className='col-4 '>
-                  <div className='container'>
+                  <div className='col-8 container'>
                     <img className='why-rent-img mb-2'      width="384" height="94.87" src={pickup_dropoff}    onMouseOver={() => setHoverImage(reason1)} alt="pickup dropoff" style={{ objectFit: 'contain', width: '100%', height: '100%' }} /> 
                     <img className='why-rent-img mb-2 ms-4' width="384" height="94.87" src={additional_driver} onMouseOver={() => setHoverImage(reason2)} alt="additional driver" style={{ objectFit: 'contain', width: '100%', height: '100%' }} /> 
                     <img className='why-rent-img mb-2 ms-4' width="384" height="94.87" src={assistance_24h}    onMouseOver={() => setHoverImage(reason3)} alt="assistance 24h" style={{ objectFit: 'contain', width: '100%', height: '100%' }} /> 

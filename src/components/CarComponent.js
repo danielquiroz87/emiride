@@ -47,7 +47,7 @@ function CarComponent ({img_src,alt_img, logo_src,alt_logo,price,marca,linea,mod
               {marca === 'LAMBORGHINI' ? 
                 isInicio ? <p className='text-model'>PROXIMAMENTE</p> : <p className='text-model'>COMING SOON</p>
                 : 
-                <p className='text-price'>{price_msg} <b>AED {price}</b></p>
+                <p className='text-price price-overflow'>{price_msg} <b>AED {price}</b></p>
               }
               </div>
                           
@@ -66,7 +66,7 @@ function CarComponent ({img_src,alt_img, logo_src,alt_logo,price,marca,linea,mod
                   src={char_img}
                   alt={`${marca}-${linea}-characteristics`}
                   width="1024"
-                  height="423"
+                  height="417"
                   style={{ objectFit: 'contain', width: '100%', height: '100%' }}
                   />        
           </div>

@@ -1,13 +1,15 @@
-import React, {useEffect, useRef, useState} from 'react';
+import React from 'react';
 
+// {useEffect, useRef, useState}
 // import MapImage from "../static/images/map.webp";
 // import Pointer from "../static/images/emirates_icon.webp"
+
 import MapPointer from '../static/images/map-pointer.webp';
 
 function MapWithPointer() {
-  const mapRef = useRef(null);
-  const pointerRef = useRef(null);
-  const [isPointerVisible, setIsPointerVisible] = useState(false);
+  // const mapRef = useRef(null);
+  // const pointerRef = useRef(null);
+  // const [isPointerVisible, setIsPointerVisible] = useState(false);
 
   // useEffect(() => {
   //   const observer = new IntersectionObserver((entries) => {
@@ -25,7 +27,10 @@ function MapWithPointer() {
         
         src={MapPointer}
         alt="pointer"
-        className='map-image'
+        className='map-image img-fluid'
+        width="855"
+        height="495"
+        
 
         // style={{ position: "absolute", top: "320px", left: "640px" }}
       />

@@ -36,7 +36,7 @@ const Header = () => {
       </a>
     </div>
     
-    <button className={`navbar-toggler ms-auto ${isOpen ? 'navbar-toggler-open me-2':''}`} type="button" onClick={toggleNavbar} alt="Header Toggler">
+    <button className={`navbar-toggler ms-auto ${isOpen ? 'navbar-toggler-open me-2':''}`} type="button" onClick={toggleNavbar} alt="Header Toggler" aria-label='Header Toggler'>
       <span className="navbar-toggler-icon d-flex justify-content-end align-items-end">{isOpen? <img className={`${isOpen ? 'close-cross':''}`} src={closeCross} width="30" height="30" alt="cross-close-img" /> : <></>}</span>
     </button>
     

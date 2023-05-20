@@ -1,7 +1,10 @@
 import React from 'react';
 
-import UaeResidentsSvg from '../../../static/images/uae_residents.svg';
-import UaeTouristsSvg from '../../../static/images/uae_tourist.svg';
+import UaeResidentsSvg from '../../../static/images/uae_residents.png';
+import UaeTouristsSvg from '../../../static/images/uae_tourist.png';
+
+// import UaeResidentsSvg from '../../../static/images/uae_residents_old.svg';
+// import UaeTouristsSvg from '../../../static/images/uae_tourist_old.svg';
 
 function DocumentsRequired(){
     return(
@@ -9,7 +12,7 @@ function DocumentsRequired(){
     <div className='container w-100 py-4'>
         <div className='row my-4'>
           
-          <div className='col'>
+          <div className='col-6'>
             <h3 className='required-documents-list-tittle'>Para los residentes de los EAU</h3>
             <ul className='documents-li px-0'>
               <li>
@@ -26,9 +29,11 @@ function DocumentsRequired(){
 
           <div className='col-6 d-flex align-items-center mx-auto'>
             <img
-            className='doc-req-img'
+            className='doc-req-img img-fluid'
             src={UaeResidentsSvg}
             alt="UAE residents"
+            width="795"
+            height="389"
             />
           </div>
 
@@ -38,13 +43,15 @@ function DocumentsRequired(){
 
           <div className='col-6 d-flex align-items-center mx-auto'>
             <img 
-            className='doc-req-img'
+            className='doc-req-img img-fluid'
             src={UaeTouristsSvg}
             alt="UAE tourists"
+            width="798"
+            height="389"
             />
           </div>
           
-          <div className='col'>
+          <div className='col-6'>
             <h3 className='required-documents-list-tittle'>Para los turistas que visitan los EAU</h3>
               <ul className='documents-li px-0'>
                 <li>

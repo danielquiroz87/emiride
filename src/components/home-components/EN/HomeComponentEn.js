@@ -115,11 +115,11 @@ function HomeEn () {
 
     try {
       if (carousel_1_loaded && carousel_2_loaded && carousel_3_loaded && carousel_4_loaded){
-        console.log('all loadedd', all_img_loaded)
+        // console.log('all loadedd', all_img_loaded)
         setAll_img_loaded(true)
       }else (console.log('all no loadedd', all_img_loaded))
     } catch (error) {
-      console.log('all no loadedd catch', all_img_loaded)
+      // console.log('all no loadedd catch', all_img_loaded)
       setAll_img_loaded(true); //this line is to avoid break the page if one image couldn't be loaded
     }
 

@@ -1,7 +1,7 @@
 import React from 'react';
 
-import UaeResidentsSvg from '../../../static/images/uae_residents.png';
-import UaeTouristsSvg from '../../../static/images/uae_tourist.png';
+import UaeResidentsSvg from '../../../static/images/uae_residents.webp';
+import UaeTouristsSvg from '../../../static/images/uae_tourist.webp';
 
 // import UaeResidentsSvg from '../../../static/images/uae_residents_old.svg';
 // import UaeTouristsSvg from '../../../static/images/uae_tourist_old.svg';

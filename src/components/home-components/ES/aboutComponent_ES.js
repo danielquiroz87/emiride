@@ -6,11 +6,15 @@ import FaqAccordion from "../../FaqAccordion";
 
 import FAQImage from '../../../static/images/faq.webp'
 import MapPointerImg from '../../../static/images/map-pointer.webp';
-
+import { Helmet } from "react-helmet";
 function AboutComponent(){
 
     return(
         <div>
+            <Helmet>
+                <title>Emi Ride Rent a Car Dubai - Sobre Nosotros</title>
+                <meta name="description" content="Todo acerca de nuestra rentadora en dubai, Aclara tus dudas sobre como y donde rentar un vehiculo en dubai" />
+            </Helmet>
 
             <Header/>
             <div className="about-us-container">

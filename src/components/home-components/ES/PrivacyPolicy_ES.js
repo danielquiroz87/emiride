@@ -1,12 +1,15 @@
 import React from "react";
 import Header from "./HeaderComponent_ES";
 import Footer from "./FooterComponent";
-
+import { Helmet } from "react-helmet";
 function PrivacyPolicy(){
     
     return(
         <div>
-
+            <Helmet>
+                <title>Emi Ride Rent a Car Dubai - Politica de privacidad</title>
+                <meta name="description" content="Conoce nuestra politica de privacidad para rentar un vehiculo en dubai con emiride" />
+            </Helmet>
             <Header/>
             <div className="about-us-container">
                 <p className="about-us-tittle pt-4">POLÍTICAS DE PRIVACIDAD</p>

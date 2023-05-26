@@ -6,11 +6,15 @@ import FaqAccordion from "../../FaqAccordion";
 
 import FAQImage from '../../../static/images/faq.webp'
 import MapPointerImg from '../../../static/images/map-pointer.webp';
+import { Helmet } from "react-helmet";
 function TermsConditions(){
     
     return(
         <div>
-
+            <Helmet>
+                <title>Emi Ride Rent a Car Dubai - Terms and Conditions</title>
+                <meta name="description" content="Terms and conditions for rent your car on dubai with us, meet our mileage policy, fuel policy and more" />
+            </Helmet>
             <Header/>
             <div className="about-us-container">
                 <p className="about-us-tittle pt-4">TERMS AND CONDITIONS</p>

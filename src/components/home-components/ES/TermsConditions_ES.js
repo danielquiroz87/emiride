@@ -1,10 +1,15 @@
 import React from "react";
 import Header from "./HeaderComponent_ES";
 import Footer from "./FooterComponent";
+import { Helmet } from "react-helmet";
 function TermsConditions_ES(){
     
     return(
         <div>
+            <Helmet>
+                <title>Emi Ride Rent a Car Dubai - Terminos y Condiciones</title>
+                <meta name="description" content="Terminos y condiciones para rentar un vehiculo en dubai con emiride, conoce nuestra politica de millaje, combustible y más!" />
+            </Helmet>
 
             <Header/>
             <div className="about-us-container">

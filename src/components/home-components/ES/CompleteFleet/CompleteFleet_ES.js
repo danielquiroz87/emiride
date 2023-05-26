@@ -24,6 +24,7 @@ import ToyotaLogo from '../../../../static/images/toyota_logo_g.webp';
 
 import Creta from '../../../../static/images/creta.webp';
 
+import Picanto from '../../../../static/images/picanto.webp';
 
 import attrage_char from '../../../../static/images/atragge_ch_es.webp';
 import pegass_char from '../../../../static/images/pegass_ch_es.webp';
@@ -46,8 +47,19 @@ function CompleteFleet () {
 
     <div className=' container-fluid car-container py-4'>
         <div className='row py-2'>
-
-        <div className="col-6 col-md-3 col-sm-6"><CarComponent 
+        <div className="col-12 col-md-4 col-sm-4"><CarComponent 
+                                            img_src={Picanto} 
+                                            alt_img={"KIA"}
+                                            logo_src={KiaLogo} 
+                                            price={"99,99"}
+                                            price_msg={"A partir de"} 
+                                            marca={"KIA"} 
+                                            linea={"PICANTO"} 
+                                            modelo={"2023"}
+                                            char_img={attrage_char}
+                                            link={"https://emiride.renthubsoftware.com/rental-booking-engine/search"}
+                                            /></div>
+        <div className="col-12 col-md-4 col-sm-4"><CarComponent 
                                             img_src={Mitsubishi} 
                                             alt_img={"MITSUBISHI"}
                                             logo_src={MitsubishiLogo} 
@@ -59,7 +71,7 @@ function CompleteFleet () {
                                             char_img={attrage_char}
                                             link={"https://emiride.renthubsoftware.com/rental-booking-engine/search"}
                                             /></div>
-        <div className="col-6 col-md-3 col-sm-6"><CarComponent 
+        <div className="col-12 col-md-4 col-sm-4"><CarComponent 
                                             img_src={KiaPegas}   
                                             alt_img={"KIA"}
                                             logo_src={KiaLogo}        
@@ -71,7 +83,7 @@ function CompleteFleet () {
                                             char_img={pegass_char}
                                             link={"https://emiride.renthubsoftware.com/rental-booking-engine/search"}
                                             /></div>
-        <div className="col-6 col-md-3 col-sm-6"><CarComponent 
+        <div className="col-12 col-md-4 col-sm-4"><CarComponent 
                                             img_src={Accent}     
                                             alt_img={"ACCENT"}
                                             logo_src={HyundaiLogo}     
@@ -83,7 +95,7 @@ function CompleteFleet () {
                                             char_img={accent_char}
                                             link={"https://emiride.renthubsoftware.com/rental-booking-engine/search"}
                                             /></div>
-        <div className="col-6 col-md-3 col-sm-6"><CarComponent 
+        <div className="col-12 col-md-4 col-sm-4"><CarComponent 
                                             img_src={Elantra}    
                                             alt_img={"ELANTRA"}
                                             logo_src={HyundaiLogo}    
@@ -95,9 +107,8 @@ function CompleteFleet () {
                                             char_img={elantra_char}
                                             link={"https://emiride.renthubsoftware.com/rental-booking-engine/search"}
                                             /></div>
-        </div>
-        <div className='row py-2'>
-        <div className="col-6 col-md-3 col-sm-6"><CarComponent 
+
+        <div className="col-12 col-md-4 col-sm-4"><CarComponent 
                                             img_src={Creta} 
                                             alt_img={"HYUNDAI"}
                                             logo_src={HyundaiLogo} 
@@ -109,7 +120,7 @@ function CompleteFleet () {
                                             char_img={pegass_char}
                                             link={"https://emiride.renthubsoftware.com/en_GB/rental-booking-engine/search"}
                                             /></div>
-        <div className="col-6 col-md-3 col-sm-6"><CarComponent 
+        <div className="col-12 col-md-4 col-sm-4"><CarComponent 
                                             img_src={Santafe} 
                                             alt_img={"SANTAFE"}
                                             logo_src={HyundaiLogo} 
@@ -121,7 +132,7 @@ function CompleteFleet () {
                                             char_img={santafe_char}
                                             link={"https://emiride.renthubsoftware.com/rental-booking-engine/search"}
                                             /></div>
-        <div className="col-6 col-md-3 col-sm-6"><CarComponent 
+        <div className="col-12 col-md-4 col-sm-4"><CarComponent 
                                             img_src={Xterra} 
                                             alt_img={"NISSAN"}
                                             logo_src={NissanLogo} 
@@ -133,7 +144,7 @@ function CompleteFleet () {
                                             char_img={xterra_char}
                                             link={"https://emiride.renthubsoftware.com/rental-booking-engine/search"}
                                             /></div>
-        <div className="col-6 col-md-3 col-sm-6"><CarComponent 
+        <div className="col-12 col-md-4 col-sm-4"><CarComponent 
                                             img_src={Fortuner} 
                                             alt_img={"TOYOTA"}
                                             logo_src={ToyotaLogo} 
@@ -145,7 +156,7 @@ function CompleteFleet () {
                                             char_img={fortuner_char}
                                             link={"https://emiride.renthubsoftware.com/rental-booking-engine/search"}
                                             /></div>
-        {/* <div className="col-6 col-md-3 col-sm-6"><CarComponent 
+        {/* <div className="col-12 col-md-4 col-sm-4"><CarComponent 
                                             img_src={Urus} 
                                             alt_img={"LAMBORGHINI"}
                                             logo_src={LamborghiniLogo} 

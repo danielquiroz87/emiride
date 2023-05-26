@@ -6,11 +6,16 @@ import FaqAccordion from "../../FaqAccordion";
 
 import FAQImage from '../../../static/images/faq.webp'
 import MapPointerImg from '../../../static/images/map-pointer.webp';
+import { Helmet } from 'react-helmet';
 
 function AboutComponent(){
 
     return(
         <div>
+            <Helmet>
+                <title>Emi Ride Rent a Car Dubai - About Us</title>
+                <meta name="description" content="About our renting company, clarify your doubts about renting a car to ride on dubai" />
+            </Helmet>
 
             <Header/>
             <div className="about-us-container">

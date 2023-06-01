@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { Helmet } from 'react-helmet';
 
 import Header from './HeaderComponent_ES';
 import Footer from './FooterComponent';
@@ -71,6 +72,12 @@ import LamborghiniLogo from '../../../static/images/lamborghini_gg.webp';
 import lamborghini_char from '../../../static/images/lamborghini_ch_es.webp';
 
 function HomeEs () {
+  <Helmet>
+      <title>Emi Ride - Renta un vehiculo en Dubai</title>
+      <meta
+        name="description"
+        content="Renta un vehiculo en dubai con Emi Ride, Escoge entre nuestra gran variedad de marcas y modelos. Recoge y entrega en cualquier lugar de los emiratos"/>
+  </Helmet>
   const [carousel_1,setCarousel_1] = useState("");
   const [carousel_1_loaded,setCarousel_1_loaded] = useState(false);
 

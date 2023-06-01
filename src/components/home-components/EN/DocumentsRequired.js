@@ -58,7 +58,7 @@ function DocumentsRequired(){
                   Passport copy
                 </li>
                 <li>
-                  Vald international driving license
+                  Valid international driving license
                 </li>
                 <li>
                   Visa/Visa stamp

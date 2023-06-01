@@ -30,7 +30,7 @@ import ss1 from '../../../../static/images/sss1.webp';
 import ss2 from '../../../../static/images/sss2.webp';
 // import ss3 from '../../../../static/images/sss3.webp';
 import ss4 from '../../../../static/images/sss4.webp';
-
+import picanto_char from '../../../../static/images/picanto_char.webp'
 
 import CompleteFleetImg from '../../../../static/images/know-fleet.webp';
 
@@ -53,7 +53,7 @@ function CompleteFleet () {
                                             marca={"KIA"} 
                                             linea={"PICANTO"} 
                                             modelo={"2023"}
-                                            char_img={ss4}
+                                            char_img={picanto_char}
                                             link={"https://emiride.renthubsoftware.com/en_GB/rental-booking-engine/search"}
                                             /></div>
         <div className="col-12 col-md-4 col-sm-4"><CarComponent 

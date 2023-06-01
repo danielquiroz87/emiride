@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from 'react';
+import { Helmet } from "react-helmet";
+
 
 import Header from './HeaderComponent';
 import Footer from './FooterComponent';
@@ -69,7 +71,16 @@ import Urus from '../../../static/images/urus.webp';
 import LamborghiniLogo from '../../../static/images/lamborghini_gg.webp';
 import ss4 from '../../../static/images/sss4.webp';
 
+
 function HomeEn () {
+
+  <Helmet>
+
+      <meta   
+        name="description"
+        content="Rent a car in Dubai from Emi Ride, choose it from our wide variety of cars to pick-up and drop-off 
+        on any location all over the Emirates"/>
+  </Helmet>
   const [carousel_1,setCarousel_1] = useState("");
   const [carousel_1_loaded,setCarousel_1_loaded] = useState(false);
 

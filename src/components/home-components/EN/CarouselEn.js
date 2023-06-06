@@ -5,7 +5,7 @@ function CarouselEn(props) {
   useEffect(() => {
     const carousel = document.querySelector('.carousel');
     const carouselInstance = new window.bootstrap.Carousel(carousel, {
-      interval: 2500,
+      interval: 3000,
       wrap: true,
     });
     return () => {

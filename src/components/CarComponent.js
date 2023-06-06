@@ -74,7 +74,7 @@ function CarComponent ({img_src,alt_img, logo_src,alt_logo,price,marca,linea,mod
           <div className='container d-flex align-items-center justify-content-center'>
 
             <button 
-              onClick={() => {window.location.href = `${link}`}} 
+              onClick={() => {isInicio ? (window.location.href = `/cars-for-rent/${lowercaseAllChars(marca)}_${lowercaseAllChars(linea)}_2023`) : (window.location.href = `/cars-for-rent/${lowercaseAllChars(marca)}_${lowercaseAllChars(linea)}_2023`)}} 
               id={`${marca}-${linea}-SubmitBtn`} 
               className={`btn rounded-right-corners px-4 mb-3 ${marca === 'LAMBORGHINI' ? 'bg-gold text-black fw-bold' : 'bg-black text-white'}`}
             >
@@ -95,5 +95,16 @@ function CarComponent ({img_src,alt_img, logo_src,alt_logo,price,marca,linea,mod
 
   );
 };
+
+function lowercaseAllChars(str) {
+  if (typeof str !== 'string' || str.length === 0) {
+    return str; // Return the input if it's not a string or an empty string
+  }
+  if (str.toLowerCase() === "x-terra") {
+    return "xterra";
+  }
+
+  return str.toLowerCase();
+}
 
 export default CarComponent;

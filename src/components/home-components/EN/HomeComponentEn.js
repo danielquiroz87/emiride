@@ -74,13 +74,7 @@ import ss4 from '../../../static/images/sss4.webp';
 
 function HomeEn () {
 
-  <Helmet>
 
-      <meta   
-        name="description"
-        content="Rent a car in Dubai from Emi Ride, choose it from our wide variety of cars to pick-up and drop-off 
-        on any location all over the Emirates"/>
-  </Helmet>
   const [carousel_1,setCarousel_1] = useState("");
   const [carousel_1_loaded,setCarousel_1_loaded] = useState(false);
 
@@ -176,8 +170,16 @@ function HomeEn () {
   ]
   
   return (
+
     all_img_loaded ? (
       <div>
+        <Helmet>
+          <meta   
+            name="description"
+            content="Rent a car in Dubai from Emi Ride, choose it from our wide variety of cars to pick-up and drop-off 
+            on any location all over the Emirates"/>
+        </Helmet>
+
         <Header/>
         <div>
           <CarouselEn c1={carousel_1} c2={carousel_2} c3={carousel_3} c4={carousel_4}/>

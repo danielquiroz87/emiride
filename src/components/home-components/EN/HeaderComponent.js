@@ -1,4 +1,5 @@
 import React ,{useState} from 'react';
+import { useLocation } from 'react-router-dom';
 
 import desktopLogo from '../../../static/images/Full-Color.webp';
 import mobileLogo from '../../../static/images/header-logo-mobile.webp';
@@ -19,12 +20,16 @@ const Header = () => {
     console.log('open?',isOpen)
   };
 
+  const location = useLocation();
+  const isCarsForRent = location.pathname.startsWith('/cars-for-rent/');
+
+
 
   return (
  
 
 
-<nav className={`navbar header_ navbar-expand-lg navbar-light ${isOpen ? 'navbar-open' : ''}`}>
+<nav className={`navbar header_ navbar-expand-lg ${ isCarsForRent? 'navbar-dark':'navbar-light'} ${isOpen ? 'navbar-open' : ''}`}>
   <div className={"container-fluid"}>
     <div className="navbar-header">
       <a className="navbar-brand d-none d-sm-block" href="/">

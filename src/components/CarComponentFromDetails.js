@@ -1,9 +1,8 @@
 import React from 'react';
-import { useLocation } from 'react-router-dom';
 
 function CarComponent ({img_src,alt_img, logo_src,alt_logo,price,marca,linea,modelo,price_msg,char_img,link}) {
-  const location = useLocation();
-  const isInicio = location.pathname === '/inicio';
+
+
   return (
     <div className='card car-card'>
       <div className='container-fluid'>
@@ -44,7 +43,7 @@ function CarComponent ({img_src,alt_img, logo_src,alt_logo,price,marca,linea,mod
           <div className="line-separator"></div>
                                        
           <div className='container my-4'>
-            <h2 className='model-tittle'>{marca} {linea}</h2>
+            <h2 className='model-tittle'>{marca} {linea} {modelo}</h2>
           </div>
 
         </div>

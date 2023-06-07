@@ -24,7 +24,7 @@ import Xterra from '../../../static/images/xterra_700.webp';
 import NissanLogo from '../../../static/images/nissan_logo_g.webp';
 
 import Fortuner from '../../../static/images/fortuner_700.webp';
-import ToyotaLogo from '../../../static/images/toyota_logo_g.webp'
+import ToyotaLogo from '../../../static/images/toyota_logo.webp'
 
 
 import ss1 from '../../../static/images/sss1.webp';

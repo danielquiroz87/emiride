@@ -1,0 +1,191 @@
+.FAQ-img-container {
+    flex: 0 0 auto;
+    width: 143; /* Set the desired width */
+    height: auto;
+
+  }
+
+.FAQ-img {
+    width: auto;
+    height: auto;
+    max-width: 85%;
+    max-height: 85%;
+  }
+
+.FAQ-tittle-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 0px; /* Adjust the spacing between image and text */
+    height: 100%;
+}
+.FAQ-tittle{
+    font-size: 48px;
+    font-weight:900;
+    margin: 0;
+  }
+  
+  @media (max-width: 992px) {
+    .FAQ-tittle {
+      font-size: 33px;
+      font-weight:900;
+    }
+    .FAQ-img {
+        max-width: 75%;
+        max-height: 75%;
+      }
+  }  
+
+  @media (max-width: 825px) {
+    .FAQ-tittle {
+      font-size: 32.5px;
+      font-weight:900;
+    }
+    .FAQ-img {
+
+        max-width: 75%;
+        max-height: 75%;
+      }
+  }
+  @media (max-width: 768px) {
+    .FAQ-tittle {
+      font-size: 29px;
+      font-weight:900;
+    }
+    .FAQ-img {
+        max-width: 60%;
+        max-height: 60%;
+      }
+  }
+  
+  @media (max-width: 625px) {
+    .FAQ-tittle {
+      font-size: 28px;
+      font-weight:900;
+    }
+    .FAQ-img {
+        width: auto;
+        height: auto;
+        max-width: 60%;
+        max-height: 60%;
+      }
+  }
+  
+  @media (max-width: 465px) {
+    .FAQ-tittle {
+      font-size: 25px;
+      font-weight:900;
+    }
+    .FAQ-img {
+        width: auto;
+        height: auto;
+        max-width: 65%;
+        max-height: 65%;
+      }
+
+    .FAQ-tittle-container{
+
+        margin-left: 0px; /* Adjust the spacing between image and text */
+
+    }
+  }
+
+/* ------------------------------ FAQ ------------------------ */
+.faq-container{
+    background-image:  url('../static/images/adam-le-sommer.webp');
+    min-height: 40vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center !important;
+    
+  }
+  
+  .accordion{
+    margin: 30px;
+  }
+  .accordion-button{
+    border-radius: 90px !important;
+    margin-bottom: 10px;
+    margin-top :10px;
+    display: grid;
+    place-items: center;
+  }
+  /* erase the default iccon of accordion */
+  .accordion-button::after {
+    
+    margin-left: 0;
+    
+    background-image: none;
+  
+  
+  }
+  
+  .accordion-button:not(.collapsed)::after {
+    background-image: none;
+    transform: rotate(-180deg);
+  }
+  /* erase the default iccon of accordion  END*/
+  
+  
+  .faq-acordion-button{
+    
+    color:white !important;
+    background-color: #000000 !important;
+    text-align: center !important;
+    font-size: 2rem 
+  }
+  
+  /* extra small devices (vertical phones) 300 px and up*/
+  @media (min-width: 300px) { 
+  
+  }
+  
+  /* // Small devices (landscape phones, 576px and up) */
+  @media (max-width: 576px) { 
+    .faq-acordion-button{
+    
+      color:white !important;
+      background-color: #000000 !important;
+      text-align: center !important;
+     
+    }
+    .accordion-header{
+      font-size: 1.1rem;
+    }
+   }
+  
+  /* // Medium devices (tablets, 768px and up) */
+  @media (min-width: 768px) { 
+  
+   }
+  
+  /* // Large devices (desktops, 992px and up) */
+  @media (min-width: 992px) { 
+  
+   }
+  
+  /* // Extra large devices (large desktops, 1200px and up) */
+  @media (min-width: 1200px) {
+  
+  
+   }
+  
+  .faq-acordion-content{
+    color:black;
+    
+    background-color: white !important;
+    border-radius: 90px 90px 90px 90px;
+    font-family: "Poppins", Sans-serif;
+    font-weight: 400 !important;
+  }
+  
+  
+  .accordion-header {
+    margin:10px;
+  }
+  
+  #accordion .collapsing {
+    transition: height 0.6s ease-in-out;
+  }
+  /* ------------------------- FAQ END ------------------------ */
+  

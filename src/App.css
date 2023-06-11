@@ -1,98 +1,11 @@
-/* ------------------------- HEADER ------------------------- */
-.header_ {
-  position: absolute; /*fixed will make this follow down when scrolling down*/
-  top: 10px;
-  left: 10vw;
-  right: 10vw;
-  background-color: white;
-  border-radius: 40px;
-  text-align: center;
-  z-index: 2;
-}
-.navbar-open {
-  background-color: black !important; 
-}
-.navbar-content-open{
-  color: white !important;
-   
-}
+@import url('./styles/BestChoiceComponent.css');
+@import url('./styles/CarDetailPageComponent.css');
+@import url('./styles/CompleteFleetComponent.css');
+@import url('./styles/FAQComponent.css');
+@import url('./styles/FooterComponent.css');
+@import url('./styles/HeaderComponent.css');
+@import url('./styles/WhyRentComponent.css');
 
-.hide-language-icon{
-  display: none;
-}
-
-.header-logo{
-  width: 10vw;
-}
-
-.header-text{
-  color:black;
-  font-weight: 700;
-}
-
-.header-text-open{
-  color: white !important;
-}
-
-.header-text-open:hover{
-  background-color: white;
-  color:black !important;
-  border-radius: 20px;
-}
-.navbar-toggler-open{
-background-color: rgba(0, 0, 0);
-/* display: none; */
-}
-.close-cross{
-  color: white !important;
-}
-
-/* Default styles for the logo */
-.logo {
-  display: none; /* Hide the logo by default */
-}
-@media (max-width: 991px) {
-  .logo-mobile {
-    display: block; /* Show the mobile logo */
-  }
-}
-
-/* Media query for screens larger than 991px */
-@media (min-width: 992px) {
-  .logo-desktop {
-    display: block; /* Show the desktop logo */
-  }
-}
-
-
-/* extra small devices (vertical phones) 300 px and up*/
-@media (max-width: 576px) { 
-  .header-logo{
-    width: 20vw;
-    display: flex;
-    justify-content: center;
-    
-  }
-
-  .header_ {
-    position: absolute; /*fixed will make this follow down when scrolling down*/
-    top: 0px;
-    left: 10vw;
-    right: 10vw;
-    background-color: rgba(0, 0, 0, 0) ; /*here the logo is transparent*/
-    border-radius: 40px;
-    text-align: center;
-    z-index: 2;
-  }
-  .navbar.open {
-    background-color: white !important; /* change the background color when the toggler button is open */
-  }
-}
-
-
-
-
-/* ------------------------- HEADER END --------------------- */
 
 /* ------------------------- FORM --------------------------- */
 .form-tittle{
@@ -124,74 +37,8 @@ background-color: rgba(0, 0, 0);
 }
 
 /* ------------------------- FORM --------------------------- */
-/* ------------------------- WHY RENT ----------------------- */
-.why_rent{
-  
-  background-image:  url('static/images/fonde.webp');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center !important;
-}
 
-.toyota-why-rent{
-  width: 100%;
-  max-width: 100%;
-  
-  transform: scaleX(-1);
-}
 
-.why-rent-img{
-  max-width: 25vw;
-
-}
-.why-rent-img:hover{
-  transform: scale(1.2);
-  transition: all .6s;
-}
-.hover-image{
-  padding-right: 10px;
-}
-
-@media (max-width: 767px) {
-  .toyota-why-rent{
-    width: 100%;
-    max-width: 100%;
-    
-    transform: scaleX(-1);
-  }
-  .why-rent-img-reasons{
-    max-width: 60%;
-    width: 60%;
-    margin-bottom: 5vh;
-    margin-top: 5vh; 
-  }
-  .why-rent-img-mobile{
-  
-    max-width: 35vw;
-  }
-}
-
-/* ---------------------- WHY RENT END ----------------------- */
-
-/* --------------------- BEST CHOICE ------------------------- */
-.best-choice-container{
-  background-image:  url('static/images/adam-le-sommer.webp');
-  min-height: 40vh;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center !important;
-}
-.best-choice-header{
-  width: 75%;
-  height: 50%;
-}
-
-@media (max-width: 576px) { 
-  .best-choice-header{
-    width: 100%;
-  }
-}
-/* --------------------- BEST CHOICE END --------------------- */
 
 /* ----------------- complete fleet -------------------------- */
 .complete-fleet-img{
@@ -335,6 +182,7 @@ background-color: rgba(0, 0, 0);
 
 .how-works-tittle{
   font-weight: 900;
+  font-size: 38px;
 }
 .steps-mobile-tittle{
   font-size: 0.9rem;
@@ -542,104 +390,6 @@ background-color: rgba(0, 0, 0);
 
 /* --------------------- REQUIRED DOCUMENTS END -------------- */
 
-/* ------------------------------ FAQ ------------------------ */
-.faq-container{
-  background-image:  url('static/images/adam-le-sommer.webp');
-  min-height: 40vh;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center !important;
-  
-}
-
-.accordion{
-  margin: 30px;
-}
-.accordion-button{
-  border-radius: 90px !important;
-  margin-bottom: 10px;
-  margin-top :10px;
-  display: grid;
-  place-items: center;
-}
-/* erase the default iccon of accordion */
-.accordion-button::after {
-  
-  margin-left: 0;
-  
-  background-image: none;
-
-
-}
-
-.accordion-button:not(.collapsed)::after {
-  background-image: none;
-  transform: rotate(-180deg);
-}
-/* erase the default iccon of accordion  END*/
-
-
-.faq-acordion-button{
-  
-  color:white !important;
-  background-color: #000000 !important;
-  text-align: center !important;
-  font-size: 2rem 
-}
-
-/* extra small devices (vertical phones) 300 px and up*/
-@media (min-width: 300px) { 
-
-}
-
-/* // Small devices (landscape phones, 576px and up) */
-@media (max-width: 576px) { 
-  .faq-acordion-button{
-  
-    color:white !important;
-    background-color: #000000 !important;
-    text-align: center !important;
-   
-  }
-  .accordion-header{
-    font-size: 1.1rem;
-  }
- }
-
-/* // Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) { 
-
- }
-
-/* // Large devices (desktops, 992px and up) */
-@media (min-width: 992px) { 
-
- }
-
-/* // Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {
-
-
- }
-
-.faq-acordion-content{
-  color:black;
-  
-  background-color: white !important;
-  border-radius: 90px 90px 90px 90px;
-  font-family: "Poppins", Sans-serif;
-  font-weight: 400 !important;
-}
-
-
-.accordion-header {
-  margin:10px;
-}
-
-#accordion .collapsing {
-  transition: height 0.6s ease-in-out;
-}
-/* ------------------------- FAQ END ------------------------ */
 
 /* ---------------------- VALUABLE INFO --------------------- */
 .valuable-information-tittle-container{
@@ -885,15 +635,7 @@ background-color: rgba(0, 0, 0);
   font-size: 1.1rem;
 }
 
-.footer-links{
-  text-decoration:none;
-  color:black
-}
-.footer-links:hover{
-  
-  font-weight: 800;
-  color:black;
-}
+
 
 /* Whatsapp button */
 
@@ -933,83 +675,24 @@ background-color: rgba(0, 0, 0);
 /* Whatsapp button */
 
 
-/* BREADCRUMBS */
+/* BLACK AND WHITE BACKGROUNDS FOR THE TITTLES OF THE WEBSITE */
+.white-black {
+  background-color: white;
+  color: black;
 
-.breadcrumb-not-active {
-  color: #cccccc;
 }
 
-.breadcrumb-active {
-  color: #000000;
-}
-
-.breadcrumb-arrow {
-  margin-left: 10px;
-  margin-right: 10px;
+.black-white {
+  background-color: black;
   color: white;
+  
+}
+.white-black,
+.black-white {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
-
-
-/* hide-mobile-devices: Hide below 991px */
-@media (max-width: 991px) {
-  .hide-mobile-devices {
-    display: none;
-  }
-}
-
-/* hide-web-devices: Hide above 991px */
-@media (min-width: 992px) {
-  .hide-web-devices {
-    display: none;
-  }
-}
-
-.table-tittle{
-  font-size: 34px;
-}
-@media (max-width: 991px) {
-  .table-tittle {
-    font-size: 23px;
-  }
-}
-@media (max-width: 768px) {
-  .table-tittle {
-    font-size: 30px;
-  }
-}
-/* Default font size for the table */
-.table-text {
-  font-size: 24px;
-  font-weight: 900;
-}
-
-/* Adjust font size for smaller screens */
-@media (max-width: 1400px) {
-  .table-text {
-    font-size: 20px;
-  }
-}
-
-@media (max-width: 1200px) {
-  .table-text {
-    font-size: 16px;
-  }
-}
-@media (max-width: 992px) {
-  .table-text {
-    font-size: 10px;
-    font-weight: 900;
-  }
-}
-@media (max-width: 768px) {
-  .table-text {
-    font-size: 16px;
-    font-weight: 900;
-  }
-}
-
-.model-tittle{
-  font-size: 30px;
-  font-weight: 900;
-}

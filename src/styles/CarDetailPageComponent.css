@@ -1,0 +1,81 @@
+
+/* BREADCRUMBS */
+
+.breadcrumb-not-active {
+  color: #cccccc;
+}
+
+.breadcrumb-active {
+  color: #000000;
+}
+
+.breadcrumb-arrow {
+  margin-left: 10px;
+  margin-right: 10px;
+  color: white;
+}
+
+
+
+/* hide-mobile-devices: Hide below 991px */
+@media (max-width: 991px) {
+  .hide-mobile-devices {
+    display: none;
+  }
+}
+
+/* hide-web-devices: Hide above 991px */
+@media (min-width: 992px) {
+  .hide-web-devices {
+    display: none;
+  }
+}
+
+.table-tittle{
+  font-size: 34px;
+}
+@media (max-width: 991px) {
+  .table-tittle {
+    font-size: 23px;
+  }
+}
+@media (max-width: 768px) {
+  .table-tittle {
+    font-size: 30px;
+  }
+}
+/* Default font size for the table */
+.table-text {
+  font-size: 24px;
+  font-weight: 900;
+}
+
+/* Adjust font size for smaller screens */
+@media (max-width: 1400px) {
+  .table-text {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .table-text {
+    font-size: 16px;
+  }
+}
+@media (max-width: 992px) {
+  .table-text {
+    font-size: 10px;
+    font-weight: 900;
+  }
+}
+@media (max-width: 768px) {
+  .table-text {
+    font-size: 16px;
+    font-weight: 900;
+  }
+}
+
+.model-tittle{
+  font-size: 30px;
+  font-weight: 900;
+}

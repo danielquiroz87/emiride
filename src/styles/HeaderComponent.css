@@ -1,0 +1,95 @@
+/* ------------------------- HEADER ------------------------- */
+.header_ {
+    position: absolute; /*fixed will make this follow down when scrolling down*/
+    top: 10px;
+    left: 10vw;
+    right: 10vw;
+    background-color: white;
+    border-radius: 40px;
+    text-align: center;
+    z-index: 2;
+  }
+  .navbar-open {
+    background-color: black !important; 
+  }
+  .navbar-content-open{
+    color: white !important;
+     
+  }
+  
+  .hide-language-icon{
+    display: none;
+  }
+  
+  .header-logo{
+    width: 10vw;
+  }
+  
+  .header-text{
+    color:black;
+    font-weight: 700;
+  }
+  
+  .header-text-open{
+    color: white !important;
+  }
+  
+  .header-text-open:hover{
+    background-color: white;
+    color:black !important;
+    border-radius: 20px;
+  }
+  .navbar-toggler-open{
+  background-color: rgba(0, 0, 0);
+  /* display: none; */
+  }
+  .close-cross{
+    color: white !important;
+  }
+  
+  /* Default styles for the logo */
+  .logo {
+    display: none; /* Hide the logo by default */
+  }
+  @media (max-width: 991px) {
+    .logo-mobile {
+      display: block; /* Show the mobile logo */
+    }
+  }
+  
+  /* Media query for screens larger than 991px */
+  @media (min-width: 992px) {
+    .logo-desktop {
+      display: block; /* Show the desktop logo */
+    }
+  }
+  
+  
+  /* extra small devices (vertical phones) 300 px and up*/
+  @media (max-width: 576px) { 
+    .header-logo{
+      width: 20vw;
+      display: flex;
+      justify-content: center;
+      
+    }
+  
+    .header_ {
+      position: absolute; /*fixed will make this follow down when scrolling down*/
+      top: 0px;
+      left: 10vw;
+      right: 10vw;
+      background-color: rgba(0, 0, 0, 0) ; /*here the logo is transparent*/
+      border-radius: 40px;
+      text-align: center;
+      z-index: 2;
+    }
+    .navbar.open {
+      background-color: white !important; /* change the background color when the toggler button is open */
+    }
+  }
+  
+  
+  
+  
+  /* ------------------------- HEADER END --------------------- */

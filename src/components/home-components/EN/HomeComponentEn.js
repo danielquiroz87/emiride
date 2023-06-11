@@ -9,7 +9,6 @@ import CarouselEn from './CarouselEn';
 import WhyRent from '../EN/WhyToRentWithUs/WhyRent';
 import HowWorks from './HowWorks';
 import HowWorksMobile from './HowWorksMobile';
-import BestChoiceImg from '../../../static/images/best-choice.webp';
 
 import MapComponent from '../../MapComponent';
 
@@ -30,8 +29,7 @@ import Step6 from '../../../static/images/collect-step-6.svg';
 
 import AngleDown from '../../../static/images/angle-down.webp';
 
-import FAQImage from '../../../static/images/faq.webp'
-
+import FAQIcon from '../../../static/images/faq_icon.webp'
 import TicketsImageTrigger from '../../../static/images/traffic-tickets.webp';
 import TicketsImageModal from '../../../static/images/traffic-tickets-modal.webp';
 
@@ -187,33 +185,48 @@ function HomeEn () {
           <FormComponentMobile />
           
           <WhyRent/>
+
           <div className='best-choice-container d-flex  align-items-center'>
-            <div className='d-flex col-8 container align-items-center justify-content-center'>
-              <img className='best-choice-header' src={BestChoiceImg} width="5650" height="302" alt="BestChoice" style={{ objectFit: 'contain', width: '100%', height: '100%' }} />
-            </div>
+
+
+              {/* <img className='best-choice-header' src={BestChoiceImg} width="5650" height="302" alt="BestChoice" style={{ objectFit: 'contain', width: '100%', height: '100%' }} /> */}
+              <div class="container-fluid d-flex flex-row align-items-center justify-content-center">              
+                <div class="white-black">
+                  <h2 className='best-choice-tittle'>BEST CHOICE</h2>
+                </div>
+                <div class="black-white">
+                  <h2 className='best-choice-tittle'>FOR TAKE A RIDE IN DUBAI</h2>
+                </div>
+              </div>
+
           </div>
           <div id="cars-for-rent">
             <CompleteFleet />
-            <div className='row car-container justify-content-center'>
 
-              <div className='container  d-flex align-items-center justify-content-center flex-column my-4'>
-                <p style={{fontWeight:900}} className="required-documents-title my-2 py-3">COMING SOON</p>
-              </div>
-              <div className="col-6 col-md-3 col-sm-6">
-                <CarComponent 
-                  img_src={Urus} 
-                  alt_img={"LAMBORGHINI"}
-                  logo_src={LamborghiniLogo} 
-                  price={"SOON"}
-                  price_msg={"A partir de"} 
-                  marca={"LAMBORGHINI"} 
-                  linea={"URUS"} 
-                  modelo={"2023"}
-                  char_img={ss4}
-                  link={"/"}
-                />
+            {/* lamborghini coming soon */}
+            <div className='container-fluid'>
+              <div className='row car-container justify-content-center'>
+                <div className='container  d-flex align-items-center justify-content-center flex-column my-4'>
+                  <p style={{fontWeight:900}} className="required-documents-title my-2 py-3">COMING SOON</p>
                 </div>
+                <div className="col-8 col-md-4 col-sm-4">
+                  <CarComponent 
+                    img_src={Urus} 
+                    alt_img={"LAMBORGHINI"}
+                    logo_src={LamborghiniLogo} 
+                    price={"SOON"}
+                    price_msg={"A partir de"} 
+                    marca={"LAMBORGHINI"} 
+                    linea={"URUS"} 
+                    modelo={"2023"}
+                    char_img={ss4}
+                    link={"/"}
+                  />
+                </div>
+              </div>
             </div>
+            {/* -lamborghini coming soon */}
+
           </div>
 
         {/* ------------------------- HOW WORKS ----------------------- */}
@@ -271,16 +284,29 @@ function HomeEn () {
             <MapComponent />
           </div>
 
-          <div className='container required-documents d-flex align-items-center justify-content-center flex-column'>
+          <div className='container required-documents d-flex align-items-center justify-content-center flex-column px-0'>
             <h2 className="required-documents-title my-2">DOCUMENTS REQUIRED</h2>
             <h2 className="required-documents-text">TO RENT A CAR IN DUBAI</h2>
           </div>
           <DocumentsRequired/>
 
-          <div className='faq-container d-flex align-items-center'>
-            <div className='d-flex container align-items-center justify-content-center'>
-              <img style={{objectFit:"contain", width:"75%", height:"75%"}}  src={FAQImage} widt="1024" height="95" alt="FAQs"/>
-            </div>
+          <div className='faq-container d-flex align-items-center justify-content-center'>
+
+              <div class="container-fluid d-flex flex-row align-items-center justify-content-center my-4  ">              
+                <div className='FAQ-img-container'>
+                  <img className="FAQ-img img-fluid" width='143' height='143' alt='complete fleet for rental'  src={FAQIcon}/>
+                </div>
+                <div className='FAQ-tittle-container'>
+
+                  <div class="black-white">
+                    <h3 className='FAQ-tittle'>FREQUENTLY</h3>
+                  </div>
+                  <div class="white-black">
+                    <h3 className='FAQ-tittle'>ASKED QUESTIONS</h3>
+                  </div>
+                </div>
+              </div>
+            
           </div>
           
           <div className="accordion accordion-flush" id="FAQ-Accordion">

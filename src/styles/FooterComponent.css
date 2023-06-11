@@ -1,0 +1,9 @@
+.footer-links{
+    text-decoration:none;
+    color:black
+  }
+  .footer-links:hover{
+    
+    font-weight: 800;
+    color:black;
+  }

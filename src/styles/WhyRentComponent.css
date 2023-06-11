@@ -1,0 +1,92 @@
+.why-rent-tittle{
+    font-size: 40px;
+    font-weight:900;
+    margin: 0;
+  }
+  
+  @media (max-width: 847px) {
+    .why-rent-tittle {
+      font-size: 33px;
+      font-weight:900;
+    }
+  }  
+
+  @media (max-width: 825px) {
+    .why-rent-tittle {
+      font-size: 32.5px;
+      font-weight:900;
+    }
+  }
+  @media (max-width: 725px) {
+    .why-rent-tittle {
+      font-size: 28px;
+      font-weight:900;
+    }
+  }
+  
+  @media (max-width: 625px) {
+    .why-rent-tittle {
+      font-size: 20.2px;
+      font-weight:900;
+    }
+  }
+  
+  @media (max-width: 465px) {
+    .why-rent-tittle {
+      font-size: 18px;
+      font-weight:900;
+    }
+  }
+
+
+
+  /* ------------------------- WHY RENT ----------------------- */
+  /* ---------------------------------------- old, need review  */
+  
+.why_rent{
+  
+  background-image:  url('../static/images/fonde.webp');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center !important;
+}
+
+.toyota-why-rent{
+  width: 100%;
+  max-width: 100%;
+  
+  transform: scaleX(-1);
+}
+
+.why-rent-img{
+  max-width: 25vw;
+
+}
+.why-rent-img:hover{
+  transform: scale(1.2);
+  transition: all .6s;
+}
+.hover-image{
+  padding-right: 10px;
+}
+
+@media (max-width: 767px) {
+  .toyota-why-rent{
+    width: 100%;
+    max-width: 100%;
+    
+    transform: scaleX(-1);
+  }
+  .why-rent-img-reasons{
+    max-width: 60%;
+    width: 60%;
+    margin-bottom: 5vh;
+    margin-top: 5vh; 
+  }
+  .why-rent-img-mobile{
+  
+    max-width: 35vw;
+  }
+}
+
+/* ---------------------- WHY RENT END ----------------------- */

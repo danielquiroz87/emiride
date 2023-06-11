@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 
 import ToyotaFortuner from '../../../../static/images/Fortuner-2022-SuperBlanco.webp';
 
-import WhyShouldYou from '../../../../static/images/why-en.webp';
+
 import pickup_dropoff from '../../../../static/images/Drop-off-1024x253.webp';
 import additional_driver from '../../../../static/images/for-free-1024x253.webp';
 import assistance_24h from '../../../../static/images/assistance-1024x253.webp';
@@ -17,13 +17,17 @@ function WhyRent () {
   const [hoverImage, setHoverImage] = useState(reason1);
 
   return (
-    <div className='why_rent container-fluid'>
+    <div className='why_rent container-fluid my-4 py-4'>
         <div className='row hide-on-mobile why-rent-show-tablet'>
-            <div className='py-4 my-2 d-flex align-items-center justify-content-center'>
-                <div className='col-8 container d-flex justify-content-center'>
-                  <img className='my-4' src= {WhyShouldYou} alt="why rent with us" width="800" height="41" style={{ objectFit: 'contain', width: '100%', height: '100%' }}/>
-                </div>                 
-            </div>
+
+                  <div class="container-fluid d-flex flex-row align-items-center justify-content-center my-2 py-4">              
+                    <div class="black-white">
+                      <h2 className='why-rent-tittle'>WHY</h2>
+                    </div>
+                    <div class="white-black">
+                      <h2 className='why-rent-tittle'>SHOULD YOU RENT A CAR WITH US?</h2>
+                    </div>
+                  </div>
 
             <div className='col-4  d-flex align-items-center justify-content-center'>
                 <img className='toyota-why-rent' src= {ToyotaFortuner} alt="fortuner" width="500" height="333" style={{ objectFit: 'contain', width: '100%', height: '100%' }}/> 
@@ -48,9 +52,16 @@ function WhyRent () {
 
         <div className='row  hide-on-desktop'>
             <div className='py-4 my-2 d-flex align-items-center justify-content-center'>
-                <div className='container d-flex justify-content-center'>
-                  <img className='w-100' src= {WhyShouldYou} alt="why should you rent" width="800" height="41" style={{ objectFit: 'contain', width: '100%', height: '100%' }}/>
-                </div>                 
+
+                  <div class="container-fluid d-flex flex-row align-items-center justify-content-center my-2 py-4">              
+                    <div class="black-white">
+                      <h2 className='why-rent-tittle'>WHY</h2>
+                    </div>
+                    <div class="white-black">
+                      <h2 className='why-rent-tittle'>SHOULD YOU RENT A CAR WITH US?</h2>
+                    </div>
+                  </div>
+
             </div>
 
             <div className='col-6  d-flex align-items-center justify-content-center'>

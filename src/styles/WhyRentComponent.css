@@ -37,9 +37,81 @@
       font-weight:900;
     }
   }
+/* spanish version */
+.por-que-rentar-tittle{
+  font-size: 40px;
+  font-weight:900;
+  margin: 0;
+}
 
+@media (max-width: 1229px) {
+  .por-que-rentar-tittle {
+    font-size: 33px;
+    font-weight:900;
+  }
+}  
 
+@media (max-width: 1017px) {
+  .por-que-rentar-tittle {
+    font-size: 30px;
+    font-weight:900;
+  }
+}
+@media (max-width: 927px) {
+  .por-que-rentar-tittle {
+    font-size: 28px;
+    font-weight:900;
+  }
+}
 
+@media (max-width: 867px) {
+  .por-que-rentar-tittle {
+    font-size: 25.2px;
+    font-weight:900;
+  }
+}
+
+@media (max-width: 784px) {
+  .por-que-rentar-tittle {
+    font-size: 24px;
+    font-weight:900;
+  }
+}
+
+@media (max-width: 767px) {
+  .por-que-rentar-tittle {
+    font-size: 30px;
+    font-weight:900;
+  }
+}
+@media (max-width: 651px) {
+  .por-que-rentar-tittle {
+    font-size: 26px;
+    font-weight:900;
+  }
+}
+@media (max-width: 590px) {
+  .por-que-rentar-tittle {
+    font-size: 24px;
+    font-weight:900;
+  }
+} 
+@media (max-width: 530px) {
+  .por-que-rentar-tittle {
+    font-size: 21px;
+    font-weight:900;
+  }
+} 
+@media (max-width: 456px) {
+  .por-que-rentar-tittle {
+    font-size: 18px;
+    font-weight:900;
+  }
+  .por-que-rentar-tittle-container{
+    display: flex;
+    flex-direction: column;
+  }
+} 
   /* ------------------------- WHY RENT ----------------------- */
   /* ---------------------------------------- old, need review  */
   

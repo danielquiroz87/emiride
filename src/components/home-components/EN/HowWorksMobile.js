@@ -6,7 +6,7 @@ function HowWorks({elements}) {
   useEffect(() => {
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
-        const index = containerRefs.current.findIndex((ref) => ref.current === entry.target);
+        // const index = containerRefs.current.findIndex((ref) => ref.current === entry.target);
         if (entry.isIntersecting) {
           entry.target.classList.add('fade-in');
         } else {
@@ -35,7 +35,7 @@ function HowWorks({elements}) {
         <div className='container-how-works' ref={containerRefs.current[index]} key={index}> 
             <div className='row'>
             
-                <img className ="w-75" src={element.img} alt="..."/>
+                <img className ="w-75" src={element.img} alt={`${element.title} step`}/>
             
             
                 <b>

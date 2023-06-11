@@ -31,9 +31,53 @@
     }
   }
 
+/* spanish version */
+.mejor-opcion-tittle{
+  font-size: 38px;
+  font-weight:900;
+  margin: 0;
+}
 
+@media (max-width: 832px) {
+  .mejor-opcion-tittle {
+    font-size: 33px;
+    font-weight:900;
+  }
+}
+@media (max-width: 725px) {
+  .mejor-opcion-tittle {
+    font-size: 30px;
+    font-weight:900;
+  }
+}
 
-  
+@media (max-width: 663px) {
+  .mejor-opcion-tittle {
+    font-size: 26px;
+    font-weight:900;
+  }
+}
+
+@media (max-width: 576px) {
+  .mejor-opcion-tittle {
+    font-size: 24px;
+    font-weight:900;
+  }
+}
+
+@media (max-width: 534px) {
+  .mejor-opcion-tittle {
+    font-size: 22px;
+    font-weight:900;
+  }
+}
+
+@media (max-width: 491px) {
+  .mejor-opcion-tittle {
+    font-size: 18px;
+    font-weight:900;
+  }
+}
 /* --------------------- BEST CHOICE ------------------------- */
 /* ---------------------------------------- old, need review   */
 

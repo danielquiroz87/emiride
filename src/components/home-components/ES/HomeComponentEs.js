@@ -8,7 +8,7 @@ import CarouselEs from './CarouselEs';
 import WhyRent from '../ES/WhyToRentWithUs/WhyRent_ES';
 import HowWorks from './HowWorks_ES';
 import HowWorksMobile from './HowWorksMobile_ES';
-import BestChoiceImg from '../../../static/images/BestChoice_ES.webp';
+
 
 import MapComponent from '../../MapComponent';
 
@@ -29,7 +29,7 @@ import Step6 from '../../../static/images/collect-step-6.svg';
 
 import AngleDown from '../../../static/images/angle-down.webp';
 
-import FAQImage from '../../../static/images/FAQ_ES.webp'
+import FAQIcon from '../../../static/images/faq_icon.webp'
 
 import TicketsImageTrigger from '../../../static/images/vi_tr_1_ES.webp';
 import TicketsImageModal from '../../../static/images/vi_c_1_ES.webp';
@@ -183,32 +183,39 @@ function HomeEs () {
           
           <WhyRent/>
           <div className='best-choice-container d-flex  align-items-center'>
-            <div className='d-flex col-8 container align-items-center justify-content-center'>
-              <img className='best-choice-header' src={BestChoiceImg} width="5650" height="302" alt="BestChoice" style={{ objectFit: 'contain', width: '100%', height: '100%' }} />
-            </div>
+          <div class="container-fluid d-flex flex-row align-items-center justify-content-center">              
+                <div class="white-black">
+                  <h2 className='mejor-opcion-tittle'>LA MEJOR OPCIÓN</h2>
+                </div>
+                <div class="black-white">
+                  <h2 className='mejor-opcion-tittle'>PARA RECORRER DUBAI</h2>
+                </div>
+              </div>
           </div>
           <div id="cars-for-rent">
             <CompleteFleet />
+            <div className='container-fluid'>
               <div className='row car-container justify-content-center'>
 
                 <div className='container  d-flex align-items-center justify-content-center flex-column my-4'>
                   <p style={{fontWeight:900}} className="required-documents-title my-2 py-3">PROXIMAMENTE</p>
                 </div>
-                <div className="col-6 col-md-3 col-sm-6">
-                  <CarComponent 
-                    img_src={Urus} 
-                    alt_img={"LAMBORGHINI"}
-                    logo_src={LamborghiniLogo} 
-                    price={"SOON"}
-                    price_msg={"A partir de"} 
-                    marca={"LAMBORGHINI"} 
-                    linea={"URUS"} 
-                    modelo={"2023"}
-                    char_img={lamborghini_char}
-                    link={"/"}
-                  />
+                  <div className="col-8 col-md-4 col-sm-4">
+                    <CarComponent 
+                      img_src={Urus} 
+                      alt_img={"LAMBORGHINI"}
+                      logo_src={LamborghiniLogo} 
+                      price={"SOON"}
+                      price_msg={"A partir de"} 
+                      marca={"LAMBORGHINI"} 
+                      linea={"URUS"} 
+                      modelo={"2023"}
+                      char_img={lamborghini_char}
+                      link={"/"}
+                    />
                   </div>
-              </div>
+                </div>
+            </div>
           </div>
 
         {/* ------------------------- HOW WORKS ----------------------- */}
@@ -273,8 +280,19 @@ function HomeEs () {
           <DocumentsRequired/>
 
           <div className='faq-container d-flex align-items-center'>
-            <div className='d-flex container align-items-center justify-content-center'>
-              <img style={{objectFit:"contain", width:"75%", height:"75%"}}  src={FAQImage} widt="1024" height="95" alt="FAQs"/>
+            <div class="container-fluid d-flex flex-row align-items-center justify-content-center my-4  ">              
+              <div className='FAQ-img-container'>
+                <img className="FAQ-img img-fluid" width='143' height='143' alt='complete fleet for rental'  src={FAQIcon}/>
+              </div>
+              <div className='FAQ-tittle-container'>
+
+                <div class="black-white">
+                  <h3 className='FAQ-tittle'>PREGUNTAS</h3>
+                </div>
+                <div class="white-black">
+                  <h3 className='FAQ-tittle'>FRECUENTES</h3>
+                </div>
+              </div>
             </div>
           </div>
           

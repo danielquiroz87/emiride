@@ -36,9 +36,7 @@ function HowWorks({elements}) {
         <div className='container-how-works' ref={containerRefs.current[index]} key={index}> 
             <div className='row'>
             
-                <img className ="w-75" src={element.img} alt="..."/>
-            
-            
+                <img className ="w-75" src={element.img} alt={`paso ${element.title}`}/>
                 <b>
                 <h3 className='steps-mobile-tittle'>{element.title}</h3>
                 </b>

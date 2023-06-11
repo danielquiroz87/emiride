@@ -30,7 +30,7 @@ function HowWorks({elements}) {
         <div className='container  container-how-works' ref={containerRefs.current[index]} key={index}>
           <div className='row d-flex align-items-center justify-content-center'>
             <div className='col-4 px-0'>
-              <img className ="w-75" src={element.img} alt="..."/>
+              <img className ="w-75" src={element.img} alt={`paso ${element.title}`}/>
             </div>
             <div className='col-8'>
               <b>

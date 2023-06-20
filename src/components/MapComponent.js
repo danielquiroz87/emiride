@@ -1,20 +1,36 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { useLocation } from 'react-router-dom';
 
 function MapComponent({ latitude, longitude }) {
   const mapRef = useRef(null);
   const markerRef = useRef(null);
+  const [shouldLoadMap, setShouldLoadMap] = useState(false);
   const location = useLocation();
 
   useEffect(() => {
-    const shouldLoadMap = location.pathname === '/' || location.pathname === '/inicio';
+    const handleScroll = () => {
+      const { top, bottom } = mapRef.current.getBoundingClientRect();
+      const isIntersecting = top < window.innerHeight && bottom >= 0;
 
+      if (isIntersecting) {
+        setShouldLoadMap(true);
+        window.removeEventListener('scroll', handleScroll);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
+  useEffect(() => {
     if (shouldLoadMap && !window.google) {
       // Load the Google Maps JavaScript API script
       const googleMapsScript = document.createElement('script');
       googleMapsScript.src = `https://maps.googleapis.com/maps/api/js?key=AIzaSyBUh1HZCtb0h9Q3pfvLGyGh5YMOTHl6v-4`;
       googleMapsScript.async = true;
-      googleMapsScript.defer = true;
       googleMapsScript.addEventListener('load', initializeMap);
       window.document.body.appendChild(googleMapsScript);
 
@@ -25,7 +41,7 @@ function MapComponent({ latitude, longitude }) {
     } else if (shouldLoadMap && window.google) {
       initializeMap();
     }
-  }, [location]);
+  }, [shouldLoadMap]);
 
   const initializeMap = () => {
     const map = new window.google.maps.Map(mapRef.current, {
@@ -50,8 +66,8 @@ function MapComponent({ latitude, longitude }) {
   };
 
   return (
-    <div ref={mapRef} style={{ width: '100%', height: '700px', margin:"40px" }}>
-      {location.pathname === '/' || location.pathname === '/inicio' ? null : (
+    <div ref={mapRef} style={{ width: '100%', height: '650px', margin: '40px' }}>
+      {location.pathname === '/' || location.pathname === '/inicio' || location.pathname === '/INICIO' ? null : (
         <p>Map Component should be rendered on the root ("/") or "/inicio" routes.</p>
       )}
     </div>

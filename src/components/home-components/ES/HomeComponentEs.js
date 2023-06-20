@@ -188,7 +188,7 @@ function HomeEs () {
                   <h2 className='mejor-opcion-tittle'>LA MEJOR OPCIÓN</h2>
                 </div>
                 <div class="black-white">
-                  <h2 className='mejor-opcion-tittle'>PARA RECORRER DUBAI</h2>
+                  <h2 className='mejor-opcion-tittle'>PARA RENTAR UN VEHICULO EN DUBAI</h2>
                 </div>
               </div>
           </div>
@@ -296,10 +296,10 @@ function HomeEs () {
               <div className='FAQ-tittle-container'>
 
                 <div class="black-white">
-                  <h3 className='FAQ-tittle'>PREGUNTAS</h3>
+                  <h3 className='FAQ-tittle'>PREGUNTAS FRECUENTES</h3>
                 </div>
                 <div class="white-black">
-                  <h3 className='FAQ-tittle'>FRECUENTES</h3>
+                  <h3 className='FAQ-tittle'>ACERCA DE NUESTRO PROCESO DE RENTA</h3>
                 </div>
               </div>
             </div>

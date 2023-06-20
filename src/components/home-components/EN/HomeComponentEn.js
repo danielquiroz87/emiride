@@ -192,7 +192,7 @@ function HomeEn() {
             {/* <img className='best-choice-header' src={BestChoiceImg} width="5650" height="302" alt="BestChoice" style={{ objectFit: 'contain', width: '100%', height: '100%' }} /> */}
             <div class="container-fluid d-flex flex-row align-items-center justify-content-center">
               <div class="white-black">
-                <h2 className='best-choice-tittle'>BEST RENTING CHOICE</h2>
+                <h2 className='best-choice-tittle'>BEST CAR RENTAL CHOICE</h2>
               </div>
               <div class="black-white">
                 <h2 className='best-choice-tittle'> IN DUBAI</h2>
@@ -308,10 +308,10 @@ function HomeEn() {
               <div className='FAQ-tittle-container'>
 
                 <div class="black-white">
-                  <h3 className='FAQ-tittle'>FREQUENTLY</h3>
+                  <h3 className='FAQ-tittle'>FREQUENTLY ASKED QUESTIONS</h3>
                 </div>
                 <div class="white-black">
-                  <h3 className='FAQ-tittle'>ASKED QUESTIONS</h3>
+                  <h3 className='FAQ-tittle'>ABOUT OUR CAR RENTAL PROCESS</h3>
                 </div>
               </div>
             </div>

@@ -59,7 +59,7 @@ function CarComponent ({img_src,alt_img, logo_src,alt_logo,price,marca,linea,mod
           </div>
 
         </div>
-          <div className='container-fluid px-0'>
+          <div className='container-fluid d-flex align-items-center justify-content-center  px-0'>
 
             <img
                   className='car-charact-img mt-0 mb-4'
@@ -79,9 +79,9 @@ function CarComponent ({img_src,alt_img, logo_src,alt_logo,price,marca,linea,mod
               className={`btn rounded-right-corners px-4 mb-3 ${marca === 'LAMBORGHINI' ? 'bg-gold text-black fw-bold' : 'bg-black text-white'}`}
             >
               {isInicio ? (
-                marca === 'LAMBORGHINI' ? 'Proximamente' : 'Reservar'
+                marca === 'LAMBORGHINI' ? 'Proximamente' : 'Detalles'
               ) : (
-                marca === 'LAMBORGHINI' ? 'Coming Soon' : 'Book Now'
+                marca === 'LAMBORGHINI' ? 'Coming Soon' : 'Details'
               )}
             </button>
                      

@@ -4,14 +4,34 @@
 @import url('./styles/FAQComponent.css');
 @import url('./styles/FooterComponent.css');
 @import url('./styles/HeaderComponent.css');
+@import url('./styles/MapComponent.css');
+@import url('./styles/TermsConditionsComponent.css');
 @import url('./styles/WhyRentComponent.css');
-
 
 /* ------------------------- FORM --------------------------- */
 .form-tittle{
   color: black;
   font-family: 'Poppins',sans-serif;
-  font-weight: 700;
+  font-weight: 900;
+  font-size: 30px;
+  
+}
+@media (max-width:672px) {
+  .form-tittle{
+    font-size: 24px;
+  }
+}
+
+@media (max-width:543px) {
+  .form-tittle{
+    font-size: 20px;
+  }
+}
+
+@media (max-width:465px) {
+  .form-tittle{
+    font-size: 19px;
+  }
 }
 .form-container{
   max-width: 50vw;
@@ -107,7 +127,7 @@
 
 .car-image{
   object-fit: contain;
-  max-width: 80%;
+  max-width: 70%;
 }
 .car-image:hover{
   transform: scale(1.2);
@@ -115,7 +135,7 @@
 }
 .car-charact-img{
   object-fit: contain;
-  max-width: 100%;
+  max-width: 90%;
 }
 .rounded-right-corners {
   border-top-left-radius: 0;
@@ -247,63 +267,6 @@
 }
 
 /* ----------- ANGLE DOWN AFTER HOW WORKS END  ---------------*/
-
-/* -------------------------- MAP --------------------------- */
-.location-widget{
-  position: absolute;
-  top: 30%;
-  left: 50%;
-  z-index: 1;
-}
-
-
-@keyframes pointer-animation {
-  from {
-    transform: translateY(1000%);
-  }
-  to {
-    transform: translateY(0);
-  }
-}
-
-
-.pointer {
-  animation: pointer-animation 1s ease-in-out;
-  transform: translateY(100%);
-  position: absolute;
-  top: 30vh;
-  left: 50vw;
-}
-
-@media (max-width: 768px) { 
-  .pointer{
-    position: absolute;
-    top: 20vh;
-    left: 50vw;
-  }
-}
-.pointer.is-visible {
-  transform: translateY(0);
-  animation: pointer-animation 1s ease-in-out;
-}
-
-.map-image{
-  /* max-width: 100%; */
-  margin-bottom: 5vh;
-  margin-top: 5vh;
-}
-/* @media (max-width: 576px) { 
-  .map-image{
-    max-width: 100%;  
-  }
-
-  .pointer {
-   max-width: 100%;
-  }
-
- } */
-
-/* -------------------------- MAP END ----------------------- */
 
 /* --------------------- REQUIRED DOCUMENTS ----------------- */
 .required-documents{

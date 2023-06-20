@@ -61,7 +61,7 @@ function CompleteFleet () {
     <div className='container-fluid car-container d-flex py-4'>
         <div className='row py-2 mx-3 px-2 align-items-center justify-content-center'>
           <div className="col-10 col-md-4 col-sm-4">
-            <CarComponent 
+            <CarComponent className="py-2" 
                 img_src={Picanto} 
                 alt_img={"PICANTO"}
                 logo_src={KiaLogo} 
@@ -75,7 +75,7 @@ function CompleteFleet () {
                 />
           </div>
           <div className="col-10 col-md-4 col-sm-4">
-            <CarComponent 
+            <CarComponent className="py-2" 
                 img_src={Mitsubishi} 
                 alt_img={"MITSUBISHI"}
                 logo_src={MitsubishiLogo} 
@@ -89,7 +89,7 @@ function CompleteFleet () {
                 />
           </div>
           <div className="col-10 col-md-4 col-sm-4">
-            <CarComponent 
+            <CarComponent className="py-2" 
                 img_src={KiaPegas}   
                 alt_img={"KIA"}
                 logo_src={KiaLogo}        
@@ -103,7 +103,7 @@ function CompleteFleet () {
                 />
           </div>
           <div className="col-10 col-md-4 col-sm-4">
-            <CarComponent 
+            <CarComponent className="py-2" 
                 img_src={Accent}     
                 alt_img={"ACCENT"}
                 logo_src={HyundaiLogo}     
@@ -117,7 +117,7 @@ function CompleteFleet () {
                 />
           </div>
           <div className="col-10 col-md-4 col-sm-4">
-            <CarComponent 
+            <CarComponent className="py-2" 
                 img_src={Elantra}    
                 alt_img={"ELANTRA"}
                 logo_src={HyundaiLogo}    
@@ -132,7 +132,7 @@ function CompleteFleet () {
           </div>
 
           <div className="col-10 col-md-4 col-sm-4">
-            <CarComponent 
+            <CarComponent className="py-2" 
                 img_src={Creta} 
                 alt_img={"HYUNDAI"}
                 logo_src={HyundaiLogo} 
@@ -146,7 +146,7 @@ function CompleteFleet () {
                 />
           </div>
           <div className="col-10 col-md-4 col-sm-4">
-            <CarComponent 
+            <CarComponent className="py-2" 
                 img_src={Santafe} 
                 alt_img={"SANTAFE"}
                 logo_src={HyundaiLogo} 
@@ -160,7 +160,7 @@ function CompleteFleet () {
                 />
           </div>
           <div className="col-10 col-md-4 col-sm-4">
-            <CarComponent 
+            <CarComponent className="py-2" 
                 img_src={Xterra} 
                 alt_img={"NISSAN"}
                 logo_src={NissanLogo} 
@@ -174,7 +174,7 @@ function CompleteFleet () {
                 />
           </div>
           <div className="col-10 col-md-4 col-sm-4">
-            <CarComponent 
+            <CarComponent className="py-2" 
                 img_src={Fortuner} 
                 alt_img={"TOYOTA"}
                 logo_src={ToyotaLogo} 

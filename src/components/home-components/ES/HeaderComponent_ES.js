@@ -32,7 +32,7 @@ const Header = () => {
       </a>
       <a className="navbar-brand d-sm-none" href="/">
         {/* <img src={mobileLogo} alt="Logo" className="d-inline-block align-text-top header-logo"/> */}
-        <img src={window.location.pathname === "/about-us" || window.location.pathname === "/privacy-policy" ? mobileLogoBW : mobileLogo} alt="Logo" className="d-inline-block align-text-top header-logo"/>
+        <img src={window.location.pathname === "/sobre-nosotros" || window.location.pathname === "/politica-privacidad" || window.location.pathname === "/terminos-condiciones" ? mobileLogoBW : mobileLogo} alt="Logo" className="d-inline-block align-text-top header-logo"/>
       </a>
     </div>
     
@@ -43,7 +43,7 @@ const Header = () => {
     <div className={`collapse navbar-collapse ${isOpen ? 'show navbar-content-open' : ''}`} id="navbarNav">
       <ul className="navbar-nav ms-auto">
         <li className="nav-item mx-2 active">
-          <a className={`nav-link header-text ${isOpen ? 'header-text-open':''}`} href="/">INICIO</a>
+          <a className={`nav-link header-text ${isOpen ? 'header-text-open':''}`} href="/inicio">INICIO</a>
         </li>
         <li className="nav-item mx-2">
           <a className={`nav-link header-text ${isOpen ? 'header-text-open':''}`} href="/inicio#cars-for-rent">CARROS EN ALQUILER</a>

@@ -37,7 +37,7 @@ const Header = () => {
       </a>
       <a className="navbar-brand d-sm-none" href="/">
         {/* <img src={mobileLogo} alt="Logo" className="d-inline-block align-text-top header-logo"/> */}
-        <img src={window.location.pathname === "/about-us" || window.location.pathname === "/privacy-policy" ? mobileLogoBW : mobileLogo} alt="Logo" className="d-inline-block align-text-top header-logo"/>
+        <img src={window.location.pathname === "/about-us" || window.location.pathname === "/privacy-policy" ||window.location.pathname === "/terms-conditions"? mobileLogoBW : mobileLogo} alt="Logo" className="d-inline-block align-text-top header-logo"/>
       </a>
     </div>
     

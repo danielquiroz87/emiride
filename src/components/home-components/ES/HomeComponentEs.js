@@ -269,8 +269,17 @@ function HomeEs () {
               // style={{ objectFit: 'contain', width: '100%', height: '100%' }}
             />
           </div>
+
+          <div class="container-fluid d-flex flex-row align-items-center justify-content-center">
+            <div class="white-black">
+              <h2 className='map-tittle'>CONOCE NUESTRA</h2>
+            </div>
+            <div class="black-white">
+              <h2 className='map-tittle'>UBICACIÓN</h2>
+            </div>
+          </div>
           <div className="d-flex align-items-center justify-content-center" >
-            <MapComponent />
+            <MapComponent latitude={25.2523202169424} longitude={55.334763524835} />
           </div>
 
           <div className='container required-documents d-flex align-items-center justify-content-center flex-column'>

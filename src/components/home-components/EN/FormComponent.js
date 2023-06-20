@@ -38,7 +38,7 @@ function FormComponent(){
 
         <form className="form-container" id="booking-form" onSubmit={handleSubmit}>
         <div className="container">
-            <h3 className="py-3 form-tittle">MAKE YOUR RESERVATION</h3>
+            <h1 className="py-3 form-tittle">RESERVE YOUR VEHICLE IN DUBAI</h1>
             <div className="row">
                 <div className="col-6">
                     <div className="form-group">

@@ -17,7 +17,7 @@ function TermsConditions(){
             </Helmet>
             <Header/>
             <div className="about-us-container">
-                <p className="about-us-tittle pt-4">TERMS AND CONDITIONS</p>
+                <p className="about-us-tittle pt-4">E M I RIDE RENT A CAR TERMS AND CONDITIONS</p>
             <div className="about-us-text mx-4">
     
                 <p className="mx-2 mt-4 pt-4">
@@ -112,33 +112,70 @@ function TermsConditions(){
                         <br/><b>1.</b>The quote sent by E M I Ride Rent a car will include the following: all mandatory charges that are required for the reservation, 5% VAT will be applied, or any other additional tax that is applied by government authorities.
                         <br/><b>2.</b>E M I Ride Rent a car reserves the right to modify the terms and conditions set forth in this document, including rates. This modification may be made at any time without prior notice and will take effect once they are published on our website and other service channels.
                         <br/><b>3.</b>Permitted mileage
-                        <br/><b>4.</b>Daily rentals (1-6 days).
-                        <br/>The daily mileage allowed is 250 KM. Any additional will be charged AED 0.40/KM (kia Pegas y Mitsubichi Attrage), AED 0.44/KM (Hyundai Accent and Hyundai Elantra), AED 0.97/KM (Hyundai Santafe), AED 1.17/KM (Nissan Xterra), AED 1.23/KM (Toyota Fortuner) to hirer.
                     </span>
                 </p>
-                <p className="mx-2 mt-4 pt-4">
-                    <strong  style={{fontWeight:700}}>1. Weekly Rentals (7-20 days).</strong>
+                <p className="one-tab mx-2 mt-4 pt-4">
+                    <strong  style={{fontWeight:700}}>3.1. Daily Rentals (1-6 days).</strong>
                 </p>
-                <p className="py-1 mx-2 " style={{fontWeight:600}}>
-                    <span  style={{fontWeight:400}}>The weekly mileage allowed is 1500KM (for Kia Pegas, Mitsubichi Attrage,  Hyundai Accent and Hyundai Elantra), 1750KM (for Hyundai Santafe, Nissan Xterra, Toyota Fortuner). Any additional will be charged AED 0.40/KM (kia Pegas), AED 0.44/KM (Hyundai Accent), AED 0.97/KM (Hyundai Santafe), AED 1.17/KM (Nissan Xterra), AED 1.23/KM (Toyota Fortuner) to hirer.</span>
+                <p className="py-1 mx-2 one-tab" style={{fontWeight:600}}>
+                    <span  style={{fontWeight:400}}>The daily mileage allowed is 250 KM. Any additional will be charged Kia Picanto (AED 0.50/Km), Kia Pegas (AED 0.50/Km), Mitsubishi Attrage (AED 0.46/Km), Hyundai Accent (AED 0.57/Km),  Hyundai Creta (AED 0.77/Km), for the following, the daily mileage allowed is 300 KM and the amount to be charged will be: Hyundai Santafe (AED 1.09/Km), Nissan X-Terra (AED 1.22/Km), Toyota Fortuner (AED 1.33/Km).</span>
                 </p>
-                <p className="mx-2 mt-4 pt-4">
-                    <strong  style={{fontWeight:700}}>2. Monthly Rentals (21 or more days).</strong>
+                <p className="one-tab mx-2 mt-4 pt-4">
+                    <strong  style={{fontWeight:700}}>3.2. Weekly Rentals (7-20 days).</strong>
                 </p>
-                <p className="py-1 mx-2 " style={{fontWeight:600}}>
+                <p className="py-1 mx-2 one-tab" style={{fontWeight:600}}>
+                    <span  style={{fontWeight:400}}>The weekly mileage allowed is 1.500 KM Any additional will be charged Kia Picanto (AED 0.50/Km), Kia Pegas (AED 0.50/Km), Mitsubishi Attrage (AED 0.46/Km), Hyundai Accent (AED 0.57/Km),  Hyundai Creta (AED 0.77/Km), for the following, the daily mileage allowed is 1.750 KM and the amount to be charged will be: Hyundai Santafe (AED 1.09/Km), Nissan X-Terra (AED 1.22/Km), Toyota Fortuner (AED 1.33/Km).</span>
+                </p>
+                <p className="one-tab mx-2 mt-4 pt-4">
+                    <strong  style={{fontWeight:700}}>3.3. Monthly Rentals (21 or more days).</strong>
+                </p>
+                <p className="py-1 mx-2 one-tab" style={{fontWeight:600}}>
                     <span  style={{fontWeight:400}}>
-                    Allowable monthly mileage is 4000KM (for Kia Pegas, Mitsubichi Attrage, Hyundai Accent and Hyundai Elantra), 4500KM (for Hyundai Santafe, Nissan Xterra, Toyota Fortuner). Any additional will be charged AED 0.40/KM (kia Pegas), AED 0.44/KM (Hyundai Accent), AED 0.97/KM (Hyundai Santafe), AED 1.17/KM (Nissan Xterra), AED 1.23/KM (Toyota Fortuner) to hirer.
-                    <br/><b>1.</b>In the event that the hirer incurs or receives a penalty or traffic fines from the police or the Traffic Department (RTA) during the rental period stipulated in the contract,          E M I Ride Rent a car is authorized to debit the cost of said penalties of the hirer’s credit card plus 10% as an internal management fee of the company, which will be the only one authorized to process the payment of said sanctions or fines. 
-                    <br/><b>2.</b>The Salik/Darb toll fee will be AED5.00 including VAT and 20% handling fees for each time the vehicle crosses the established tolls gates.
-                    <br/><b>3.</b>All fines incurred during the rental period will be the responsibility of the renter. an additional 10% will be charge as handling fee for each traffic violation incurred by the hirer.
-                    <br/><b>4.</b>In the event that the traffic offense committed is attributable and the vehicle may be confiscated by the Police, E M I Ride Rent a car will ensure that the fines or penalties are paid to avoid the seizure of the vehicle. All charges or confiscation fees must be paid by the hirer, as well as all additional costs that may be generated 30 days later, it will be automatically processed from the hirer’s credit card without any notification.
-                    <br/><b>5.</b>E M I Ride Rent a car will not generate any additional cost for (01 additional driver for each reservation), if 2 or more additional drivers are required within the reservation, the cost for each one will be AED 50.
-                    <br/><b>6.</b>E M I Ride Rent a car may apply additional administrative charges if an additional assistance is required such as: copy of the final police report, copies of traffic tickets, release of the vehicle for having been impounded, driving while intoxicated, translation of required documents, etc.
-                    <br/><b>7.</b>E M I Ride Rent a car may apply service charges if the vehicle is returned by the hirer in a condition that requires specialized cleaning in the amount of AED 200 for sedans and AED 250 for SUVs.
-                    <br/><b>8.</b>E M I Ride Rent a car may apply additional charges for any assistance required for the recovery of the vehicle due to the negligence or default of the hirer.
-                    <br/><b>9.</b>The hirer will pay to E M I Ride Rent a car the agreed rates during the term of the rental agreement, in case of renewal or if the hirer cannot return the vehicle at the termination or expiration of the contract agreement, a new rate will be charged according to at the rental rates in effect at that time.
-                    <br/><b>10.</b>The hirer authorizes E M I Ride Rent a car to process any additional charges during the rental period such as: traffic fines, salik-darb fees from the toll system, damage or loss, additional costs for non-compliance with the gasoline policy, etc.  of the hirer’s credit card registered in the rental agreement.
-                    <br/><b>11.</b>The price of additional services such as (GPS, child seats, CDW-SCDW among others), will be displayed on our website upon request.
+                    Allowable monthly mileage is 4.000 KM. Any additional will be charged Kia Picanto (AED 0.50/Km), Kia Pegas (AED 0.50/Km), Mitsubishi Attrage (AED 0.46/Km), Hyundai Accent (AED 0.57/Km),  Hyundai Creta (AED 0.77/Km), for the following, the daily mileage allowed is 4.500 KM and the amount to be charged will be: Hyundai Santafe (AED 1.09/Km), Nissan X-Terra (AED 1.22/Km), Toyota Fortuner (AED 1.33/Km).
+                    </span>
+                </p>
+
+                <p className="py-1 mx-2" style={{fontWeight:600}}>
+                    <span  style={{fontWeight:400}}>
+                    <br/><b>4.</b>In the event that the hirer incurs or receives a penalty or traffic fines from the police or the Traffic Department (RTA) during the rental period stipulated in the contract,          E M I Ride Rent a car is authorized to debit the cost of said penalties of the hirer’s credit card plus 10% as an internal management fee of the company, which will be the only one authorized to process the payment of said sanctions or fines. 
+                    <br/><b>5.</b>The Salik/Darb toll fee will be AED5.00 including VAT and 20% handling fees for each time the vehicle crosses the established tolls gates.
+                    <br/><b>6.</b>All fines incurred during the rental period will be the responsibility of the renter. an additional 10% will be charge as handling fee for each traffic violation incurred by the hirer.
+                    <br/><b>7.</b>In the event that the traffic offense committed is attributable and the vehicle may be confiscated by the Police, E M I Ride Rent a car will ensure that the fines or penalties are paid to avoid the seizure of the vehicle. All charges or confiscation fees must be paid by the hirer, as well as all additional costs that may be generated 30 days later, it will be automatically processed from the hirer’s credit card without any notification.
+                    <br/><b>8.</b>E M I Ride Rent a car will not generate any additional cost for (01 additional driver for each reservation), if 2 or more additional drivers are required within the reservation, the cost for each one will be AED 50.
+                    <br/><b>9.</b>E M I Ride Rent a car may apply additional administrative charges if an additional assistance is required such as: copy of the final police report, copies of traffic tickets, release of the vehicle for having been impounded, driving while intoxicated, translation of required documents, etc.
+                    <br/><b>10.</b>E M I Ride Rent a car may apply service charges if the vehicle is returned by the hirer in a condition that requires specialized cleaning in the amount of AED 200 for sedans and AED 250 for SUVs.
+                    <br/><b>11.</b>E M I Ride Rent a car may apply additional charges for any assistance required for the recovery of the vehicle due to the negligence or default of the hirer.
+                    <br/><b>12.</b>The hirer will pay to E M I Ride Rent a car the agreed rates during the term of the rental agreement, in case of renewal or if the hirer cannot return the vehicle at the termination or expiration of the contract agreement, a new rate will be charged according to at the rental rates in effect at that time.
+                    <br/><b>13.</b>The hirer authorizes E M I Ride Rent a car to process any additional charges during the rental period such as: traffic fines, salik-darb fees from the toll system, damage or loss, additional costs for non-compliance with the gasoline policy, etc.  of the hirer’s credit card registered in the rental agreement.
+                    <br/><b>14.</b>The price of additional services such as (GPS, child seats, CDW-SCDW among others), will be displayed on our website upon request.
+                    <br/><b>15.</b>In case of having fines or any additional procedure generated to the vehicle while the Rental Agreement and it is necessary to carry out any kind of procedure before the regulatory entities, a fee will be charged depending on the Emirate where the procedure has to be carried out:
+                    <ul>
+                        <li>
+                            For Abu Dhabi AED 300 + VAT
+                        </li>
+                        <li>
+                            To Dubai AED 150 + VAT
+                        </li>
+                        <li>
+                            To Ajman AED 300 + VAT
+                        </li>
+                        <li>
+                            For Fujairah AED 300 + VAT
+                        </li>
+                        <li>
+                            To Ras Al Khaimah AED 300 + VAT
+                        </li>
+                        <li>
+                            To Sharjah AED 200 + VAT
+                        </li>
+                        <li>
+                            For Umm Al Quwain. AED 300 + VAT
+                        </li>
+
+                    </ul>
+This value will be assumed by the client. Emi Ride Rent a Car, will be in charge of managing any additional procedures and will proceed to charge the equivalent of the expenses to the client.
+
+                    
                     </span>
                 </p>
                 <p className="mx-2 mt-4 pt-4">

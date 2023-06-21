@@ -41,15 +41,15 @@ import CompleteFleetImg from '../../../../static/images/know-fleet-img.webp';
 function CompleteFleet () {
   return (
     <>
-      <div class="container-fluid d-flex flex-row align-items-center justify-content-center my-4  ">              
+      <div className="container-fluid d-flex flex-row align-items-center justify-content-center my-4  ">              
         <div className='flota-completa-img-container'>
           <img className="flota-completa-img img-fluid" width='139' height='148' alt='complete fleet for rental'  src={CompleteFleetImg}/>
         </div>
         <div className='flota-completa-tittle-container'>
-          <div class="black-white">
+          <div className="black-white">
             <h2 className='flota-completa-tittle'>CONOCE</h2>
           </div>
-          <div class="white-black">
+          <div className="white-black">
             <h2 className='flota-completa-tittle'>NUESTRA FLOTA</h2>
           </div>
         </div>

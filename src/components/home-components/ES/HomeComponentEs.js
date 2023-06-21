@@ -183,11 +183,11 @@ function HomeEs () {
           
           <WhyRent/>
           <div className='best-choice-container d-flex  align-items-center'>
-          <div class="container-fluid d-flex flex-row align-items-center justify-content-center">              
-                <div class="white-black">
+          <div className="container-fluid d-flex flex-row align-items-center justify-content-center">              
+                <div className="white-black">
                   <h2 className='mejor-opcion-tittle'>LA MEJOR OPCIÓN</h2>
                 </div>
-                <div class="black-white">
+                <div className="black-white">
                   <h2 className='mejor-opcion-tittle'>PARA RENTAR UN VEHICULO EN DUBAI</h2>
                 </div>
               </div>
@@ -270,11 +270,11 @@ function HomeEs () {
             />
           </div>
 
-          <div class="container-fluid d-flex flex-row align-items-center justify-content-center">
-            <div class="white-black">
+          <div className="container-fluid d-flex flex-row align-items-center justify-content-center">
+            <div className="white-black">
               <h2 className='map-tittle'>CONOCE NUESTRA</h2>
             </div>
-            <div class="black-white">
+            <div className="black-white">
               <h2 className='map-tittle'>UBICACIÓN</h2>
             </div>
           </div>
@@ -289,16 +289,16 @@ function HomeEs () {
           <DocumentsRequired/>
 
           <div className='faq-container d-flex align-items-center'>
-            <div class="container-fluid d-flex flex-row align-items-center justify-content-center my-4  ">              
+            <div className="container-fluid d-flex flex-row align-items-center justify-content-center my-4  ">              
               <div className='FAQ-img-container'>
                 <img className="FAQ-img img-fluid" width='143' height='143' alt='complete fleet for rental'  src={FAQIcon}/>
               </div>
               <div className='FAQ-tittle-container'>
 
-                <div class="black-white">
+                <div className="black-white">
                   <h3 className='FAQ-tittle'>PREGUNTAS FRECUENTES</h3>
                 </div>
-                <div class="white-black">
+                <div className="white-black">
                   <h3 className='FAQ-tittle'>ACERCA DE NUESTRO PROCESO DE RENTA</h3>
                 </div>
               </div>

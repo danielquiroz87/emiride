@@ -19,11 +19,11 @@ function WhyRent () {
     <div className='why_rent container-fluid my-4 py-4'>
         <div className='row hide-on-mobile why-rent-show-tablet'>
 
-          <div class="container-fluid d-flex flex-row align-items-center justify-content-center my-2 py-4">              
-            <div class="black-white">
+          <div className="container-fluid d-flex flex-row align-items-center justify-content-center my-2 py-4">              
+            <div className="black-white">
               <h2 className='por-que-rentar-tittle'>¿POR QUÉ DEBERIAS</h2>
             </div>
-            <div class="white-black">
+            <div className="white-black">
               <h2 className='por-que-rentar-tittle'>RENTAR UN VEHICULO CON NOSOTROS?</h2>
             </div>
           </div>
@@ -51,12 +51,12 @@ function WhyRent () {
 
         <div className='row  hide-on-desktop'>
             <div className='py-4 my-2 d-flex align-items-center justify-content-center'>
-              <div class="container-fluid d-flex flex-row align-items-center justify-content-center my-2 py-4">              
+              <div className="container-fluid d-flex flex-row align-items-center justify-content-center my-2 py-4">              
                 <div className='por-que-rentar-tittle-container'>
-                  <div class="black-white">
+                  <div className="black-white">
                     <h2 className='por-que-rentar-tittle'>¿POR QUÉ DEBERIAS</h2>
                   </div>
-                  <div class="white-black">
+                  <div className="white-black">
                     <h2 className='por-que-rentar-tittle'>RENTAR UN VEHICULO CON NOSOTROS?</h2>
                   </div>
                 </div>

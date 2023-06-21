@@ -42,15 +42,15 @@ function CompleteFleet () {
         {/* <img className='complete-fleet-img my-2' src={CompleteFleetImg} alt="complete fleet" />  */}
         {/*width="1024" height="148"*/}
 
-        <div class="container-fluid d-flex flex-row align-items-center justify-content-center my-4  ">              
+        <div className="container-fluid d-flex flex-row align-items-center justify-content-center my-4  ">              
           <div className='complete-fleet-img-container'>
             <img className="complete-fleet-img img-fluid" width='139' height='148' alt='complete fleet for rental'  src={CompleteFleetImg}/>
           </div>
           <div className='complete-fleet-tittle-container'>
-            <div class="black-white">
+            <div className="black-white">
               <h2 className='complete-fleet-tittle'>KNOW OUR</h2>
             </div>
-            <div class="white-black">
+            <div className="white-black">
               <h2 className='complete-fleet-tittle'>COMPLETE FLEET</h2>
             </div>
           </div>

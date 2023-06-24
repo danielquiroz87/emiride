@@ -2,10 +2,6 @@ import React, {useState} from 'react';
 
 import ToyotaFortuner from '../../../../static/images/Fortuner-2022-SuperBlanco.webp';
 
-import pickup_dropoff from '../../../../static/images/dropoff_ES.webp';
-import additional_driver from '../../../../static/images/additionaldriver_ES.webp';
-import assistance_24h from '../../../../static/images/assistance_ES.webp';
-import insurance_policy from '../../../../static/images/assurance_ES.webp';
 
 import reason1 from '../../../../static/images/C1_ES.webp';
 import reason2 from '../../../../static/images/C2_ES.webp';
@@ -92,7 +88,7 @@ function WhyRent () {
                       <WhyRentReasons img_src={assistance_reason} reason={"Asistencia vial por daños"} img_alt={"Asistencia vial por daños"}/>
                     </div>
                     
-                    <div className="mb-2"  onMouseOver={() => setHoverImage(reason3)}>
+                    <div className="mb-2"  onMouseOver={() => setHoverImage(reason4)}>
                       <WhyRentReasons img_src={insurance_reason} reason={"Póliza de seguro"} img_alt={"Póliza de seguro"}/>
                     </div> 
                   </div>

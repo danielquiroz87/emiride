@@ -2,12 +2,6 @@ import React, {useState} from 'react';
 
 import ToyotaFortuner from '../../../../static/images/Fortuner-2022-SuperBlanco.webp';
 
-
-import pickup_dropoff from '../../../../static/images/Drop-off-1024x253.webp';
-import additional_driver from '../../../../static/images/for-free-1024x253.webp';
-import assistance_24h from '../../../../static/images/assistance-1024x253.webp';
-import insurance_policy from '../../../../static/images/Insurance-1024x253.webp';
-
 import reason1 from '../../../../static/images/sde1.webp';
 import reason2 from '../../../../static/images/sde2.webp';
 import reason3 from '../../../../static/images/sde3.webp';
@@ -50,7 +44,7 @@ function WhyRent () {
                       <WhyRentReasons img_src={assistance_reason} reason={"Breakdown road side assistance"} img_alt={"Breakdown road side assistance"}/>
                     </div>
                     
-                    <div className="mb-2"  onMouseOver={() => setHoverImage(reason3)}>
+                    <div className="mb-2"  onMouseOver={() => setHoverImage(reason4)}>
                       <WhyRentReasons img_src={insurance_reason} reason={"Insurance policy"} img_alt={"Insurance policy"}/>
                     </div>
                   
@@ -96,7 +90,7 @@ function WhyRent () {
                       <WhyRentReasons img_src={assistance_reason} reason={"Breakdown road side assistance"} img_alt={"Breakdown road side assistance"}/>
                     </div>
                     
-                    <div className="mb-2"  onMouseOver={() => setHoverImage(reason3)}>
+                    <div className="mb-2"  onMouseOver={() => setHoverImage(reason4)}>
                       <WhyRentReasons img_src={insurance_reason} reason={"Insurance policy"} img_alt={"Insurance policy"}/>
                     </div>
 

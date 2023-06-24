@@ -162,3 +162,131 @@
 }
 
 /* ---------------------- WHY RENT END ----------------------- */
+
+
+/* --------------- why rent reasons -------------------------- */
+
+
+
+.textContainer {
+  background-color: black;
+  color: white;
+
+}
+.textContainer p{
+  margin:0;
+  font-weight: 600;
+  font-size:18px ;
+}
+
+@media (max-width: 958px) {
+  .textContainer p {
+    font-weight: 600;
+    font-size:16px ;
+  }
+}
+@media (max-width: 888px) {
+  .textContainer p {
+    font-weight: 600;
+    font-size:14px ;
+  }
+}
+
+@media (max-width: 805px) {
+  .textContainer p {
+    font-weight: 600;
+    font-size:13px ;
+  }
+}
+
+@media (max-width: 761px) {
+  .textContainer p {
+    font-weight: 600;
+    font-size:18px ;
+  }
+}
+@media (max-width: 512px) {
+  .textContainer p {
+    font-weight: 600;
+    font-size:16px ;
+  }
+}
+ 
+@media (max-width: 466px) {
+  .textContainer p {
+    font-weight: 600;
+    font-size:12.5px ;
+  }
+}
+
+.imageContainer img {
+  max-width: 100%;
+  height: auto;
+}
+
+.col-reasons {
+  flex: 1; /* additionally, equal width */
+}
+
+.why-rent-reasons-container:hover{
+  transform: scale(1.2);
+  transition: all .6s;
+}
+
+/* SPANISH VERSION */
+
+.textContainerEs {
+  background-color: black;
+  color: white;
+
+}
+.textContainerEs p{
+  margin:0;
+  font-weight: 600;
+  font-size:16.5px ;
+}
+@media (max-width: 1020px) {
+  .textContainerEs p {
+    font-weight: 600;
+    font-size:15px ;
+  }
+}
+@media (max-width: 958px) {
+  .textContainerEs p {
+    font-weight: 600;
+    font-size:14px ;
+  }
+}
+@media (max-width: 888px) {
+  .textContainerEs p {
+    font-weight: 600;
+    font-size:13px ;
+  }
+}
+
+@media (max-width: 805px) {
+  .textContainerEs p {
+    font-weight: 600;
+    font-size:12px ;
+  }
+}
+
+@media (max-width: 761px) {
+  .textContainerEs p {
+    font-weight: 600;
+    font-size:15.1px ;
+  }
+}
+@media (max-width: 512px) {
+  .textContainerEs p {
+    font-weight: 600;
+    font-size:13.2px ;
+  }
+}
+ 
+@media (max-width: 466px) {
+  .textContainerEs p {
+    font-weight: 600;
+    font-size:11px ;
+  }
+}

@@ -212,7 +212,7 @@ function HomeEn() {
                 <div className='container  d-flex align-items-center justify-content-center flex-column my-4'>
                   <p style={{ fontWeight: 900 }} className="required-documents-title my-2 py-3">COMING SOON</p>
                 </div>
-                <div className="col-8 col-md-4 col-sm-4">
+                <div className="col-10 px-3 col-md-4 col-sm-4">
                   <CarComponent
                     img_src={Urus}
                     alt_img={"LAMBORGHINI"}

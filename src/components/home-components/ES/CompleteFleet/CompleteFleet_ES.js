@@ -1,4 +1,4 @@
-import React from 'react';
+import React ,{useState,useEffect}from 'react';
 import CarComponent from '../../../CarComponent';
 
 import Mitsubishi from '../../../../static/images/mitsubishi.webp';
@@ -40,8 +40,28 @@ import CompleteFleetImg from '../../../../static/images/know-fleet-img.webp';
 
 import MobileCarousel from './MobileCarouselComponent';
 function CompleteFleet () {
-  return (
-    <>
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    function handleResize() {
+      setIsMobile(window.innerWidth <= 767 || window.innerWidth === 767); // Adjust the breakpoint value as needed
+    }
+
+    // Add event listener to handle window resize
+    window.addEventListener('resize', handleResize);
+
+    // Initial check on component mount
+    handleResize();
+
+    // Clean up the event listener on component unmount
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
+  if (isMobile){
+    return (
+      <>
       <div className="container-fluid d-flex flex-row align-items-center justify-content-center my-4  ">              
         <div className='flota-completa-img-container'>
           <img className="flota-completa-img img-fluid" width='139' height='148' alt='complete fleet for rental'  src={CompleteFleetImg}/>
@@ -59,6 +79,29 @@ function CompleteFleet () {
     <div className='car-container'>
       <MobileCarousel/>
     </div>
+      </>
+    );
+  }
+  else{
+
+  
+  return (
+    <>
+      <div className="container-fluid d-flex flex-row align-items-center justify-content-center my-4  ">              
+        <div className='flota-completa-img-container'>
+          <img className="flota-completa-img img-fluid" width='139' height='148' alt='complete fleet for rental'  src={CompleteFleetImg}/>
+        </div>
+        <div className='flota-completa-tittle-container'>
+          <div className="black-white">
+            <h2 className='flota-completa-tittle'>CONOCE</h2>
+          </div>
+          <div className="white-black">
+            <h2 className='flota-completa-tittle'>NUESTRA FLOTA</h2>
+          </div>
+        </div>
+      </div>
+
+
 
     <div className=' container-fluid car-container d-flex py-4'>
         <div className='row py-2 mx-3 px-2 align-items-center justify-content-center'>
@@ -207,6 +250,7 @@ function CompleteFleet () {
     </div>     
     </> 
   );
+  }
 };
 
 export default CompleteFleet;

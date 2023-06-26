@@ -38,6 +38,7 @@ import fortuner_char from '../../../../static/images/fortuner_ch_es.webp';
 
 import CompleteFleetImg from '../../../../static/images/know-fleet-img.webp';
 
+import MobileCarousel from './MobileCarouselComponent';
 function CompleteFleet () {
   return (
     <>
@@ -54,7 +55,10 @@ function CompleteFleet () {
           </div>
         </div>
       </div>
-    
+
+    <div className='car-container'>
+      <MobileCarousel/>
+    </div>
 
     <div className=' container-fluid car-container d-flex py-4'>
         <div className='row py-2 mx-3 px-2 align-items-center justify-content-center'>

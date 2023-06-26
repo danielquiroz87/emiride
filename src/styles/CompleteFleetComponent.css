@@ -154,3 +154,20 @@
 
     }
   }
+
+
+
+  /* the carousel */
+
+
+  @media (min-width: 767px) {
+    .hide-carousel-on-desktop {
+        display: none ;
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .hide-fleet-on-mobile {
+        display: none;
+    }
+  }

@@ -1,6 +1,5 @@
-import React from 'react';
+import React, { useState, useEffect} from 'react';
 import CarComponent from '../../../CarComponent';
-
 import Mitsubishi from '../../../../static/images/mitsubishi.webp';
 import MitsubishiLogo from '../../../../static/images/Mitsubishi_logo_g.webp'
 
@@ -33,9 +32,60 @@ import ss4 from '../../../../static/images/sss4.webp';
 import picanto_char from '../../../../static/images/picanto_char.webp'
 
 import CompleteFleetImg from '../../../../static/images/know-fleet-img.webp';
-
+import MobileCarousel from './MobileCarouselComponent';
 
 function CompleteFleet () {
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    function handleResize() {
+      setIsMobile(window.innerWidth <= 767 || window.innerWidth === 767); // Adjust the breakpoint value as needed
+    }
+
+    // Add event listener to handle window resize
+    window.addEventListener('resize', handleResize);
+
+    // Initial check on component mount
+    handleResize();
+
+    // Clean up the event listener on component unmount
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
+  if (isMobile){
+    return(
+      <>
+      <div className='container-fluid d-flex mt-4 col mx-0 px-0 '>
+          {/* <img className='complete-fleet-img my-2' src={CompleteFleetImg} alt="complete fleet" />  */}
+          {/*width="1024" height="148"*/}
+  
+          <div className="container-fluid d-flex flex-row align-items-center justify-content-center my-4  ">              
+            <div className='complete-fleet-img-container'>
+              <img className="complete-fleet-img img-fluid" width='139' height='148' alt='complete fleet for rental'  src={CompleteFleetImg}/>
+            </div>
+            <div className='complete-fleet-tittle-container'>
+              <div className="black-white">
+                <h2 className='complete-fleet-tittle'>KNOW OUR</h2>
+              </div>
+              <div className="white-black">
+                <h2 className='complete-fleet-tittle'>COMPLETE FLEET</h2>
+              </div>
+            </div>
+          </div>
+          
+      </div>
+      <div className='car-container hide-carousel-on-desktop'>
+        <MobileCarousel/>
+      </div>
+       
+      </> 
+    )
+  }
+  else{
+
+  
   return (
     <>
     <div className='container-fluid d-flex mt-4 col mx-0 px-0 '>
@@ -57,8 +107,11 @@ function CompleteFleet () {
         </div>
         
     </div>
+    <div className='car-container hide-carousel-on-desktop'>
+      <MobileCarousel/>
+    </div>
 
-    <div className='container-fluid car-container d-flex py-4'>
+    <div className='container-fluid car-container d-flex py-4 hide-fleet-on-mobile'>
         <div className='row py-2 mx-3 px-2 align-items-center justify-content-center'>
           <div className="col-10 col-md-4 col-sm-4">
             <CarComponent className="py-2" 
@@ -192,6 +245,7 @@ function CompleteFleet () {
     </div>     
     </> 
   );
+  }
 };
 
 export default CompleteFleet;

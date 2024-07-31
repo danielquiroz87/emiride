@@ -28,6 +28,59 @@ const Header = () => {
   return (
  
 
+<div className='top'>
+<div className="header-black">
+<div className="col-md-3 px-0 justify-content-between css-1xlylu">
+
+<ul>
+    
+        <li className="nav-item hide-on-mobile hide-on-tablet">
+          <a aria-label='Facebook' className={`nav-link header-text ${isOpen ? 'header-text-open':''}`} href="https://www.facebook.com/emiridedubai?mibextid=ZbWKwL">        <i className="white fa-brands fa-facebook-f"></i>
+          </a>
+        </li>
+        <li className="nav-item hide-on-mobile hide-on-tablet">
+          <a aria-label='Instagram' className={`nav-link header-text ${isOpen ? 'header-text-open':''}`} href="https://www.instagram.com/emi_ride_dubai/">        <i className="white fa-brands fa-instagram"></i>
+          </a>
+        </li>
+        <li className="nav-item hide-on-mobile hide-on-tablet">
+          <a aria-label='TikTok' className={`white nav-link header-text ${isOpen ? 'header-text-open':''}`} href="https://www.tiktok.com/@emi_ride_dubai?_t=8XZAzmOXHXB&_r=1"><i class="fa-brands fa-tiktok"></i></a>
+        </li>
+        <li className="nav-item hide-on-mobile hide-on-tablet">
+          <a aria-label='Whatsapp' className={`white nav-link header-text ${isOpen ? 'header-text-open':''}`} href="https://api.whatsapp.com/send/?phone=%2B971503323079&text=Hello+i+want+to+rent+a+car+with+EMI&type=phone_number&app_absent=0"><i class="fa-brands fa-whatsapp"></i></a>
+        </li>
+  </ul>
+  </div>
+  <ul>
+
+        <li className="nav-item hide-on-mobile hide-on-tablet">
+          <a aria-label='Idioma Ingles' className={`header-idioma nav-link ${isOpen ? 'header-text-open':''}`} href="/"><img src='/idiomaingles.png' width="16" height="16" alt="Ingles" />&nbsp;&nbsp;English</a>
+        </li>
+        <li className='header-separador'>&nbsp;</li>
+         <li className="nav-item hide-on-mobile hide-on-tablet">
+          <a aria-label='Idioma Ingles' className={`header-idioma nav-link ${isOpen ? 'header-text-open':''}`} href="#"><img src='/idiomarabe.png' width="16" height="16" alt="Ingles" />&nbsp;&nbsp;عرب</a>
+        </li>
+        
+       
+  </ul>
+
+
+  <div className="header-contacto col-md-9 px-0 justify-content-between css-1xlylu">
+
+        <div className="header-left css-15vc923">
+          <i className="white fa-regular fa-envelope"></i>&nbsp;&nbsp;
+          <a className='white' href="mailto:marketing@sigmasoft.co" target="_blank">carsforrent@emiride.com</a>
+        </div>
+        
+        <div className="header-left css-15vc923">
+        <i className="white fa fa-phone" aria-hidden="true"></i>&nbsp;&nbsp;
+        <a className="white" href="https://api.whatsapp.com/send/?phone=%2B971503323079&text=Hello+i+want+to+rent+a+car+with+EMI&type=phone_number&app_absent=0" target="_blank">+971503323079</a>
+        </div>
+        
+    
+</div>
+      
+</div>
+
 
 <nav className={`navbar header_ navbar-expand-lg ${ isCarsForRent? 'navbar-dark':'navbar-light'} ${isOpen ? 'navbar-open' : ''}`}>
   <div className={"container-fluid"}>
@@ -51,26 +104,35 @@ const Header = () => {
           <a className={`nav-link header-text ${isOpen ? 'header-text-open':''}`} href="/">HOME</a>
         </li>
         <li className="nav-item mx-2">
-          <a className={`nav-link header-text ${isOpen ? 'header-text-open':''}`} href="/#cars-for-rent">CARS FOR RENT</a>
-        </li>
-        <li className="nav-item mx-2">
           <a className={`nav-link header-text ${isOpen ? 'header-text-open':''}`} href="/about-us">ABOUT US</a>
         </li>
+
         <li className="nav-item mx-2">
-          <a className={`nav-link header-text ${isOpen ? 'header-text-open':''}`} href="https://api.whatsapp.com/send/?phone=%2B971503323079&text=Hello+i+want+to+rent+a+car+with+EMI&type=phone_number&app_absent=0">CONTACT US</a>
+          <a className={`nav-link header-text ${isOpen ? 'header-text-open':''}`} href="/promotion">PROMOTIONS</a>
         </li>
-        <li className="nav-item hide-on-mobile hide-on-tablet">
-          <a aria-label='Facebook' className={`nav-link header-text ${isOpen ? 'header-text-open':''}`} href="https://www.facebook.com/emiridedubai?mibextid=ZbWKwL"><img src={facebookImage} width="30" height="30" alt="Facebook" /></a>
+       
+        <li className="nav-item mx-2">
+          <a className={`nav-link header-text ${isOpen ? 'header-text-open':''}`} href="/#cars-for-rent">CARS FOR RENT</a>
         </li>
-        <li className="nav-item hide-on-mobile hide-on-tablet">
-          <a aria-label='Instagram' className={`nav-link header-text ${isOpen ? 'header-text-open':''}`} href="https://www.instagram.com/emi_ride_dubai/"><img src={instagramImage} width="30" height="30" alt="Instagram" /></a>
+
+
+        <li className="nav-item mx-2">
+          <a className={`nav-link header-text ${isOpen ? 'header-text-open':''}`} href="/brand">BRANDS</a>
         </li>
-        <li className="nav-item hide-on-mobile hide-on-tablet">
-          <a aria-label='TikTok' className={`nav-link header-text ${isOpen ? 'header-text-open':''}`} href="https://www.tiktok.com/@emi_ride_dubai?_t=8XZAzmOXHXB&_r=1"><img src={tiktokImage} width="30" height="30" alt="TikTok" /></a>
+
+
+        <li className="nav-item mx-2">
+          <a className={`nav-link header-text ${isOpen ? 'header-text-open':''}`} href="/promotion">BLOG</a>
+        </li>
+
+        <li className="nav-item mx-2">
+          <a className={`nav-link header-text ${isOpen ? 'header-text-open':''}`} href="https://api.whatsapp.com/send/?phone=%2B971503323079&text=Hello+i+want+to+rent+a+car+with+EMI&type=phone_number&app_absent=0">CONTACT</a>
         </li>
         <li className="nav-item hide-on-mobile hide-on-tablet">
           <a aria-label='Whatsapp' className={`nav-link header-text ${isOpen ? 'header-text-open':''}`} href="https://api.whatsapp.com/send/?phone=%2B971503323079&text=Hello+i+want+to+rent+a+car+with+EMI&type=phone_number&app_absent=0"><img src={whatsappImage} width="30" height="30" alt="Whatsapp" /></a>
         </li>
+
+       
 
       </ul>
 
@@ -82,7 +144,7 @@ const Header = () => {
 
   </div>
 </nav>
-
+</div>
 
 
   );

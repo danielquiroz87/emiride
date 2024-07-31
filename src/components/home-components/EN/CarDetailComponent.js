@@ -1,10 +1,13 @@
 import React from 'react';
 import Header from './HeaderComponent';
 import Footer from './FooterComponent';
+
 import { Link, useLocation } from 'react-router-dom'
 
 import CarComponentWithChar from '../../CarComponentFromDetails';
-function CarComponent({ img_src, alt_img, logo_src, price,price_week,price_month, price_msg, marca, linea, modelo, char_img, link }) {
+function CarComponent({ img_src, alt_img, logo_src, price,price_week,price_month,price_offer,price_month_offer, price_week_offer,  price_msg, marca, linea, modelo, char_img, link,description,
+  EngineSize,Bluetooth,CruiseControl,AUX,USB,FiveSeater,SevenSeater,smallLuggage,bigLuggage,Navigation,ReverseCamera,ParkingSensor,appleCarPlay,TintedWindows,sunRoof,title
+ }) {
   return (
     <div>
       <div className='car-container'>
@@ -20,21 +23,45 @@ function CarComponent({ img_src, alt_img, logo_src, price,price_week,price_month
             <div className='row'>
               <div className='col-md-7 col-12 my-3 shadow-lg'>
                 <CarComponentWithChar
-                  img_src={img_src} 
+                  img_src={`https://app2.movlife.co/static/images/${img_src}`}
                   alt_img={alt_img}
-                  logo_src={logo_src} 
+                  logo_src={`https://app2.movlife.co/static/images/${logo_src}`} 
                   price={price}
                   price_msg={"Starting from"} 
                   marca={marca} 
                   linea={linea} 
                   modelo={modelo}
-                  char_img={char_img}
+                  char_img={`https://app2.movlife.co/static/images/${char_img}`}
                   link={link}
+                  description={description}
+                  title={title}
+                 
+                />
+               
+              </div>
+
+              <div className='col-md-5 col-12 my-3 '>
+                <BookPanel 
+                char_img={`https://app2.movlife.co/static/images/${char_img}`}
+                price={price} price_offer={price_offer} price_week={price_week} price_week_offer={price_week_offer} price_month={price_month} price_month_offer={price_month_offer} link={link}
+                EngineSize={EngineSize}
+                Bluetooth={Bluetooth}
+                CruiseControl= {CruiseControl}
+                AUX={AUX}
+                USB= {USB}
+                FiveSeater= {FiveSeater}
+                SevenSeater= {SevenSeater}
+                smallLuggage= {smallLuggage}
+                bigLuggage= {bigLuggage}
+                Navigation= {Navigation}
+                ReverseCamera= {ReverseCamera}
+                ParkingSensor= {ParkingSensor}
+                appleCarPlay= {appleCarPlay}
+                TintedWindows= {TintedWindows}
+                sunRoof={sunRoof}
                 />
               </div>
-              <div className='col-md-5 col-12 my-3 '>
-                <BookPanel char_img={char_img} price={price} price_week={price_week} price_month={price_month} link={link}/>
-              </div>
+
             </div>
 
           </div>        
@@ -97,9 +124,17 @@ function BookPanel(props){
             <table class="table table-borderless ">
               <thead>
                 <tr>
-                  <th className='mt-2 pt-3 table-text mb-0 pb-0'><p className='mb-0'>{props.price} AED</p></th>
-                  <th className='mt-2 pt-3 table-text mb-0 pb-0'><p className='mb-0'>{props.price_week} AED</p></th>
-                  <th className='mt-2 pt-3 table-text mb-0 pb-0'><p className='mb-0'>{props.price_month} AED</p></th>              
+                  <th className='mt-2 pt-3 table-text mb-0 pb-0'>
+                        <del>{props.price_offer} AED</del>
+                        <p className='mb-0'>{props.price} AED</p>
+                        </th>
+                  <th className='mt-2 pt-3 table-text mb-0 pb-0'>
+                    <del>{props.price_week_offer} AED</del>
+                    <p className='mb-0'>{props.price_week} AED</p>
+                    </th>
+                  <th className='mt-2 pt-3 table-text mb-0 pb-0'>
+                    <del>{props.price_month_offer} AED</del>
+                    <p className='mb-0'>{props.price_month} AED</p></th>              
                 </tr>
               </thead>
               <tbody className='p-0'>
@@ -146,6 +181,24 @@ function BookPanel(props){
               style={{ objectFit: 'contain', width: '100%', height: '100%' }}/>
         </div>
 
+        <table class="table my-4 "><thead><tr></tr></thead><tbody>
+        <tr><th class="features-table-title" scope="row">Engine Size</th><td class="features-table-text" colspan="2">{props.EngineSize}</td></tr>
+        <tr><th class="features-table-title" scope="row">Bluetooth</th><td class="features-table-text" colspan="2">{props.Bluetooth}</td></tr>
+        <tr><th class="features-table-title" scope="row">Cruise Control</th><td class="features-table-text" colspan="2">{props.CruiseControl}</td></tr>
+        <tr><th class="features-table-title" scope="row">AUX</th><td class="features-table-text" colspan="2">{props.AUX}</td></tr>
+        <tr><th class="features-table-title" scope="row">USB</th><td class="features-table-text" colspan="2">{props.USB}</td></tr>
+        <tr><th class="features-table-title" scope="row">5 SEATER</th><td class="features-table-text" colspan="2">{props.FiveSeater}</td></tr>
+        <tr><th class="features-table-title" scope="row">7 SEATER</th><td class="features-table-text" colspan="2">{props.SevenSeater}</td></tr>
+        <tr><th class="features-table-title" scope="row">SMALL LUGGAGE</th><td class="features-table-text" colspan="2">{props.smallLuggage}</td></tr>
+        <tr><th class="features-table-title" scope="row">BIG LUGGAGE</th><td class="features-table-text" colspan="2">{props.bigLuggage}</td></tr>
+        <tr><th class="features-table-title" scope="row">NAVIGATION</th><td class="features-table-text" colspan="2">{props.Navigation}</td></tr>
+        <tr><th class="features-table-title" scope="row">REVERSE CAMERA</th><td class="features-table-text" colspan="2">{props.ReverseCamera}</td></tr>
+        <tr><th class="features-table-title" scope="row">PARKING SENSOR</th><td class="features-table-text" colspan="2">{props.ParkingSensor}</td></tr>
+        <tr><th class="features-table-title" scope="row">APPLE CAR PLAY</th><td class="features-table-text" colspan="2">{props.appleCarPlay}</td></tr>
+        <tr><th class="features-table-title" scope="row">TINTED WINDOWS</th><td class="features-table-text" colspan="2">{props.TintedWindows}</td></tr>
+        <tr><th class="features-table-title" scope="row">SUN ROOF</th><td class="features-table-text" colspan="2">{props.sunRoof}</td></tr>
+        </tbody>
+        </table>
       </div>
     </div>
   )

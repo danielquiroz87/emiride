@@ -79,3 +79,22 @@
   font-size: 30px;
   font-weight: 900;
 }
+
+.model-line-title{
+  font-size: 40px;
+  font-weight: 900;
+  text-transform: uppercase;
+
+}
+
+.table-text del {
+  font-size: 14px;
+  font-weight: 500;
+}
+.description-text{
+  
+}
+.features-table-text{
+  text-transform: capitalize
+
+}

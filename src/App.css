@@ -562,13 +562,18 @@
 }
 
 .carousel-caption{
-  right: 2.5vw;
-  left: auto;
+  left: 2.5vw;
   bottom: auto;
-  top: 50%;
+  top: 45%;
   transform: translateY(-50%);
 }
 
+.pt-4 {
+  padding-top: 2.6rem !important;
+}
+.white{
+  color: #fff;
+}
 /* d-none d-md-block just shows desktop */
 
 

@@ -4,6 +4,8 @@ import {Routes, Route, Navigate} from 'react-router-dom'; //Switch changed to ro
 
 import HomeEn from './home-components/EN/HomeComponentEn';
 import AboutUs from './home-components/EN/aboutComponent';
+import CardHome from './home-components/EN/CardHomeComponent';
+
 import HomeEs from './home-components/ES/HomeComponentEs';
 import SobreNosotros from './home-components/ES/aboutComponent_ES';
 import CarDetailPageEN from './home-components/EN/CarDetail_EN';
@@ -56,6 +58,8 @@ function Main(){
         <Routes>
             <Route path = "/"               element={<HomeEn/>}/>
             <Route path = "/about-us"       element={<AboutUs/>}/>
+            <Route path = "/card-home"       element={<CardHome/>}/>
+
             <Route path = "/privacy-policy" element={<PrivacyPolicyComponent/>} />
             <Route path = "/terms-conditions" element={<TermsConditionsComponent/>} />
             <Route path = "/cars-for-rent/:car" element={<CarDetailPageEN/>}/>

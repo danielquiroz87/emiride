@@ -10,6 +10,11 @@ import HomeEs from './home-components/ES/HomeComponentEs';
 import SobreNosotros from './home-components/ES/aboutComponent_ES';
 import CarDetailPageEN from './home-components/EN/CarDetail_EN';
 import CarDetailPageES from './home-components/ES/CarDetail_ES';
+import CategoryDetailCarComponent from './home-components/EN/CategoryDetailCarComponent_EN';
+import BrandDetailCarComponent from './home-components/EN/BrandDetailCarComponent_EN';
+import PromotionDetailCarComponent from './home-components/EN/PromotionDetailCarComponent_EN';
+
+
 
 // import as here https://web.dev/code-splitting-suspense/
 
@@ -63,6 +68,11 @@ function Main(){
             <Route path = "/privacy-policy" element={<PrivacyPolicyComponent/>} />
             <Route path = "/terms-conditions" element={<TermsConditionsComponent/>} />
             <Route path = "/cars-for-rent/:car" element={<CarDetailPageEN/>}/>
+            <Route path = "/cars-for-category/:category" element={<CategoryDetailCarComponent/>}/>
+            <Route path = "/cars-for-brand/:brand" element={<BrandDetailCarComponent/>}/>
+            <Route path = "/promotions" element={<PromotionDetailCarComponent/>}/>
+
+
 
             <Route path = "/inicio"         element={<HomeEs/>}/> 
             <Route path = '/sobre-nosotros' element={<SobreNosotros/>}/>

@@ -29,7 +29,7 @@ function MapComponent({ latitude, longitude }) {
     if (shouldLoadMap && !window.google) {
       // Load the Google Maps JavaScript API script
       const googleMapsScript = document.createElement('script');
-      googleMapsScript.src = `https://maps.googleapis.com/maps/api/js?key=AIzaSyBUh1HZCtb0h9Q3pfvLGyGh5YMOTHl6v-4`;
+      googleMapsScript.src = `https://maps.googleapis.com/maps/api/js?key=AIzaSyCTB40SU4FspBupqEDIRYg3PlrVNcrNsBQ`;
       googleMapsScript.async = true;
       googleMapsScript.addEventListener('load', initializeMap);
       window.document.body.appendChild(googleMapsScript);

@@ -94,6 +94,42 @@ margin: auto !important;
   .close-cross{
     color: white !important;
   }
+
+  .submenu {
+    display: none;
+    position: absolute;
+    background-color: black;
+    min-width: 160px;
+    z-index: 1;
+    margin:0;
+    padding:0;
+    margin-left:10px;
+}
+
+.submenu li {
+    display: block;
+    text-align: left;
+    padding: 12px;
+    padding-left: 20px;
+    border-bottom: 1px solid white;
+    font-weight: bold;
+}
+
+.submenu li a {
+    padding: 0px;
+    text-decoration: none;
+    color:white;
+    padding: 10px;
+}
+
+.submenu li a:hover {
+    background-color: #ccc;
+}
+
+/* Mostrar el submenú al pasar el ratón */
+.navbar ul li:hover .submenu {
+    display: block;
+}
   
   /* Default styles for the logo */
   .logo {

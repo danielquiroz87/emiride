@@ -8,8 +8,8 @@
 .FAQ-img {
     width: auto;
     height: auto;
-    max-width: 85%;
-    max-height: 85%;
+    max-width: 55%;
+    max-height: 55%;
   }
 
 .FAQ-tittle-container{
@@ -20,7 +20,7 @@
     height: 100%;
 }
 .FAQ-tittle{
-    font-size: 48px;
+    font-size: 38px;
     font-weight:900;
     margin: 0;
   }
@@ -93,7 +93,7 @@
 /* ------------------------------ FAQ ------------------------ */
 .faq-container{
     background-image:  url('../static/images/adam-le-sommer.webp');
-    min-height: 40vh;
+    min-height: 20vh;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center !important;

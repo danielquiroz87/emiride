@@ -6,6 +6,8 @@ import Header from './HeaderComponent';
 import Footer from './FooterComponent';
 
 import CarouselEn from './CarouselEn';
+
+
 import WhyRent from '../EN/WhyToRentWithUs/WhyRent';
 import HowWorks from './HowWorks';
 import HowWorksMobile from './HowWorksMobile';
@@ -15,8 +17,6 @@ import MapComponent from '../../MapComponent';
 import DocumentsRequired from './DocumentsRequired';
 import FaqAccordion from '../../FaqAccordion';
 import ModalInformation from '../../ModalInformation';
-
-
 
 import StepsPath from '../../../static/images/steps-path-desktop.webp';
 import StepsPathMobile from '../../../static/images/steps-path-mobile.webp';
@@ -68,7 +68,16 @@ import CarComponent from '../../CarComponent';
 import Urus from '../../../static/images/urus.webp';
 import LamborghiniLogo from '../../../static/images/lamborghini_gg.webp';
 import ss4 from '../../../static/images/sss4.webp';
+import CarPromotionCard from '../../CarPromotionCard';
+import CarCategoriesCard from '../../CarCategoriesCard';
+import CategoryCarouselItemComponent from '../../CategoryCarrouselItemComponent';
+import HomePromotionComponent from '../HomePromotionComponent';
+import HomeCategoryComponent from '../HomeCategoryComponent';
 
+
+
+import CarouselHomeEn from "react-multi-carousel";
+import "react-multi-carousel/lib/styles.css";
 
 function HomeEn() {
 
@@ -182,10 +191,60 @@ function HomeEn() {
         </Helmet>
 
         <Header />
-        <div>
           <CarouselEn c1={carousel_1} c2={carousel_2} c3={carousel_3} c4={carousel_4} />
 
           <FormComponentMobile />
+         
+              
+          <div className='car-container container-fluid'>
+
+          <div class="container-fluid d-flex flex-row align-items-center justify-content-center my-4  ">
+              <div class="complete-fleet-img-container">
+                <img class="complete-fleet-img img-fluid" width="139" height="148" alt="complete fleet for rental" src="/static/media/know-fleet-img.ef728cea795c8c852cda.webp" />
+              </div>
+              <div class="complete-fleet-tittle-container"><div class="black-white">
+                <h2 class="complete-fleet-tittle">PROMOTIONS</h2>
+              </div>
+            </div>
+          </div>
+          
+          <div style={{marginLeft:'auto'}} className="row row-cols-1 row-cols-md-3 g-4">
+            <HomePromotionComponent category="yes" ></HomePromotionComponent>
+            </div>
+          </div>
+        
+            <div className="container my-4 hide-on-mobile promociones">
+           
+            <div id="carouselHome1" className="carousel slide" data-bs-ride="carousel" data-interval="100">
+            <div className="carousel-inner">
+
+            <div className="carousel-item active">
+                <div class="row">
+                  <CategoryCarouselItemComponent category='economica' ></CategoryCarouselItemComponent>
+                  <CategoryCarouselItemComponent category='intermedia' ></CategoryCarouselItemComponent>
+                  <CategoryCarouselItemComponent category='compact' ></CategoryCarouselItemComponent>
+
+                </div>
+            </div>
+
+            <div className="carousel-item">
+            <div className="row">
+                  <CategoryCarouselItemComponent category='economica' ></CategoryCarouselItemComponent>
+                  <CategoryCarouselItemComponent category='intermedia' ></CategoryCarouselItemComponent>
+                  <CategoryCarouselItemComponent category='compact' ></CategoryCarouselItemComponent>
+
+               
+            </div>
+        </div>
+       
+    </div>
+
+</div>
+
+            
+            </div>
+          
+          
 
           <WhyRent />
 
@@ -233,7 +292,7 @@ function HomeEn() {
           </div>
 
           {/* ------------------------- HOW WORKS ----------------------- */}
-          <div className='container my-4 hide-on-mobile'>
+          <div className='container my-4 hide-on-mobile'> 
             <b><h3 className='d-flex align-items-center justify-content-center how-works-tittle my-4 py-4'>HOW IT WORKS</h3></b>
             <HowWorks elements={elements_1} />
 
@@ -272,19 +331,92 @@ function HomeEn() {
           </div>
 
           {/* --------------------- HOW WORKS END -------------------- */}
-
-          <div className='d-flex align-items-center justify-content-center angle-down-parent'>
-            <img
-              src={AngleDown}
-              className="angle-down"
-              alt="AngleDown"
-            // width="512"
-            // height="512"
-            // style={{ objectFit: 'contain', width: '100%', height: '100%' }}
-            />
+        
+          <div className='container-fluid promociones'>
+          <h1 className='' style={{marginLeft:'20px'}}>Categoría ecomomica</h1>
+          <div className="row row-cols-1 row-cols-md-3 g-4">
+         
+            <HomeCategoryComponent category="economica" ></HomeCategoryComponent>
+           
+            </div>
           </div>
 
-          <div className="container-fluid d-flex flex-row align-items-center justify-content-center">
+          <div className='container-fluid promociones'>
+            <h1 className='' style={{marginLeft:'20px'}}>Categoría Intermedia</h1>
+            <div className="row row-cols-1 row-cols-md-3 g-4">
+                <HomeCategoryComponent category="intermedia" ></HomeCategoryComponent>
+              </div>
+           </div>
+
+            <div className='container-fluid promociones'>
+            <h1 className='' style={{marginLeft:'20px'}}>Categoría Compact</h1>
+            <div className="row row-cols-1 row-cols-md-3 g-4">
+          
+            <HomeCategoryComponent category="compact" ></HomeCategoryComponent>
+
+              </div>
+            </div>
+
+
+          <div className="bg-content-red">
+
+<div className="bg-black-franja">
+<div class="row">
+  <h1 class="bg-white-title">Our Flexible Car Rental Plans</h1>
+      <div class="col-md-4 card-custom">
+          <div class="card card-icon-bg card-icon-bg-primary o-hidden mb-4">
+              <div class="card-body-custom text-left">
+                  <i class="i-Financial"></i>
+                  <div class="content">
+                      <h4>Shor Team<br/>
+                      <span className='small'>Car Rental</span>
+                      </h4>
+                      <p style={{marginTop:'40px'}}>"Esta opción será ideal cuando necesite un rentar vehiculo a corto plazo en Dubái, para
+un viaje de un día, una escapada de un fin de semana o para tus vacaciones. EMI
+RIDE RENT A CAR puede cubrirte en cualquiera de estos casos con una flota de
+vehículos nuevos al mejor precio precio."</p>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+      <div class="col-md-3 card-custom">
+          <div class="card card-icon-bg card-icon-bg-primary o-hidden mb-4">
+              <div class="card-body-custom text-left">
+                  <i class="i-Financial"></i>
+                  <div class="content">
+                      <h4>Monthly<br/>
+                      <span className='small'>Car Rental</span>
+                      </h4>
+                      <p style={{marginTop:'40px'}}>"En EMI RIDE RENT A CAR, ofrecemos servicios de renta de vehículos mensuales en
+                      Dubái tanto para residentes como para turistas en los Emiratos Árabes Unidos. Pregunta por nuestras ofertas de renta de
+                      vehículos  en Dubái."</p>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+      <div class="col-md-3 card-custom">
+          <div class="card card-icon-bg card-icon-bg-primary o-hidden mb-4">
+              <div class="card-body-custom text-left">
+                  <i class="i-Checkout-Basket"></i>
+                  <div class="content">
+                      <h4>Long Term<br/>
+                      <span className='small'>Car Rental</span>
+                      </h4>
+                      <p style={{marginTop:'40px'}}>"Si pretende estar una larga temporada en los Emiratos Árabes Unidos, Emi Ride Ren
+a Car te ofrece diferentes opciones de renta de vehículos a largo plazo en Dubái, para
+todo tipo de presupuesto, que te llevaran cómodo y seguro a cualquier lugar."</p>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+
+  </div>
+</div>
+</div>
+          <div className="title-location container-fluid d-flex flex-row align-items-center justify-content-center">
             <div className="white-black">
               <h2 className='map-tittle'>OUR</h2>
             </div>
@@ -292,8 +424,8 @@ function HomeEn() {
               <h2 className='map-tittle'>LOCATION</h2>
             </div>
           </div>
-          <div className='map-container d-flex align-items-center justify-content-center'>              
-            <MapComponent latitude={25.2523202169424} longitude={55.334763524835} />
+          <div className=''>              
+          <div><iframe width="100%" height="600" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=es&amp;q=Dubai+(Ubicacion%20Emiride)&amp;t=&amp;z=8&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe></div>
           </div>
 
           <div className='container required-documents d-flex align-items-center justify-content-center flex-column px-0'>
@@ -374,10 +506,10 @@ function HomeEn() {
             </div>
           </div>
 
-        </div>
         <WhatsappIcon />
         <Footer />
       </div>
+      
     )
       : null
   );

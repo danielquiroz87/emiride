@@ -5,6 +5,13 @@ import Footer from './FooterComponent';
 import { Link, useLocation } from 'react-router-dom'
 
 import CarComponentWithChar from '../../CarComponentFromDetails';
+
+function gotoWhatsApp(go){
+  if(go){
+    window.open('https://api.whatsapp.com/send/?phone=%2B971503323079&text=Hello+i+want+to+rent+a+car+with+EMI&type=phone_number&app_absent=0', '_blank');
+  }
+}
+
 function CarComponent({ img_src, alt_img, logo_src, price,price_week,price_month,price_offer,price_month_offer, price_week_offer,  price_msg, marca, linea, modelo, char_img, link,description,
   EngineSize,Bluetooth,CruiseControl,AUX,USB,FiveSeater,SevenSeater,smallLuggage,bigLuggage,Navigation,ReverseCamera,ParkingSensor,appleCarPlay,TintedWindows,sunRoof,title
  }) {
@@ -153,7 +160,7 @@ function BookPanel(props){
           <div className='container d-flex align-items-center justify-content-center'>
 
             <button 
-              onClick={() => {window.location.href = `${props.link}`}} 
+              onClick={() => gotoWhatsApp(true)}
               id={`${props.marca}-${props.linea}-SubmitBtn`} 
               className={`btn rounded-right-corners px-4 mb-3 shadow ${props.marca === 'LAMBORGHINI' ? 'bg-gold text-black fw-bold' : 'bg-black text-white'}`}
             >

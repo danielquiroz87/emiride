@@ -52,7 +52,7 @@ const CarDetailPage = () => {
 
   const fetchData = async (car) => {
     try {
-      const response = await fetch('https://app2.movlife.co/jsongoogle.php?id='+car); // Replace with your API endpoint
+      const response = await fetch('https://test-emiride.movlife.co/jsongoogle.php?id='+car); // Replace with your API endpoint
       if (!response.ok) {
         throw new Error('Network response was not ok.');
       }

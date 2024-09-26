@@ -108,7 +108,7 @@ const Header = () => {
         </li>
 
         <li className="nav-item mx-2">
-          <a className={`nav-link header-text ${isOpen ? 'header-text-open':''}`} href="/promotion">PROMOTIONS</a>
+          <a className={`nav-link header-text ${isOpen ? 'header-text-open':''}`} href="/promotions">PROMOTIONS</a>
         </li>
        
         <li className="nav-item mx-2">
@@ -117,9 +117,18 @@ const Header = () => {
 
 
         <li className="nav-item mx-2">
-          <a className={`nav-link header-text ${isOpen ? 'header-text-open':''}`} href="/brand">BRANDS</a>
+          <a className={`nav-link header-text ${isOpen ? 'header-text-open':''}`} href="/cars-for-brand/all">BRANDS</a>
+         
+                <ul className="submenu">
+                    <li><a href="/cars-for-brand/kia">KIA</a></li>
+                    <li><a href="/cars-for-brand/mitsubishi">MITSUBISHI</a></li>
+                    <li><a href="/cars-for-brand/toyota">TOYOTA</a></li>
+                    <li><a href="/cars-for-brand/hyundai">HYUNDAI</a></li>
+                    <li><a href="/cars-for-brand/nissan">NISSAN</a></li>
+                </ul>
+          
         </li>
-
+        
 
         <li className="nav-item mx-2">
           <a className={`nav-link header-text ${isOpen ? 'header-text-open':''}`} href="/promotion">BLOG</a>

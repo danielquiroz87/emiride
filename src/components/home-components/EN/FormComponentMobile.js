@@ -25,10 +25,19 @@ function FormComponentMobile(){
     const handleSubmit = (e) => {
         e.preventDefault();
         // Build the URL htmlFor the external API
-
         const apiUrl = `${baseUrl}search?from=${from}&to=${to}&date_from=${formatDate(date_from)}&time_from=${hour_from}&date_to=${formatDate(date_to)}&time_to=${hour_to}`;
         // Redirect to the external API
-        window.location.href = apiUrl;
+        //window.location.href = apiUrl;
+        var message = "New message from " + from + "\n\n"; // Pesan Pembuka
+        message += "*to:* " + to + "\n";
+        message += "*date_from:* " + formatDate(date_from) + "\n";
+        message += "*time_from:* " + formatDate(hour_from) + "\n";
+        message += "*date_to:* " + formatDate(date_to) + "\n\n";
+        message += "*time_to:* " + formatDate(hour_to) + "\n\n";
+        message += "=============================" + "\n";
+        console.log(message);
+        return false;
+       
     };
 
     return(
@@ -205,7 +214,7 @@ function FormComponentMobile(){
             <div className="container py-4">
                 <div className="row align-items-center justify-content-center">
                     <div className="col text-center">
-                        <button type="submit" id="mobile-submitBtnMobile" className="btn btn-lg btn-secondary rounded-pill submit-button ">Book Now</button>
+                        <button type="submit" id="mobile-submitBtnMobile" className="btn btn-lg btn-secondary rounded-pill submit-button ">Book Now X</button>
                     </div>
                 </div>
             </div>

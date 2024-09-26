@@ -25,13 +25,25 @@ function FormComponent(){
     // Handle form submit event
     const handleSubmit = (e) => {
         e.preventDefault();
-        // Build the URL htmlFor the external API
-
+        
+        const fromOption = document.getElementById('pick-up-place').options[from].text;
+        const toOption= document.getElementById('drop-off-place').options[from].text; 
         const time_from = hour_from+':'+minute_from;
         const time_to = hour_to+':'+minute_to;
         const apiUrl = `${baseUrl}search?from=${from}&to=${to}&date_from=${formatDate(date_from)}&time_from=${time_from}&date_to=${formatDate(date_to)}&time_to=${time_to}`;
-        // Redirect to the external API
-        window.location.href = apiUrl;
+        var message = "=============================" + "\n";
+        message += "New Booking from emiride.com "+ "\n"; 
+        message += "*From:* " + toOption + "\n";
+        message += "*To:* " + toOption + "\n";
+        message += "*Date From:* " + formatDate(date_from) + "\n";
+        message += "*Time From:* " + formatDate(hour_from) + "\n";
+        message += "*Date To:* " + formatDate(date_to) + "\n";
+        message += "*Time To:* " + formatDate(hour_to) + "\n";
+        message += "*Age:* " + (age) + "\n";
+        message += "=============================" + "\n";
+        var newMessage=encodeURI(message);
+        window.open('https://api.whatsapp.com/send/?phone=%2B971503323079&text='+newMessage+'', '_blank');
+        
     };
 
     return(

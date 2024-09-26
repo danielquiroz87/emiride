@@ -562,9 +562,9 @@
 }
 
 .carousel-caption{
-  left: 2.5vw;
+  right: 2.5vw;
   bottom: auto;
-  top: 45%;
+  top: 50%;
   transform: translateY(-50%);
 }
 
@@ -664,3 +664,143 @@
   text-align: center;
 }
 
+.separador{
+  width: 100%;
+}
+.promociones{
+  margin: auto;
+  width: 90%;
+}
+.promociones h1{
+  margin-left: 20px;
+}
+.home-ofertas{
+  float: left;
+  width: 32%;
+  margin: 8px;
+}
+.carouselHome img{
+  width: 200px !important;
+}
+
+.card-custom {
+  margin-left: 4%;
+  margin-top:  20px;
+}
+.card-custom img {
+  width:80% !important ;
+  height: 80%;
+  margin: auto;
+}
+.card-custom .card-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+}
+.card-custom .card-footer {
+  display: flex;
+  justify-content: space-around;
+}
+
+.title-location{
+  padding-top:40px;
+}
+.card-custom-title-price{
+  color:#bfbfbf;
+  font-weight: 300 !important;
+  font-size: 16px;
+}
+.card-custom del{
+  color: red;
+}
+.card-custom-title-green{
+  color:#00bf00;
+  font-weight: 300 !important;
+  font-size: 16px;
+
+}
+.red{
+  color: red;
+}
+.w900{
+  font-weight: 700;
+}
+.bg-content-red{
+  height: 350px;
+}
+.bg-red{
+background-color: #f11302;
+height: 150px
+}
+.bg-black-franja{
+background-color: #000;
+height: 150px
+}
+.bg-white-title{
+  color: white;
+  margin-top: 40px;
+  text-align: center;
+  font-weight: 700;
+}
+.card-body-custom{
+  min-height: 150px;
+  margin: 20px;
+}
+.small{
+  font-size: 16px;
+  color: red;
+  position: absolute;
+}
+
+.about-us-container{
+  margin-top:140px
+}
+.text-align-left{
+text-align: left;
+}
+.col-33{
+  width: 33%;
+}
+.card a{
+  text-decoration: none;
+}
+.card-img-top{
+    width: 240px !important;
+    height: 200px !important;
+    margin: auto;
+    display: block;
+}
+.item-img-carrousel{
+  color: black;
+  font-size: 24px;
+  text-align: center;
+  text-transform: capitalize;
+  font-weight: 800;
+
+}
+
+.us-tittle{
+  text-align: left;
+  font-family: "Poppins", Sans-serif;
+  font-size: 2.2rem;
+  font-weight: 800;
+  line-height: 1px;
+  color: #474747;
+  margin-top: 10vh;
+}
+
+.text-center{
+  color: #474747;
+}
+
+.bg-content-red p {
+  font-size: 12px;
+}
+#booking-form{
+  float: right;
+  margin-right: 20px;
+}
+#submitBtn{
+  background-color: black;
+}

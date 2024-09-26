@@ -61,6 +61,33 @@ function Footer() {
 
             </div>
         </div>
+
+        <div className="container-fluid text-left " >
+    
+    <div className="row align-items-center justify-content-center ">
+
+        <div className="col-md-3 col-6">
+        </div>
+      
+        <div className="col-md-3 col-6">
+            <a className='footer-links text-left red w900' href='#'><p>Al Ain Mall Al Ain</p></a>
+            <a className='footer-links text-left red w900' href='#'><p>AL Ghurair Mall</p></a>
+            <a className='footer-links text-left red w900' href='#'><p>Arabian Ranches</p></a>
+        </div>
+
+        <div className="col-md-3 col-6">
+            <a className='footer-links text-left red w900' href='#'><p>Al Ain Mall Al Ain</p></a>
+            <a className='footer-links text-left red w900' href='#'><p>AL Ghurair Mall</p></a>
+            <a className='footer-links text-left red w900' href='#'><p>Arabian Ranches</p></a>
+        </div>
+        <div className="col-md-3 col-6">
+            <a className='footer-links text-left red w900' href='#'><p>Al Ain Mall Al Ain</p></a>
+            <a className='footer-links text-left red w900' href='#'><p>AL Ghurair Mall</p></a>
+            <a className='footer-links text-left red w900' href='#'><p>Arabian Ranches</p></a>
+        </div>
+    
+    </div>
+</div>
         <div className='container'>
             <ul className="navbar-nav ms-auto d-flex flex-row align-items-center justify-content-center">
                 <li className="nav-item mx-3 my-2">
